@@ -31,8 +31,15 @@
   sections:
     file: N1850OCBDRDDMS_f19_tn14_03042019
     file: N1850OCBDRDDMS_f19_tn14_12042019
+    file: N1850OCBDRDDMS_f19_tn14_15042019
+    file: N1850OCBDRDDMS_f19_tn14_25042019
+    file: N1850OCBDRDDMS_f19_tn14_07052019
+    file: N1850OCBDRDDMS_f19_tn14_08052019
+    file: N1850OCBDRDDMS_f19_tn14_10052019
+    file: N1850OCBDRDDMS_f19_tn14_13052019
   not_numbered: true
   expand_sections: true
+  
 # External link
 - title: Github repository
   url: https://github.com/NorESMhub/noresm-exp
