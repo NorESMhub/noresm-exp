@@ -28,6 +28,7 @@
 
 # NorESM2-LM spin up experiments
 - title: NorESM2-LM spin up experiments
+  url: /noresm2_lm_spin
   sections:
     file: N1850OCBDRDDMS_f19_tn14_03042019
     file: N1850OCBDRDDMS_f19_tn14_12042019
