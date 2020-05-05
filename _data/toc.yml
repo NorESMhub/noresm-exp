@@ -30,8 +30,10 @@
 - title: NorESM2-LM spin up experiments
   url: /noresm2_lm_spin
   sections:
-    file: N1850OCBDRDDMS_f19_tn14_03042019
-    file: N1850OCBDRDDMS_f19_tn14_12042019
+  - title: N1850OCBDRDDMS_f19_tn14_03042019
+    url: /N1850OCBDRDDMS_f19_tn14_03042019
+  - title: N1850OCBDRDDMS_f19_tn14_12042019
+    url: /N1850OCBDRDDMS_f19_tn14_12042019
   not_numbered: true
   expand_sections: true
 #    file: N1850OCBDRDDMS_f19_tn14_15042019
