@@ -39,6 +39,23 @@
     file: N1850OCBDRDDMS_f19_tn14_13052019
   not_numbered: true
   expand_sections: true
+
+# NorESM2-MM spin up experiments
+- title: NorESM2-MM spin up experiments
+  sections:
+    file: N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
+    file: N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
+    file: N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
+    file: N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
+    file: N1850OCBDRDDMS_f09_tn14_20190411
+    file: N1850OCBDRDDMS_f09_tn14_20190417
+    file: N1850OCBDRDDMS_f09_tn14_20190425
+    file: N1850OCBDRDDMS_f09_tn14_20190506
+    file: N1850OCBDRDDMS_f09_tn14_20190512
+    file: N1850OCBDRDDMS_f09_tn14_20190515
+    file: N1850_f09_tn14_20190524
+  not_numbered: true
+  expand_sections: true
   
 # External link
 - title: Github repository
