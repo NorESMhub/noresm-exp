@@ -1,7 +1,7 @@
 # N1850OCBDRDDMS_f19_tn14_03042019
 
 Spin up simulation for NorESM2-LM
-
+- upgraded from CESM2.0 to CESM2.1
 - Parent: hybrid from Øyvind's N1850OCBDRDDMS_f19_tn14_Gibr_220319
 - Branch time from parent: 01-01-0421
 
