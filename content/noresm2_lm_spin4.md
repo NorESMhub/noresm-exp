@@ -81,7 +81,7 @@ if (ferr > 2*ferrmax) then
 
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
 
-Note this bug was fixed in ??
+Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_07052019
 
 ### User name lists
 
