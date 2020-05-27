@@ -147,7 +147,7 @@ Long wave aerosol optical depth (AOD) bug fixer: optinterpol.F90
  micro_mg_dcs             = 5.0e-4
 
 &clubb_params_nl
- clubb_gamma_coef = 0.258
+ clubb_gamma_coef = 0.263
 
 &gw_drag_nl
  tau_0_ubc                = .true.
