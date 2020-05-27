@@ -21,7 +21,7 @@ Include a summary of the modifications included and added to this simulation
 | Parent |   N1850OCBDRDDMS_f19_tn14_201218  |
 | Run type  | branch |
 | Branch time from parent | 01-01-0091 |
-| Simulated years | 01-01-0001 - 31-12-0645 |   
+| Simulated years | 01-01-0091 - 31-12-0645 |   
 | Compset | 1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
 | Git branch | featureCAM5-OsloDevelopment_trunk2.0-6 | 
 | Git commit | 9aa22b2 |
