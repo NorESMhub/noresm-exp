@@ -1,5 +1,19 @@
 # N1850OCBDRDDMS_f19_tn14_03042019
 
+## Data storage
+The data is stored on NIRD @ sigma2
+
+/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_03042019
+
+
+## Path to case directory
+
+/home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_03042019/
+
+copy on Vilje @ sigma2
+
+/home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_03042019/
+
 ## Simulation specifics
 
 |  |  |  
@@ -134,17 +148,4 @@ Increased width of Strait of Gibraltar from 15 km to 30 km
 set CWMWTH = "      30.e3,      30.e3"
 
 ```
-
-## Data storage
-The data is stored on NIRD @ sigma2
-/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_03042019
-
-
-## Path to case directory
-
-/home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_03042019/
-
-copy on Vilje @ sigma2
-
-/home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_03042019/
 
