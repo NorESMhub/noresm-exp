@@ -1,16 +1,18 @@
 # Data storage
 The data is stored on NIRD @ sigma2
+
 /projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019
 
+/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019_vilje
 
 # Path to case directory
 
 on Fram @ sigma2: /cluster/projects/nn2345k/adagj/NorESM/cases/N1850_f19_tn14_11062019
-
+on Vilje @ sigma2: /home/ntnu/adagj/noresm/cases_2.1.0/N1850_f19_tn14_11062019_vilje
 
 
 # Summary of simulation
-Spin up simulation moved fron Nebula @ nsc.liu to Fram @ sigma2
+Spin up simulation moved fron Nebula @ nsc.liu to Fram @ sigma2 and an identical simulation on Vilje @ sigma2
 
 No additional code modifications or user name list modifications included compared to N1850OCBDRDDMS_f19_tn14_13052019 and N1850_f19_tn14_06062019.
 
@@ -35,7 +37,7 @@ and to components/micom/phy/rdlim.F which fixed the time variable output problem
 | Git branch | featureCESM2.1.0-OsloDevelopment |
 | Git commit | 54075ac  |
 | Resolution | f19_tn14 |
-| Machine  |  Fram  |
+| Machine  |  Fram and Vilje  |
 
 # Node allocation
 
