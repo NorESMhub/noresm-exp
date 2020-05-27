@@ -9,6 +9,9 @@ on Vilje @ sigma2
 
 /home/metno/oyvinds/NorESM2old/noresmdevcases/N1850OCBDRDDMS_f19_tn14_Gibr_220319
 
+# Summary of simulation
+
+Include a summary of the modifications included and added to this simulation
 
 # Simulation specifics
 
@@ -109,9 +112,9 @@ Not included in this simulation
 
 Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_07052019
 
-## User name lists
+# User name lists
 
-### user_nl_cam
+## user_nl_cam
 ``` 
 &dyn_fv_inparm
  fv_am_correction= .true.
@@ -146,7 +149,7 @@ aerotab_table_dir =
 
 ```
 
-### user_nl_clm
+## user_nl_clm
 Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing. 
 ```
 finidat = '/work/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
@@ -155,7 +158,7 @@ reset_snow = .true.
 
 ```
 
-### user_nl_micom
+## user_nl_micom
 
 Increased width of Strait of Gibraltar from 15 km to 30 km
 
