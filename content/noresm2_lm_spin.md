@@ -17,12 +17,11 @@
 |N1850_f19_tn14_06062019| CESM2.1| branch | 1516-01-01 | 1516 - 1565 |
 |N1850_f19_tn14_11062019| CESM2.1| branch | 1566-01-01 | 1566 - 1600 |
 
-````
-```{figure} ../images/Figure_4.png
+
+{figure} images/Figure_4.png
 ---
 height: 150px
 name: spinup
 ---
 Spin up simulation figure caption!
-```
-````
+
