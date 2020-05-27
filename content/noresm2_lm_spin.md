@@ -16,3 +16,13 @@
 |N1850OCBDRDDMS_f19_tn14_13052019| CESM2.1  | branch | 1101-01-01 | 1101 - 1515 |
 |N1850_f19_tn14_06062019| CESM2.1| branch | 1516-01-01 | 1516 - 1565 |
 |N1850_f19_tn14_11062019| CESM2.1| branch | 1566-01-01 | 1566 - 1600 |
+
+````
+```{figure} ../images/Figure.png
+---
+height: 150px
+name: spinup
+---
+Spin up simulation figure caption!
+```
+````
