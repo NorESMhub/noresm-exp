@@ -31,7 +31,7 @@ and the SourceMods no longer needed
 | CESM parent| CESM2.1.0  | 
 | Parent |   N1850OCBDRDDMS_f19_tn14_10052019  |
 | Run type  | branch |
-| Branch time from parent | 1036-01-01 |
+| Branch time from parent | 1101-01-01 |
 | Simulated years | 01-01-1101 - 31-12-1515 |   
 | Compset | 1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
 | Git branch | featureCESM2.1.0-OsloDevelopment |

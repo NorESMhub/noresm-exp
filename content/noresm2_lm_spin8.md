@@ -13,7 +13,7 @@ copy on Vilje @ sigma2
 
 
 # Summary of simulation
-Increased gamma to 0.263 (from 0.258), this simulation was not used further in the spinup of NorESM2-LM, instead N1850OCBDRDDMS_f19_tn14_08052019 (with gamma set to 0.263 was used)
+Increased gamma to 0.263 (from 0.258), **this simulation was not used in the spinup of NorESM2-LM**, instead N1850OCBDRDDMS_f19_tn14_08052019 (with gamma set to 0.263 was used)
 
 File modifications to components/mosart/src/riverroute/RtmRestFile.F90 which fixed the problems with fill values on Nebula 
 and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment
