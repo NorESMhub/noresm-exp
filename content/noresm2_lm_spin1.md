@@ -1,19 +1,17 @@
-# N1850OCBDRDDMS_f19_tn14_201218
-
-## Data storage
+# Data storage
 The data is stored on NIRD @ sigma2
 
 /projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_201218
 
 
-## Path to case directory
+# Path to case directory
 
 on Vilje @ sigma2
 
 /home/metno/oyvinds/NorESM2old/noresmdevcases/N1850OCBDRDDMS_f19_tn14_201218
 
 
-## Simulation specifics
+# Simulation specifics
 
 |  |  |  
 | --- | --- | 
@@ -28,7 +26,7 @@ on Vilje @ sigma2
 | Resolution | f19_tn14 |
 | Machine  |  Vilje  |
 
-## Node allocation
+# Node allocation
 
 ```
 
@@ -51,18 +49,18 @@ on Vilje @ sigma2
 
 ```
 
-## Code modifications (SourceMods)
+# Code modifications (SourceMods)
 
 
-### Includes the long wave aod error
+## Includes the long wave aod error
 
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
 
 Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_07052019
 
-### User name lists
+## User name lists
 
-#### user_nl_cam
+### user_nl_cam
 ``` 
 &dyn_fv_inparm
  fv_am_correction= .true.
@@ -93,7 +91,7 @@ Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_07052019
 
 ```
 
-#### user_nl_clm
+### user_nl_clm
 Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing. 
 ```
 finidat = '/work/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
