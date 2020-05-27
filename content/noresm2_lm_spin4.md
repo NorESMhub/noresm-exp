@@ -1,12 +1,10 @@
-# N1850OCBDRDDMS_f19_tn14_03042019
-
-## Data storage
+# Data storage
 The data is stored on NIRD @ sigma2
 
 /projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_03042019
 
 
-## Path to case directory
+# Path to case directory
 
 /home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_03042019/
 
@@ -14,10 +12,10 @@ copy on Vilje @ sigma2
 
 /home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_03042019/
 
-## Simulation specifics
+# Simulation specifics
 
 |  |  |  
-| --- | --- | 
+| --- | :--- | 
 | CESM parent| CESM2.1.0  | 
 | Parent |   N1850OCBDRDDMS_f19_tn14_Gibr_220319  |
 | Run type  | hybrid |
@@ -29,7 +27,7 @@ copy on Vilje @ sigma2
 | Resolution | f19_tn14 |
 | Machine  |  Nebula  |
 
-## Node allocation
+# Node allocation
 
 ```
 
@@ -52,9 +50,9 @@ copy on Vilje @ sigma2
 
 ```
 
-## Code modifications (SourceMods)
+# Code modifications (SourceMods)
 
-### 1.1 x seasalt emissions
+## 1.1 x seasalt emissions
 
 Line 176 in components/cam/src/chemistry/oslo_aero/seasalt_model.F90 
 ```
@@ -67,13 +65,13 @@ Line 176 in components/cam/src/chemistry/oslo_aero/seasalt_model.F90
 
 
 ```
-### Moist convection in CAM
+## Moist convection in CAM
 Moist convection modifications ("zmst" modifications) in
 
 components/cam/src/NorESM/zm_convF90: 
  
 
-### Energy conservation error (W m-2) in CICE
+## Energy conservation error (W m-2) in CICE
 ferr = energy conservation error (W m-2)
 
 Line 2390 in /components/cice/src/source/ice_therm_vertical.F90
@@ -91,15 +89,15 @@ to
 if (ferr > 2*ferrmax) then
 
 ```
-### Includes the long wave aod error
+## Includes the long wave aod error
 
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
 
 Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_07052019
 
-### User name lists
+## User name lists
 
-#### user_nl_cam
+### user_nl_cam
 ``` &dyn_fv_inparm
  fv_am_correction= .true.
  fv_am_diag      = .true.
@@ -132,7 +130,7 @@ aerotab_table_dir =
 '/nobackup/forsk/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
 ```
 
-#### user_nl_clm
+### user_nl_clm
 Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing. 
 ```
 finidat = '/nobackup/forsk/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
@@ -140,7 +138,7 @@ use_init_interp = .true.
 reset_snow = .true.
 
 ```
-#### user_nl_micom
+### user_nl_micom
 
 Increased width of Strait of Gibraltar from 15 km to 30 km
 
