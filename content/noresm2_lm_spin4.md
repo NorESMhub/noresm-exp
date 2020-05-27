@@ -95,9 +95,9 @@ if (ferr > 2*ferrmax) then
 
 Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_07052019
 
-## User name lists
+# User name lists
 
-### user_nl_cam
+## user_nl_cam
 ``` &dyn_fv_inparm
  fv_am_correction= .true.
  fv_am_diag      = .true.
@@ -130,7 +130,7 @@ aerotab_table_dir =
 '/nobackup/forsk/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
 ```
 
-### user_nl_clm
+## user_nl_clm
 Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing. 
 ```
 finidat = '/nobackup/forsk/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
@@ -138,7 +138,7 @@ use_init_interp = .true.
 reset_snow = .true.
 
 ```
-### user_nl_micom
+## user_nl_micom
 
 Increased width of Strait of Gibraltar from 15 km to 30 km
 
