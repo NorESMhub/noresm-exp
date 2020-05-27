@@ -12,6 +12,10 @@ copy on Vilje @ sigma2
 
 /home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_03042019/
 
+# Summary of simulation
+
+Include a summary of the modifications included and added to this simulation
+
 # Simulation specifics
 
 |  |  |  
