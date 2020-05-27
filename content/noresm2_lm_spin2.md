@@ -53,7 +53,8 @@ on Vilje @ sigma2
 
 ## Code modifications (SourceMods)
 
-### 
+### iHAMOCC modifications
+
 In components/micom/hamocc/beleg_bgc.F90
 
 Line 209
@@ -96,6 +97,7 @@ Line 176 in components/cam/src/chemistry/oslo_aero/seasalt_model.F90
 
 
 ```
+
 ### Moist convection in CAM
 Moist convection modifications ("zmst" modifications) in
 
@@ -118,7 +120,7 @@ to
 
 ```
 if (ferr > 2*ferrmax) then
-
+```
 
 ### Includes the long wave aod error
 
@@ -156,6 +158,10 @@ Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_07052019
 
 &cldfrc_nl
  cldfrc_iceopt          =  4
+ 
+&phys_ctl_nl
+aerotab_table_dir =
+'/work/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
 
 ```
 
