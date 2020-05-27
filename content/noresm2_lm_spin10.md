@@ -60,26 +60,28 @@ and the SourceMods no longer needed
 
 ## Increase in DMS emissions @ high latitudes
 
-In components/micom/hamocc/mo_riverinpt.F90
-
-Line 179-181 AND Line 184-186 from
+In components/micom/hamocc/mo_riverinpt.F90 ,
 ```
-ocetra(i,j,1:kmle,isco212)    = ocetra(i,j,1:kmle,isco212)    + riv_DIC2d(i,j)*fdt/volij
-
-```
-
-to
+!  Since only alkalinity is available from measurements, DIC is updated using                                                            
+!  the assumtions that a_t=a_c+a_n and DIC=a_c (a_t: total alkalinity,
+!  a_c: carbonate alkalinity, a_n: contribution of nutrients to a_t).   
 
 ```
-!  Since only alkalinity is available from measurements, DIC is updated using 
-! the assumtions that a_t=a_c+a_n and DIC=a_c (a_t: total alkalinity,                   
-!  a_c: carbonate alkalinity, a_n: contribution of nutrients to a_t).  
 
-ocetra(i,j,1:kmle,isco212)    = ocetra(i,j,1:kmle,isco212)    + riv_DIC2d(i,j)*fdt/volij  &
-                                                                  + riv_DIN2d(i,j)*fdt/volij  &
-                                                                  + riv_DIP2d(i,j)*fdt/volij
+Line 179-181 AND Line 184-186
+
+from
+```
+ocetra(i,j,1:kmle,isco212)    = ocetra(i,j,1:kmle,isco212)    + riv_DIC2d(i,j)*fdt/volij           
 ```
 
+to 
+
+```
+ocetra(i,j,1:kmle,isco212)    = ocetra(i,j,1:kmle,isco212)    + riv_DIC2d(i,j)*fdt/volij  &        
+                                                                    + riv_DIN2d(i,j)*fdt/volij  &  
+                                                                    + riv_DIP2d(i,j)*fdt/volij 
+```
 
 In components/micom/hamocc/beleg_bgc.F90
 
