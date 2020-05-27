@@ -1,28 +1,27 @@
 # Data storage
 The data is stored on NIRD @ sigma2
-/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_13052019
+/projects/NS2345K/noresm/cases/N1850_f19_tn14_06062019
 
 
 # Path to case directory
 
-/home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_13052019/
+/home/sm_adagj/noresm/spinupcase/N1850_f19_tn14_06062019/
 
 copy on Vilje @ sigma2
 
-/home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_13052019/
+/home/ntnu/adagj/noresm/nebulaspinup/N1850_f19_tn14_06062019/
 
 
 # Summary of simulation
-Increased gamma (CLUBB parameter) from 0.261 to 0.264
-
 No additional code modifications or user name list modifications included compared to N1850OCBDRDDMS_f19_tn14_13052019.
 
-The increased (x2) error tolerance in energy conservation test were merged into featureCESM2.1.0-OsloDevelopment
-and the SourceMods no longer needed
+The increased (x2) error tolerance in energy conservation test, the increased DMS emissions @ high latitudes, the moist convection in CAM6-Nor and the long wave AOD fix were merged to featureCESM2.1.0-OsloDevelopment
+and the SourceMod no longer needed
+
+The increased width of Strait of Gibraltar from 15 km to 30 km was included in the micom source code, so the user name list setting in micom was no longer needed
 
 File modifications to components/mosart/src/riverroute/RtmRestFile.F90 which fixed the problems with fill values on Nebula 
-and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment
-and the SourceMods no longer needed
+and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed
 
 # Simulation specifics
 
@@ -63,7 +62,7 @@ and the SourceMods no longer needed
 ```
 
 # Code modifications (SourceMods)
-All code modifications merged into featureCESM2.1.0-OsloDevelopment 54075ac, so no SourceMods needed
+All code modifications merged to featureCESM2.1.0-OsloDevelopment 54075ac, so no SourceMods needed
 
 # User name lists
 
@@ -132,13 +131,5 @@ Reset snow: Remove infiltration excess water as runoff if the temperature of the
 finidat = '/nobackup/forsk/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
 use_init_interp = .true.
 reset_snow = .true.
-
-```
-## user_nl_micom
-
-Increased width of Strait of Gibraltar from 15 km to 30 km
-
-```
-set CWMWTH = "      30.e3,      30.e3"
 
 ```
