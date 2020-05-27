@@ -14,7 +14,7 @@ on Vilje @ sigma2
 # Simulation specifics
 
 |  |  |  
-| --- | --- | 
+| --- | :--- | 
 | CESM parent| CESM2.0.0  | 
 | Parent |   -  |
 | Run type  | startup |
