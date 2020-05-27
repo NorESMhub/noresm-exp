@@ -8,6 +8,7 @@ The data is stored on NIRD @ sigma2
 # Path to case directory
 
 on Fram @ sigma2: /cluster/projects/nn2345k/adagj/NorESM/cases/N1850_f19_tn14_11062019
+
 on Vilje @ sigma2: /home/ntnu/adagj/noresm/cases_2.1.0/N1850_f19_tn14_11062019_vilje
 
 
