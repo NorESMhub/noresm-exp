@@ -40,26 +40,28 @@
     url: /noresm2_lm_spin4
   - title: N1850OCBDRDDMS_f19_tn14_12042019
     url: /noresm2_lm_spin5
-  - title: N1850OCBDRDDMS_f19_tn14_15042019
-    url: /noresm2_lm_spin6
-  - title: N1850OCBDRDDMS_f19_tn14_25042019
-    url: /noresm2_lm_spin7
-  - title: N1850OCBDRDDMS_f19_tn14_07052019
-    url: /noresm2_lm_spin8
-  - title: N1850OCBDRDDMS_f19_tn14_08052019
-    url: /noresm2_lm_spin9
-  - title: N1850OCBDRDDMS_f19_tn14_10052019
-    url: /noresm2_lm_spin10
-  - title: N1850OCBDRDDMS_f19_tn14_13052019
-    url: /noresm2_lm_spin11
-  - title: N1850_f19_tn14_06062019
-    url: /noresm2_lm_spin12
-  - title: N1850_f19_tn14_11062019
-    url: /noresm2_lm_spin13
-  - title: N1850_f19_tn14_11062019_vilje
-    url: /noresm2_lm_spin14
   not_numbered: true
   expand_sections: true
+  #- title: N1850OCBDRDDMS_f19_tn14_15042019
+  #  url: /noresm2_lm_spin6
+  #- title: N1850OCBDRDDMS_f19_tn14_25042019
+  #  url: /noresm2_lm_spin7
+  #- title: N1850OCBDRDDMS_f19_tn14_07052019
+  #  url: /noresm2_lm_spin8
+  #- title: N1850OCBDRDDMS_f19_tn14_08052019
+  #  url: /noresm2_lm_spin9
+  #- title: N1850OCBDRDDMS_f19_tn14_10052019
+  #  url: /noresm2_lm_spin10
+  #- title: N1850OCBDRDDMS_f19_tn14_13052019
+  #  url: /noresm2_lm_spin11
+  #- title: N1850_f19_tn14_06062019
+  #  url: /noresm2_lm_spin12
+  #- title: N1850_f19_tn14_11062019
+  #  url: /noresm2_lm_spin13
+  #- title: N1850_f19_tn14_11062019_vilje
+  #  url: /noresm2_lm_spin14
+  #not_numbered: true
+  #expand_sections: true
   
 
 # NorESM2-MM spin up experiments
