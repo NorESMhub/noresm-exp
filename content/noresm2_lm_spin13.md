@@ -13,17 +13,24 @@ on Vilje @ sigma2: /home/ntnu/adagj/noresm/cases_2.1.0/N1850_f19_tn14_11062019_v
 
 
 # Summary of simulation
-Spin up simulation moved fron Nebula @ nsc.liu to Fram @ sigma2 and an identical simulation on Vilje @ sigma2
 
-No additional code modifications or user name list modifications included compared to N1850OCBDRDDMS_f19_tn14_13052019 and N1850_f19_tn14_06062019.
+New in this simulation: 
+-  Spin up simulation moved fron Nebula @ nsc.liu to Fram @ sigma2 and an identical simulation on Vilje @ sigma2
 
-The increased (x2) error tolerance in energy conservation test, the increased DMS emissions @ high latitudes, the moist convection in CAM6-Nor and the long wave AOD fix were merged to featureCESM2.1.0-OsloDevelopment
-and the SourceMod no longer needed
 
-The increased width of Strait of Gibraltar from 15 km to 30 km was included in the micom source code, so the user name list setting in micom was no longer needed
-
-File modifications to components/mosart/src/riverroute/RtmRestFile.F90 which fixed the problems with fill values on Nebula 
-and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed
+Continued to use
+-  CESM2.1
+-  gamma = 0.264
+-  the removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC
+-  new emission files to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.
+-  the long wave aerosol optical depth (AOD) bug fixer
+-  the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)
+-  Nebula @ nsc.liu
+-  the increased width of Strait of Gibraltar
+-  the increased (x2) error tolerance in energy conservation test in CICE (code changes included in the main CICE code)
+-  the modifications to the parameters *bkopal, rcalc and ropal* in iHAMOCC  included as SourceMod 
+-  the modifications to the convection code included as SourceMod 
+-  the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
 
 # Simulation specifics
 
