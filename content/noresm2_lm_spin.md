@@ -18,12 +18,11 @@
 |N1850_f19_tn14_11062019| CESM2.1| branch | 1566-01-01 | 1566 - 1600 |
 
 
-```{figure} Figure_4.png
----
-height: 250px
-name: spinup
----
-**NorESM2-LM spinup simulations**
+<figure>
+  <img src="Figure_4.png" alt="NorESM2-LM spinup simulations" style="width:250px">
+  <figcaption><b>NorESM2-LM spinup simulations</b><br>
 Upper left: Global and annual sum of DMS (dimethylsulfide).
-Globally and annually averaged Surface (2m) air temperature (middle left), Net radiation @TOA (bottom left), SST (upper right). Global and volume averaged ocean temperature (middle right). 
-```
+Globally and annually averaged Surface (2m) air temperature (middle left), Net radiation @TOA (bottom left), SST (upper right). Global and volume averaged ocean temperature (middle right). </figcaption>
+</figure>
+
+
