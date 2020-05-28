@@ -13,12 +13,8 @@ on Vilje @ sigma2
 - To reduce the net radiation imbalance @TOM (top of model) the sea-salt emissions were increased by 10% 
 - Increased (x2) error tolerance in energy conservation test in CICE
 - Modifications to the convection code included as SourceMod 
-- Namelist changes compared to repository for CAM6-Nor:
-  - zmconv_c0_lnd = 0.0300D0 -> 0.0200D0
-  - zmconv_c0_ocn = 0.0300D0 -> 0.0200D0
-  - tau_0_ubc = .false. -> .true.
-  - cldfrc_iceopt =  4
-  - clubb_gamma_coef =  0.258
+- Continued to use the previous namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
+- *New* namelist additions compared to repository for CAM6-Nor:
   - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_20oct16' -> '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
  - Namelist changes compared to repository for MICOM:
    - bkopal = 1.e-6 -> 5.e-6
