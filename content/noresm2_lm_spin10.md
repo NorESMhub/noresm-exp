@@ -25,7 +25,7 @@ Continued to use
 -  the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)
 -  Nebula @ nsc.liu
 -  the increased width of Strait of Gibraltar
--  the increased (x2) error tolerance in energy conservation test in CICE
+-  the increased (x2) error tolerance in energy conservation test in CICE (code changes included in the main CICE code)
 -  the modifications to the parameters *bkopal, rcalc and ropal* in iHAMOCC  included as SourceMod 
 -  the modifications to the convection code included as SourceMod 
 -  the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
@@ -154,25 +154,6 @@ Moist convection modifications ("zmst" modifications) in
 
 components/cam/src/NorESM/zm_convF90: 
  
-
-## Increased error tolerance in energy conservation test in CICE
-ferr = energy conservation error (W m-2)
-
-Line 2390 in /components/cice/src/source/ice_therm_vertical.F90
-
-changed from 
-
-```
-if (ferr > ferrmax) then
-
-```
-
-to 
-
-```
-if (ferr > 2*ferrmax) then
-
-```
 ## Long wave AOD fix
 
 Long wave aerosol optical depth (AOD) bug fixer: optinterpol.F90
