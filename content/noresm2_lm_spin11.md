@@ -76,7 +76,7 @@ and to components/micom/phy/rdlim.F which fixed the time variable output problem
 
 # Code modifications (SourceMods)
 
-# Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC
+## Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC
 The code modifications helps (a bit) to reduce the ocean C-uptake (i.e. it will
 tend to reduce the current drift in ocean C)
 
