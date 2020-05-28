@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin12.html",
   "headline": "Data storage",
-  "datePublished": "2020-05-28T10:15:01+00:00",
-  "dateModified": "2020-05-28T10:15:01+00:00",
+  "datePublished": "2020-05-28T10:18:29+00:00",
+  "dateModified": "2020-05-28T10:18:29+00:00",
   "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850_f19_tn14_06062019# Path to case directory/home/sm_adagj/noresm/spinupca...",
   "author": {
     "@type": "Person",
@@ -866,15 +866,28 @@ initFunction(initPrint)
 <p>/home/ntnu/adagj/noresm/nebulaspinup/N1850_f19_tn14_06062019/</p>
 
 <h1 id="summary-of-simulation">Summary of simulation</h1>
-<p>No additional code modifications or user name list modifications included compared to N1850OCBDRDDMS_f19_tn14_13052019.</p>
 
-<p>The increased (x2) error tolerance in energy conservation test, the increased DMS emissions @ high latitudes, the moist convection in CAM6-Nor and the long wave AOD fix were merged to featureCESM2.1.0-OsloDevelopment
-and the SourceMod no longer needed</p>
+<p>New in this simulation:</p>
+<ul>
+  <li>All code modifications were merged to featureCESM2.1.0-OsloDevelopment and the SourceMods were no longer needed</li>
+  <li>The increased width of Strait of Gibraltar from 15 km to 30 km was included in the micom source code, so the user name list setting in micom was no longer needed</li>
+</ul>
 
-<p>The increased width of Strait of Gibraltar from 15 km to 30 km was included in the micom source code, so the user name list setting in micom was no longer needed</p>
-
-<p>File modifications to components/mosart/src/riverroute/RtmRestFile.F90 which fixed the problems with fill values on Nebula 
-and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed</p>
+<p>Continued to use</p>
+<ul>
+  <li>CESM2.1</li>
+  <li>gamma = 0.264</li>
+  <li>the removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC</li>
+  <li>new emission files to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.</li>
+  <li>the long wave aerosol optical depth (AOD) bug fixer</li>
+  <li>the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)</li>
+  <li>Nebula @ nsc.liu</li>
+  <li>the increased width of Strait of Gibraltar</li>
+  <li>the increased (x2) error tolerance in energy conservation test in CICE (code changes included in the main CICE code)</li>
+  <li>the modifications to the parameters <em>bkopal, rcalc and ropal</em> in iHAMOCC  included as SourceMod</li>
+  <li>the modifications to the convection code included as SourceMod</li>
+  <li>the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5</li>
+</ul>
 
 <h1 id="simulation-specifics">Simulation specifics</h1>
 
