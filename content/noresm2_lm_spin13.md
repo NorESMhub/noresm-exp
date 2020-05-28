@@ -90,3 +90,12 @@ finidat = '/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_co
 use_init_interp = .true.
 reset_snow = .true.
 ```
+
+# Time series of spinup
+
+<figure>
+  <img src="../images/spinup13.png" alt="NorESM2-LM spinup simulations" style="width:120%">
+  <figcaption><b>NorESM2-LM spinup simulations</b><br>
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Net radiation @top of model, Surface (2m) air temperature, Sea surface temperature (SST), Global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. <b>Right column (from top to bottom):</b> Global and annual sum of Sea salt, DMS (dimethylsulfide). Globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
+  </figcaption>
+</figure>
