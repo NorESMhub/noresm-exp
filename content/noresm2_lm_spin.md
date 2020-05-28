@@ -23,5 +23,7 @@
 height: 250px
 name: spinup
 ---
-Spin up simulation figure caption!
+**NorESM2-LM spinup simulations**
+Upper left: Global and annual sum of DMS (dimethylsulfide).
+Globally and annually averaged Surface (2m) air temperature (middle left), Net radiation @TOA (bottom left), SST (upper right). Global and volume averaged ocean temperature (middle right). 
 ```
