@@ -11,7 +11,15 @@ on Vilje @ sigma2
 
 # Summary of simulation
 
-Include a summary of the modifications included and added to this simulation
+New in this simulation: Increased width of Strait of Gibraltar from 15 km to 30 km
+
+- Continued to use a 10% increase in the sea-salt emissions in order to reduce the net radiation imbalance @TOM (top of model)
+- Continued to use the increased (x2) error tolerance in energy conservation test in CICE
+- Continued to use the modifications to the convection code included as SourceMod 
+- Continued to use the namelist changes compared to repository for CAM6-Nor and  MICOM
+
+For all user name list specifics, see bottom of this page
+
 
 # Simulation specifics
 
@@ -103,7 +111,7 @@ Moist convection modifications ("zmst" modifications) in
 
 components/cam/src/NorESM/zm_convF90: 
  
-## Energy conservation error (W m-2) in CICE
+## Increased error tolerance in energy conservation test in CICE
 Not included in this simulation
 
 ## Includes the long wave aod error
