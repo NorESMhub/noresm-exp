@@ -9,6 +9,10 @@ on Vilje @ sigma2
 
 /home/metno/oyvinds/NorESM2old/noresmdevcases/N1850OCBDRDDMS_f19_tn14_250119
 
+# Path to diagnostics
+
+http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850OCBDRDDMS_f19_tn14_250119/
+
 # Summary of simulation
 - To reduce the net radiation imbalance @TOM (top of model) the sea-salt emissions were increased by 10% 
 - Increased (x2) error tolerance in energy conservation test in CICE
