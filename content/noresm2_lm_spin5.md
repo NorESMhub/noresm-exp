@@ -15,7 +15,7 @@ copy on Vilje @ sigma2
 # Summary of simulation
 
 New in this simulation: 
--  Increase in DMS emissions @ high latitudes n order to reduce the net radiation imbalance @TOM (top of model)
+-  Increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)
 -  Long wave aerosol optical depth (AOD) bug fixer
 
 
