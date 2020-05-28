@@ -11,6 +11,10 @@ on Fram @ sigma2: /cluster/projects/nn2345k/adagj/NorESM/cases/N1850_f19_tn14_11
 
 on Vilje @ sigma2: /home/ntnu/adagj/noresm/cases_2.1.0/N1850_f19_tn14_11062019_vilje
 
+# Path to diagnostics
+
+http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f19_tn14_11062019/
+
 
 # Summary of simulation
 
