@@ -13,11 +13,24 @@ copy on Vilje @ sigma2
 
 
 # Summary of simulation
-Increased gamma to 0.261 (from 0.258), this simulation was used further in the spinup of NorESM2-LM.
+New in this simulation: 
+-  Increased gamma to 0.261 (from 0.258)
+
+Continued to use
+-  CESM2.1
+-  new emission files to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.
+-  the long wave aerosol optical depth (AOD) bug fixer
+-  the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)
+-  Nebula @ nsc.liu
+-  the increased width of Strait of Gibraltar
+-  the increased (x2) error tolerance in energy conservation test in CICE
+-  the modifications to the parameters *bkopal, rcalc and ropal* in iHAMOCC  included as SourceMod 
+-  the modifications to the convection code included as SourceMod 
+-  the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
 
 File modifications to components/mosart/src/riverroute/RtmRestFile.F90 which fixed the problems with fill values on Nebula 
-and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment
-and the SourceMods no longer needed
+and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed
+
 
 # Simulation specifics
 
@@ -98,7 +111,7 @@ Moist convection modifications ("zmst" modifications) in
 components/cam/src/NorESM/zm_convF90: 
  
 
-## Energy conservation error (W m-2) in CICE
+## Increased error tolerance in energy conservation test in CICE
 ferr = energy conservation error (W m-2)
 
 Line 2390 in /components/cice/src/source/ice_therm_vertical.F90
