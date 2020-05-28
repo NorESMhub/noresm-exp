@@ -13,16 +13,28 @@ copy on Vilje @ sigma2
 
 
 # Summary of simulation
-Increased gamma (CLUBB parameter) from 0.261 to 0.264
+
+New in this simulation: 
+-  Increased gamma to 0.264 (from 0.261)
 
 No additional code modifications or user name list modifications included compared to N1850OCBDRDDMS_f19_tn14_13052019.
 
-The increased (x2) error tolerance in energy conservation test were merged into featureCESM2.1.0-OsloDevelopment
-and the SourceMods no longer needed
+Continued to use
+-  CESM2.1
+-  the removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC
+-  new emission files to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.
+-  the long wave aerosol optical depth (AOD) bug fixer
+-  the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)
+-  Nebula @ nsc.liu
+-  the increased width of Strait of Gibraltar
+-  the increased (x2) error tolerance in energy conservation test in CICE (code changes included in the main CICE code)
+-  the modifications to the parameters *bkopal, rcalc and ropal* in iHAMOCC  included as SourceMod 
+-  the modifications to the convection code included as SourceMod 
+-  the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
 
 File modifications to components/mosart/src/riverroute/RtmRestFile.F90 which fixed the problems with fill values on Nebula 
-and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment
-and the SourceMods no longer needed
+and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed
+
 
 # Simulation specifics
 
@@ -64,9 +76,12 @@ and the SourceMods no longer needed
 
 # Code modifications (SourceMods)
 
-## Increase in DMS emissions @ high latitudes
+# Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC
+The code modifications helps (a bit) to reduce the ocean C-uptake (i.e. it will
+tend to reduce the current drift in ocean C)
 
-In components/micom/hamocc/mo_riverinpt.F90 ,
+
+In components/micom/hamocc/mo_riverinpt.F90 , 
 ```
 !  Since only alkalinity is available from measurements, DIC is updated using                                                            
 !  the assumtions that a_t=a_c+a_n and DIC=a_c (a_t: total alkalinity,
@@ -89,6 +104,8 @@ ocetra(i,j,1:kmle,isco212)    = ocetra(i,j,1:kmle,isco212)    + riv_DIC2d(i,j)*f
                                                                     + riv_DIP2d(i,j)*fdt/volij 
 ```
 
+## Increase in DMS emissions @ high latitudes
+
 In components/micom/hamocc/beleg_bgc.F90
 
 Line 175 changed from 
@@ -103,6 +120,19 @@ to
 ```
 epsher = 0.85         !dimensionless fraction -fraction of grazing egested
 
+```
+
+Line 253 changed from
+
+```
+rcalc = 35.  ! calcium carbonate to organic phosphorous production ratio 
+
+```
+
+to 
+
+```
+rcalc = 33.  ! calcium carbonate to organic phosphorous production ratio 
 ```
 
 and Line 287 AND Line 288
