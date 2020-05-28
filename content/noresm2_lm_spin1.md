@@ -12,7 +12,7 @@ on Vilje @ sigma2
 
 # Summary of simulation
 
-Include a summary of the modifications included and added to this simulation
+The fist simulation (of many) in the NorESM2-LM spinup. No SourceMods included. 
 
 # Simulation specifics
 
