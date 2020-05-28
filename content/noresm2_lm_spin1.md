@@ -10,6 +10,10 @@ on Vilje @ sigma2
 
 /home/metno/oyvinds/NorESM2old/noresmdevcases/N1850OCBDRDDMS_f19_tn14_201218
 
+# Path to diagnostics
+
+http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850OCBDRDDMS_f19_tn14_201218/
+
 # Summary of simulation
 
 The fist simulation (of many) in the NorESM2-LM spinup. No SourceMods included. 
