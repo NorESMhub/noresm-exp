@@ -14,7 +14,24 @@ copy on Vilje @ sigma2
 
 # Summary of simulation
 
-Include a summary of the modifications included and added to this simulation
+New in this simulation: 
+-  Increase in DMS emissions @ high latitudes n order to reduce the net radiation imbalance @TOM (top of model)
+-  Long wave aerosol optical depth (AOD) bug fixer
+
+
+Continued to use
+-  CESM2.1
+-  Nebula @ nsc.liu
+-  the increased width of Strait of Gibraltar
+-  a 10% increase in the sea-salt emissions in order to reduce the net radiation imbalance @TOM (top of model)
+-  the increased (x2) error tolerance in energy conservation test in CICE
+-  the modifications to the parameters *bkopal, rcalc and ropal* in iHAMOCC  included as SourceMod 
+-  the modifications to the convection code included as SourceMod 
+-  the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
+
+For all user name list specifics, see bottom of this page
+
+
 
 # Simulation specifics
 
@@ -104,7 +121,7 @@ Moist convection modifications ("zmst" modifications) in
 components/cam/src/NorESM/zm_convF90: 
  
 
-## Energy conservation error (W m-2) in CICE
+## Increased error tolerance in energy conservation test in CICE
 ferr = energy conservation error (W m-2)
 
 Line 2390 in /components/cice/src/source/ice_therm_vertical.F90
@@ -129,7 +146,7 @@ Long wave aerosol optical depth (AOD) bug fixer: optinterpol.F90
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
 
 # Minor code changes 
-which were included but didn't impact the model climate 
+which were included but didn't impact the model results
 
 ## Time variable in MICOM output 
 Modifications added to components/micom/phy/rdlim.F 
