@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin4.html",
   "headline": "Data storage",
-  "datePublished": "2020-05-28T08:02:44+00:00",
-  "dateModified": "2020-05-28T08:02:44+00:00",
+  "datePublished": "2020-05-28T08:06:54+00:00",
+  "dateModified": "2020-05-28T08:06:54+00:00",
   "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_03042019# Path to case directory/home/sm_adagj/noresm...",
   "author": {
     "@type": "Person",
@@ -868,7 +868,21 @@ initFunction(initPrint)
 
 <h1 id="summary-of-simulation">Summary of simulation</h1>
 
-<p>Include a summary of the modifications included and added to this simulation</p>
+<p>New in this simulation:</p>
+<ul>
+  <li>Upgraded CESM2.0 to CESM2.1</li>
+  <li>
+    <p>Started to use Nebula @ nsc.liu</p>
+  </li>
+  <li>Continued to use the increased width of Strait of Gibraltar</li>
+  <li>Continued to use a 10% increase in the sea-salt emissions in order to reduce the net radiation imbalance @TOM (top of model)</li>
+  <li>Continued to use the increased (x2) error tolerance in energy conservation test in CICE</li>
+  <li>Continued to use the modifications to the parameters <em>bkopal, rcalc and ropal</em> in iHAMOCC  included as SourceMod</li>
+  <li>Continued to use the modifications to the convection code included as SourceMod</li>
+  <li>Continued to use the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5</li>
+</ul>
+
+<p>For all user name list specifics, see bottom of this page</p>
 
 <h1 id="simulation-specifics">Simulation specifics</h1>
 
@@ -964,7 +978,7 @@ initFunction(initPrint)
 
 <p>components/cam/src/NorESM/zm_convF90:</p>
 
-<h2 id="energy-conservation-error-w-m-2-in-cice">Energy conservation error (W m-2) in CICE</h2>
+<h2 id="increased-error-tolerance-in-energy-conservation-test-in-cice">Increased error tolerance in energy conservation test in CICE</h2>
 <p>ferr = energy conservation error (W m-2)</p>
 
 <p>Line 2390 in /components/cice/src/source/ice_therm_vertical.F90</p>
