@@ -13,8 +13,21 @@ copy on Vilje @ sigma2
 
 
 # Summary of simulation
+New in this simulation: 
+- reduced the DMS flux at high latitudes (compared to 15042019)
+- included new emission files from Dirk to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.
 
-Include a summary of the modifications included and added to this simulation
+Continued to use
+-  CESM2.1
+-  the long wave aerosol optical depth (AOD) bug fixer
+-  the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)
+-  Nebula @ nsc.liu
+-  the increased width of Strait of Gibraltar
+-  the increased (x2) error tolerance in energy conservation test in CICE
+-  the modifications to the parameters *bkopal, rcalc and ropal* in iHAMOCC  included as SourceMod 
+-  the modifications to the convection code included as SourceMod 
+-  the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
+
 
 # Simulation specifics
 
@@ -95,7 +108,7 @@ Moist convection modifications ("zmst" modifications) in
 components/cam/src/NorESM/zm_convF90: 
  
 
-## Energy conservation error (W m-2) in CICE
+## Increased error tolerance in energy conservation test in CICE
 ferr = energy conservation error (W m-2)
 
 Line 2390 in /components/cice/src/source/ice_therm_vertical.F90

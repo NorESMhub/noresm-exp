@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin7.html",
   "headline": "N1850OCBDRDDMS_f19_tn14_25042019",
-  "datePublished": "2020-05-28T08:25:50+00:00",
-  "dateModified": "2020-05-28T08:25:50+00:00",
+  "datePublished": "2020-05-28T08:31:23+00:00",
+  "dateModified": "2020-05-28T08:31:23+00:00",
   "description": "        N1850OCBDRDDMS_f19_tn14_25042019    Data storage The data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_25042019Pa...",
   "author": {
     "@type": "Person",
@@ -865,7 +865,23 @@ initFunction(initPrint)
 <h1 id="Path-to-case-directory">Path to case directory<a class="anchor-link" href="#Path-to-case-directory"> </a></h1><p>/home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_25042019/</p>
 <p>copy on Vilje @ sigma2</p>
 <p>/home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_25042019/</p>
-<h1 id="Summary-of-simulation">Summary of simulation<a class="anchor-link" href="#Summary-of-simulation"> </a></h1><p>Include a summary of the modifications included and added to this simulation</p>
+<h1 id="Summary-of-simulation">Summary of simulation<a class="anchor-link" href="#Summary-of-simulation"> </a></h1><p>New in this simulation:</p>
+<ul>
+<li>reduced the DMS flux at high latitudes (compared to 15042019)</li>
+<li>included new emission files from Dirk to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.</li>
+</ul>
+<p>Continued to use</p>
+<ul>
+<li>CESM2.1</li>
+<li>the long wave aerosol optical depth (AOD) bug fixer</li>
+<li>the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)</li>
+<li>Nebula @ nsc.liu</li>
+<li>the increased width of Strait of Gibraltar</li>
+<li>the increased (x2) error tolerance in energy conservation test in CICE</li>
+<li>the modifications to the parameters <em>bkopal, rcalc and ropal</em> in iHAMOCC  included as SourceMod </li>
+<li>the modifications to the convection code included as SourceMod </li>
+<li>the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5</li>
+</ul>
 <h1 id="Simulation-specifics">Simulation specifics<a class="anchor-link" href="#Simulation-specifics"> </a></h1><table>
 <thead><tr>
 <th></th>
@@ -949,7 +965,7 @@ dmspar(4)=1.25*0.107638502E+00  !2*1.3e-5 production with delcar</code></pre>
 dmspar(4)=1.25*0.10      ! production with delcar, following Kloster et al., 06 Table 1,  but reduced by ~7%</code></pre>
 <h2 id="Moist-convection-in-CAM">Moist convection in CAM<a class="anchor-link" href="#Moist-convection-in-CAM"> </a></h2><p>Moist convection modifications ("zmst" modifications) in</p>
 <p>components/cam/src/NorESM/zm_convF90:</p>
-<h2 id="Energy-conservation-error-(W-m-2)-in-CICE">Energy conservation error (W m-2) in CICE<a class="anchor-link" href="#Energy-conservation-error-(W-m-2)-in-CICE"> </a></h2><p>ferr = energy conservation error (W m-2)</p>
+<h2 id="Increased-error-tolerance-in-energy-conservation-test-in-CICE">Increased error tolerance in energy conservation test in CICE<a class="anchor-link" href="#Increased-error-tolerance-in-energy-conservation-test-in-CICE"> </a></h2><p>ferr = energy conservation error (W m-2)</p>
 <p>Line 2390 in /components/cice/src/source/ice_therm_vertical.F90</p>
 <p>changed from</p>
 
