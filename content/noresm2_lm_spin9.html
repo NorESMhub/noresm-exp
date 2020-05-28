@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin9.html",
   "headline": "Data storage",
-  "datePublished": "2020-05-28T09:50:00+00:00",
-  "dateModified": "2020-05-28T09:50:00+00:00",
+  "datePublished": "2020-05-28T10:02:20+00:00",
+  "dateModified": "2020-05-28T10:02:20+00:00",
   "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_08052019# Path to case directory/home/sm_adagj/noresm...",
   "author": {
     "@type": "Person",
@@ -866,11 +866,27 @@ initFunction(initPrint)
 <p>/home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_08052019/</p>
 
 <h1 id="summary-of-simulation">Summary of simulation</h1>
-<p>Increased gamma to 0.261 (from 0.258), this simulation was used further in the spinup of NorESM2-LM.</p>
+<p>New in this simulation:</p>
+<ul>
+  <li>Increased gamma to 0.261 (from 0.258)</li>
+</ul>
+
+<p>Continued to use</p>
+<ul>
+  <li>CESM2.1</li>
+  <li>new emission files to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.</li>
+  <li>the long wave aerosol optical depth (AOD) bug fixer</li>
+  <li>the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)</li>
+  <li>Nebula @ nsc.liu</li>
+  <li>the increased width of Strait of Gibraltar</li>
+  <li>the increased (x2) error tolerance in energy conservation test in CICE</li>
+  <li>the modifications to the parameters <em>bkopal, rcalc and ropal</em> in iHAMOCC  included as SourceMod</li>
+  <li>the modifications to the convection code included as SourceMod</li>
+  <li>the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5</li>
+</ul>
 
 <p>File modifications to components/mosart/src/riverroute/RtmRestFile.F90 which fixed the problems with fill values on Nebula 
-and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment
-and the SourceMods no longer needed</p>
+and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed</p>
 
 <h1 id="simulation-specifics">Simulation specifics</h1>
 
@@ -981,7 +997,7 @@ dmspar(4)=1.25*0.10      ! production with delcar, following Kloster et al., 06 
 
 <p>components/cam/src/NorESM/zm_convF90:</p>
 
-<h2 id="energy-conservation-error-w-m-2-in-cice">Energy conservation error (W m-2) in CICE</h2>
+<h2 id="increased-error-tolerance-in-energy-conservation-test-in-cice">Increased error tolerance in energy conservation test in CICE</h2>
 <p>ferr = energy conservation error (W m-2)</p>
 
 <p>Line 2390 in /components/cice/src/source/ice_therm_vertical.F90</p>
