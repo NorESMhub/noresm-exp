@@ -11,6 +11,9 @@ copy on Vilje @ sigma2
 
 /home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_07052019/
 
+# Path to diagnostics
+
+--
 
 # Summary of simulation
  **This simulation was not used in the spinup of NorESM2-LM, instead N1850OCBDRDDMS_f19_tn14_08052019 (with gamma set to 0.263 was used)**
