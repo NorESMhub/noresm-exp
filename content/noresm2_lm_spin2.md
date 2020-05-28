@@ -10,8 +10,22 @@ on Vilje @ sigma2
 /home/metno/oyvinds/NorESM2old/noresmdevcases/N1850OCBDRDDMS_f19_tn14_250119
 
 # Summary of simulation
-
-Include a summary of the modifications included and added to this simulation
+- To reduce the net radiation imbalance @TOM (top of model) the sea-salt emissions were increased by 10% 
+- Increased (x2) error tolerance in energy conservation test in CICE
+- Modifications to the convection code included as SourceMod 
+- Namelist changes compared to repository for CAM6-Nor:
+  - zmconv_c0_lnd = 0.0300D0 -> 0.0200D0
+  - zmconv_c0_ocn = 0.0300D0 -> 0.0200D0
+  - tau_0_ubc = .false. -> .true.
+  - cldfrc_iceopt =  4
+  - clubb_gamma_coef =  0.258
+  - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_20oct16' -> '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
+ - Namelist changes compared to repository for MICOM:
+   - bkopal = 1.e-6 -> 5.e-6
+   - rcalc = 48. -> 35.
+   - ropal = 35. -> 45.
+ 
+For all user name list specifics, see bottom of this page
 
 # Simulation specifics
 
@@ -104,7 +118,7 @@ Moist convection modifications ("zmst" modifications) in
 components/cam/src/NorESM/zm_convF90: 
  
 
-## Energy conservation error (W m-2) in CICE
+## Increased error tolerance in energy conservation test in CICE
 ferr = energy conservation error (W m-2)
 
 Line 2390 in /components/cice/src/source/ice_therm_vertical.F90
