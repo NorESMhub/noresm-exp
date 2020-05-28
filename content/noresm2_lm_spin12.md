@@ -11,6 +11,9 @@ copy on Vilje @ sigma2
 
 /home/ntnu/adagj/noresm/nebulaspinup/N1850_f19_tn14_06062019/
 
+# Path to diagnostics
+
+http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f19_tn14_06062019/
 
 # Summary of simulation
 
