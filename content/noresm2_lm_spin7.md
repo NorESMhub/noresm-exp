@@ -87,6 +87,18 @@ epsher = 0.85         !dimensionless fraction -fraction of grazing egested
 
 ```
 
+Line 253 changed from 
+
+```
+rcalc = 35.  ! calcium carbonate to organic phosphorous production ratio  
+```
+
+to
+
+```
+rcalc = 33.  ! calcium carbonate to organic phosphorous production ratio  
+```
+
 and Line 287 AND Line 288
 
 ```
