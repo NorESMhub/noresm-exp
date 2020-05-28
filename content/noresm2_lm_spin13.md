@@ -15,7 +15,7 @@ on Vilje @ sigma2: /home/ntnu/adagj/noresm/cases_2.1.0/N1850_f19_tn14_11062019_v
 # Summary of simulation
 
 New in this simulation: 
--  Spin up simulation moved fron Nebula @ nsc.liu to Fram @ sigma2 and an identical simulation on Vilje @ sigma2
+-  Spin up simulation moved from Nebula @ nsc.liu to Fram @ sigma2 and an identical simulation on Vilje @ sigma2
 
 
 Continued to use
