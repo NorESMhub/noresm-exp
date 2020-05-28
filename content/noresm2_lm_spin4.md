@@ -15,15 +15,16 @@ copy on Vilje @ sigma2
 # Summary of simulation
 
 New in this simulation: 
-- Upgraded CESM2.0 to CESM2.1
-- Started to use Nebula @ nsc.liu
+-  Upgraded CESM2.0 to CESM2.1
+-  Started to use Nebula @ nsc.liu
 
-- Continued to use the increased width of Strait of Gibraltar
-- Continued to use a 10% increase in the sea-salt emissions in order to reduce the net radiation imbalance @TOM (top of model)
-- Continued to use the increased (x2) error tolerance in energy conservation test in CICE
-- Continued to use the modifications to the parameters *bkopal, rcalc and ropal* in iHAMOCC  included as SourceMod 
-- Continued to use the modifications to the convection code included as SourceMod 
-- Continued to use the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
+Continued to use
+-  the increased width of Strait of Gibraltar
+-  a 10% increase in the sea-salt emissions in order to reduce the net radiation imbalance @TOM (top of model)
+-  the increased (x2) error tolerance in energy conservation test in CICE
+-  the modifications to the parameters *bkopal, rcalc and ropal* in iHAMOCC  included as SourceMod 
+-  the modifications to the convection code included as SourceMod 
+-  the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
 
 For all user name list specifics, see bottom of this page
 
