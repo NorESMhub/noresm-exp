@@ -20,6 +20,8 @@ The fist simulation (of many) in the NorESM2-LM spinup. No SourceMods included.
   - tau_0_ubc = .false. -> .true.
   - cldfrc_iceopt =  4
   - clubb_gamma_coef =  0.258
+ - Namelist changes compared to repository for CLM5:
+   - reset_snow = .true.
   
 
 # Simulation specifics
