@@ -19,7 +19,7 @@
 
 
 <figure>
-  <img src="Figure_4.png" alt="NorESM2-LM spinup simulations" style="width:110%">
+  <img src="Figure_4.png" alt="NorESM2-LM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-LM spinup simulations</b><br>
 Upper left: Global and annual sum of DMS (dimethylsulfide).
 Globally and annually averaged Surface (2m) air temperature (middle left), Net radiation @TOA (bottom left), SST (upper right). Global and volume averaged ocean temperature (middle right). </figcaption>
