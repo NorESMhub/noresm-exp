@@ -18,11 +18,13 @@
 |N1850_f19_tn14_11062019| CESM2.1| branch | 1566-01-01 | 1566 - 1600 |
 
 
+# Time series of spinup
+
 <figure>
-  <img src="Figure_4.png" alt="NorESM2-LM spinup simulations" style="width:120%">
+  <img src="../images/spinup13.png" alt="NorESM2-LM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-LM spinup simulations</b><br>
-Upper left: Global and annual sum of DMS (dimethylsulfide).
-Globally and annually averaged Surface (2m) air temperature (middle left), Net radiation @TOA (bottom left), SST (upper right). Global and volume averaged ocean temperature (middle right). </figcaption>
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Net radiation @top of model, Surface (2m) air temperature, Sea surface temperature (SST), Global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. <b>Right column (from top to bottom):</b> Global and annual sum of Sea salt, DMS (dimethylsulfide). Globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
+  </figcaption>
 </figure>
 
 
