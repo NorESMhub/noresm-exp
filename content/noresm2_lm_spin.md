@@ -18,7 +18,7 @@
 |N1850_f19_tn14_11062019| CESM2.1| branch | 1566-01-01 | 1566 - 1600 |
 
 
-```{figure} images/logo/Figure_4.png
+```{figure} Figure_4.png
 ---
 height: 250px
 name: spinup
