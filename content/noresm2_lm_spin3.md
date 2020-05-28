@@ -9,6 +9,10 @@ on Vilje @ sigma2
 
 /home/metno/oyvinds/NorESM2old/noresmdevcases/N1850OCBDRDDMS_f19_tn14_Gibr_220319
 
+# Path to diagnostics
+
+http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850OCBDRDDMS_f19_tn14_Gibr_220319/
+
 # Summary of simulation
 
 New in this simulation: Increased width of Strait of Gibraltar from 15 km to 30 km
