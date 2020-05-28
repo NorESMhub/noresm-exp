@@ -14,6 +14,14 @@ on Vilje @ sigma2
 
 The fist simulation (of many) in the NorESM2-LM spinup. No SourceMods included. 
 
+- Namelist changes compared to repository for CAM6-Nor:
+  - zmconv_c0_lnd = 0.0300D0 -> 0.0200D0
+  - zmconv_c0_ocn = 0.0300D0 -> 0.0200D0
+  - tau_0_ubc = .false. -> .true.
+  - cldfrc_iceopt =  4
+  - clubb_gamma_coef =  0.258
+  
+
 # Simulation specifics
 
 |  |  |  

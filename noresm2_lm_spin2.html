@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin2.html",
   "headline": "N1850OCBDRDDMS_f19_tn14_250119",
-  "datePublished": "2020-05-28T07:40:54+00:00",
-  "dateModified": "2020-05-28T07:40:54+00:00",
+  "datePublished": "2020-05-28T07:54:40+00:00",
+  "dateModified": "2020-05-28T07:54:40+00:00",
   "description": "        N1850OCBDRDDMS_f19_tn14_250119    Data storage The data is stored on NIRD @ sigma2/projects/NS2345K/DO_NOT_TOUCH/NS2345K/noresm/cases/N1850OCBDRDDMS_...",
   "author": {
     "@type": "Person",
@@ -864,7 +864,27 @@ initFunction(initPrint)
 <p>/projects/NS2345K/DO_NOT_TOUCH/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_250119</p>
 <h1 id="Path-to-case-directory">Path to case directory<a class="anchor-link" href="#Path-to-case-directory"> </a></h1><p>on Vilje @ sigma2</p>
 <p>/home/metno/oyvinds/NorESM2old/noresmdevcases/N1850OCBDRDDMS_f19_tn14_250119</p>
-<h1 id="Summary-of-simulation">Summary of simulation<a class="anchor-link" href="#Summary-of-simulation"> </a></h1><p>Include a summary of the modifications included and added to this simulation</p>
+<h1 id="Summary-of-simulation">Summary of simulation<a class="anchor-link" href="#Summary-of-simulation"> </a></h1><ul>
+<li>To reduce the net radiation imbalance @TOM (top of model) the sea-salt emissions were increased by 10% </li>
+<li>Increased (x2) error tolerance in energy conservation test in CICE</li>
+<li>Modifications to the convection code included as SourceMod </li>
+<li>Namelist changes compared to repository for CAM6-Nor:<ul>
+<li>zmconv_c0_lnd = 0.0300D0 -&gt; 0.0200D0</li>
+<li>zmconv_c0_ocn = 0.0300D0 -&gt; 0.0200D0</li>
+<li>tau_0_ubc = .false. -&gt; .true.</li>
+<li>cldfrc_iceopt =  4</li>
+<li>clubb_gamma_coef =  0.258</li>
+<li>aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_20oct16' -&gt; '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'</li>
+<li>Namelist changes compared to repository for MICOM:<ul>
+<li>bkopal = 1.e-6 -&gt; 5.e-6</li>
+<li>rcalc = 48. -&gt; 35.</li>
+<li>ropal = 35. -&gt; 45.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>For all user name list specifics, see bottom of this page</p>
 <h1 id="Simulation-specifics">Simulation specifics<a class="anchor-link" href="#Simulation-specifics"> </a></h1><table>
 <thead><tr>
 <th></th>
@@ -958,7 +978,7 @@ initFunction(initPrint)
                             + coeffD(n) )</code></pre>
 <h2 id="Moist-convection-in-CAM">Moist convection in CAM<a class="anchor-link" href="#Moist-convection-in-CAM"> </a></h2><p>Moist convection modifications ("zmst" modifications) in</p>
 <p>components/cam/src/NorESM/zm_convF90:</p>
-<h2 id="Energy-conservation-error-(W-m-2)-in-CICE">Energy conservation error (W m-2) in CICE<a class="anchor-link" href="#Energy-conservation-error-(W-m-2)-in-CICE"> </a></h2><p>ferr = energy conservation error (W m-2)</p>
+<h2 id="Increased-error-tolerance-in-energy-conservation-test-in-CICE">Increased error tolerance in energy conservation test in CICE<a class="anchor-link" href="#Increased-error-tolerance-in-energy-conservation-test-in-CICE"> </a></h2><p>ferr = energy conservation error (W m-2)</p>
 <p>Line 2390 in /components/cice/src/source/ice_therm_vertical.F90</p>
 <p>changed from</p>
 
