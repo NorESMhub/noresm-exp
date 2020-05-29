@@ -1,6 +1,4 @@
-# NorESM2-LM spin up 
-
-Detailed information about the simulations can be found by clicking on case names in the table of contents or at the bottom of this page
+**Detailed information about the simulations can be found by clicking on case names in the table of contents or at the bottom of this page**
 
 # A quick overview
 
@@ -23,8 +21,8 @@ Detailed information about the simulations can be found by clicking on case name
 # Time series of spinup
 
 <figure>
-  <img src="images/spinup.png" alt="NorESM2-LM spinup simulations" style="width:120%">
-  <img src="images/legend_all.png" alt="NorESM2-LM spinup legend" style="width:70%">
+  <img src="images/spinup.png" alt="NorESM2-LM spinup simulations" style="width:150%">
+  <img src="images/legend_all.png" alt="NorESM2-LM spinup legend" style="width:40%">
   <figcaption><b>NorESM2-LM spinup simulations</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. <b>Right column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
   </figcaption>
