@@ -62,7 +62,7 @@
 
 # NorESM2-MM spin up experiments
 - title: NorESM2-MM spin up experiments
-  url: /noresm2_mm_spin/noresm2_mm_spin
+  url: /noresm2_mm_spin/noresm2_mm_spin_intro
 #  sections:
 #    file: N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
 #    file: N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
