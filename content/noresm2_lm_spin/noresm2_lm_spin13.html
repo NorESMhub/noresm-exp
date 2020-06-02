@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Home</title>
-  <meta name="description" content="        Home    NorESM Experiments          ">
+  <title>Data storage</title>
+  <meta name="description" content="# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019...">
 
-  <link rel="canonical" href="https://noresmhub.github.io//noresm-exp/intro.html">
+  <link rel="canonical" href="https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin/noresm2_lm_spin13.html">
   <link rel="alternate" type="application/rss+xml" title="NorESM Experiments" href="https://noresmhub.github.io//noresm-exp/feed.xml">
 
-  <meta property="og:url"         content="https://noresmhub.github.io//noresm-exp/intro.html" />
+  <meta property="og:url"         content="https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin/noresm2_lm_spin13.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Home" />
-<meta property="og:description" content="        Home    NorESM Experiments          " />
+<meta property="og:title"       content="Data storage" />
+<meta property="og:description" content="# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019..." />
 <meta property="og:image"       content="https://noresmhub.github.io//noresm-exp/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/intro.html",
-  "headline": "Home",
+  "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin/noresm2_lm_spin13.html",
+  "headline": "Data storage",
   "datePublished": "2020-06-02T13:37:48+00:00",
   "dateModified": "2020-06-02T13:37:48+00:00",
-  "description": "        Home    NorESM Experiments          ",
+  "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019...",
   "author": {
     "@type": "Person",
     "name": "Ada Gjermundsen"
@@ -853,44 +853,152 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-                  <main class="jupyter-page">
-    <div id="page-info"><div id="page-title">Home</div>
-</div>
-    <div class="jb_cell">
+              <h1 id="data-storage">Data storage</h1>
+<p>The data is stored on NIRD @ sigma2</p>
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="NorESM-Experiments">NorESM Experiments<a class="anchor-link" href="#NorESM-Experiments"> </a></h1>
-</div>
-</div>
-</div>
-</div>
+<p>/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019</p>
 
- 
+<p>/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019_vilje</p>
+
+<h1 id="path-to-case-directory">Path to case directory</h1>
+
+<p>on Fram @ sigma2: /cluster/projects/nn2345k/adagj/NorESM/cases/N1850_f19_tn14_11062019</p>
+
+<p>on Vilje @ sigma2: /home/ntnu/adagj/noresm/cases_2.1.0/N1850_f19_tn14_11062019_vilje</p>
+
+<h1 id="path-to-diagnostics">Path to diagnostics</h1>
+
+<p>http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f19_tn14_11062019/</p>
+
+<h1 id="summary-of-simulation">Summary of simulation</h1>
+
+<p>New in this simulation:</p>
+<ul>
+  <li>Spin up simulation moved from Nebula @ nsc.liu to Fram @ sigma2 and an identical simulation on Vilje @ sigma2</li>
+</ul>
+
+<p>Continued to use</p>
+<ul>
+  <li>CESM2.1</li>
+  <li>gamma = 0.264</li>
+  <li>the removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC</li>
+  <li>new emission files to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.</li>
+  <li>the long wave aerosol optical depth (AOD) bug fixer</li>
+  <li>the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)</li>
+  <li>Nebula @ nsc.liu</li>
+  <li>the increased width of Strait of Gibraltar</li>
+  <li>the increased (x2) error tolerance in energy conservation test in CICE (code changes included in the main CICE code)</li>
+  <li>the modifications to the parameters <em>bkopal, rcalc and ropal</em> in iHAMOCC  included as SourceMod</li>
+  <li>the modifications to the convection code included as SourceMod</li>
+  <li>the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5</li>
+</ul>
+
+<h1 id="simulation-specifics">Simulation specifics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CESM parent</td>
+      <td style="text-align: left">CESM2.1.0</td>
+    </tr>
+    <tr>
+      <td>Parent</td>
+      <td style="text-align: left">N1850_f19_tn14_06062019</td>
+    </tr>
+    <tr>
+      <td>Run type</td>
+      <td style="text-align: left">branch</td>
+    </tr>
+    <tr>
+      <td>Branch time from parent</td>
+      <td style="text-align: left">1566-01-01</td>
+    </tr>
+    <tr>
+      <td>Simulated years</td>
+      <td style="text-align: left">01-01-1566 - 31-12-1600</td>
+    </tr>
+    <tr>
+      <td>Compset</td>
+      <td style="text-align: left">1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS</td>
+    </tr>
+    <tr>
+      <td>Git branch</td>
+      <td style="text-align: left">featureCESM2.1.0-OsloDevelopment</td>
+    </tr>
+    <tr>
+      <td>Git commit</td>
+      <td style="text-align: left">54075ac</td>
+    </tr>
+    <tr>
+      <td>Resolution</td>
+      <td style="text-align: left">f19_tn14</td>
+    </tr>
+    <tr>
+      <td>Machine</td>
+      <td style="text-align: left">Fram and Vilje</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="node-allocation">Node allocation</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+ &lt;entry id="NTASKS"&gt;
+      &lt;type&gt;integer&lt;/type&gt;
+      &lt;values&gt;
+        &lt;value compclass="ATM"&gt;768&lt;/value&gt;
+        &lt;value compclass="CPL"&gt;768&lt;/value&gt;
+        &lt;value compclass="OCN"&gt;186&lt;/value&gt;
+        &lt;value compclass="WAV"&gt;300&lt;/value&gt;
+        &lt;value compclass="GLC"&gt;768&lt;/value&gt;
+        &lt;value compclass="ICE"&gt;504&lt;/value&gt;
+        &lt;value compclass="ROF"&gt;8&lt;/value&gt;
+        &lt;value compclass="LND"&gt;256&lt;/value&gt;
+        &lt;value compclass="ESP"&gt;1&lt;/value&gt;
+      &lt;/values&gt;
+      &lt;desc&gt;number of tasks for each component&lt;/desc&gt;
+    &lt;/entry&gt;
 
 
-    </main>
-    
+</code></pre></div></div>
+
+<h1 id="code-modifications-sourcemods">Code modifications (SourceMods)</h1>
+<p>All code modifications merged to featureCESM2.1.0-OsloDevelopment 54075ac, so no SourceMods needed</p>
+
+<h1 id="user-name-lists">User name lists</h1>
+<p>All user list settings included in the main source code, so no user list settings needed. 
+However, the “old” user_nl_clm (should not have any impact at all)</p>
+
+<h2 id="user_nl_clm">user_nl_clm</h2>
+
+<p>Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>finidat = '/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
+use_init_interp = .true.
+reset_snow = .true.
+</code></pre></div></div>
+
+<h1 id="time-series-of-spinup">Time series of spinup</h1>
+
+<figure>
+  <img src="images/spinup13.png" alt="NorESM2-LM spinup simulations" style="width:120%" />
+  <figcaption><b>NorESM2-LM spinup simulations</b><br />
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. <b>Right column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
+  </figcaption>
+</figure>
+
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
               
 <nav class="c-page__nav">
   
-    
-    
 
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="">
-      〈 <span class="u-margin-right-tiny"></span> 
-    </a>
-  
-
-  
-    
-
-    
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin.html">
-      NorESM2-LM spin up experiments <span class="u-margin-right-tiny"></span> 〉
-    </a>
   
 </nav>
 
