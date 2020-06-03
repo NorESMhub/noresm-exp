@@ -38,7 +38,7 @@ The fist simulation (of many) in the NorESM2-MM spin up tree. No SourceMods incl
 | Parent |   -  |
 | Run type  | startup |
 | Branch time from parent | -|
-| Simulated years | 01-01-0001 - 31-12-0210 |   
+| Simulated years | 01-01-0001 - 31-12-0120 |   
 | Compset | 1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
 | Git branch | featureCESM2-OsloDevelopment | 
 | Git commit | 46a9911 |
