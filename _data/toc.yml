@@ -75,8 +75,8 @@
 #    file: N1850OCBDRDDMS_f09_tn14_20190512
 #   file: N1850OCBDRDDMS_f09_tn14_20190515
 #    file: N1850_f09_tn14_20190524
-#  not_numbered: true
-#  expand_sections: true
+  not_numbered: true
+  expand_sections: true
   
 # External link
 - title: Github repository
