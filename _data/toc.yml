@@ -63,7 +63,13 @@
 # NorESM2-MM spin up experiments
 - title: NorESM2-MM spin up experiments
   url: /noresm2_mm_spin/noresm2_mm_spin_intro
-#  sections:
+  sections:
+  - title: N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
+    url: /noresm2_mm_spin/noresm2_mm_spin1
+  - title: N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
+    url: /noresm2_mm_spin/noresm2_mm_spin2
+  external: true
+  not_numbered: true
 #    file: N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
 #    file: N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
 #    file: N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
@@ -75,8 +81,8 @@
 #    file: N1850OCBDRDDMS_f09_tn14_20190512
 #   file: N1850OCBDRDDMS_f09_tn14_20190515
 #    file: N1850_f09_tn14_20190524
-  not_numbered: true
-  expand_sections: true
+#  not_numbered: true
+#  expand_sections: true
   
 # External link
 - title: Github repository
