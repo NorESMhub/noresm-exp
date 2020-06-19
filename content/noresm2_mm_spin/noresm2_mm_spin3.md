@@ -1,18 +1,19 @@
+
 # Data storage
 The data is stored on NIRD @ sigma2
 
-/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
+/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
 
 
 # Path to case directory
 
 on Fram @ sigma2
 
-/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314/
+/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314/
 
 # Path to diagnostics
 
-http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314/
+http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314/
 
 # Summary of simulation
 
@@ -48,10 +49,10 @@ For all user name list specifics, see bottom of this page
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.0.0  | 
-| Parent |   N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220  |
-| Run type  | startup |
-| Branch time from parent | -|
-| Simulated years | 01-01-0001 - 31-12-0120 |   
+| Parent |  N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314   |
+| Run type  | branch |
+| Branch time from parent | 01-01-0211 |
+| Simulated years | 01-01-0211 - 31-12-0240 |   
 | Compset | 1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
 | Git branch | featureCESM2-OsloDevelopment | 
 | Git commit | 46a9911 |
