@@ -68,6 +68,10 @@
     url: /noresm2_mm_spin/noresm2_mm_spin1
   - title: N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
     url: /noresm2_mm_spin/noresm2_mm_spin2
+  - title: N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
+    url: /noresm2_mm_spin/noresm2_mm_spin3
+  - title: N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
+    url: /noresm2_mm_spin/noresm2_mm_spin4
   not_numbered: true
   expand_sections: true
 #    file: N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
