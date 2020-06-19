@@ -69,7 +69,6 @@ The fist simulation (of many) in the NorESM2-MM spin up tree. No SourceMods incl
 
  Code modifications (SourceMods)
 
-
 ## Includes the long wave aod error
 
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
@@ -77,6 +76,11 @@ The fist simulation (of many) in the NorESM2-MM spin up tree. No SourceMods incl
 Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
 
 # User name lists
+
+## Parameterisation of ice-cloud fraction
+The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.  In this simulation the iceopt = 4, for which there is no such dependence. This was changed later in N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
+
+
 
 ## user_nl_cam
 ``` 
