@@ -16,19 +16,26 @@ http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850OCBDRDDMS_f09_tn14_qmnmxrhm
 
 # Summary of simulation
 
+Modifications to the parameterisation of ice clouds were included. Together with the namelist setting iceopt = 5, the changes in cldfrc2m.F90 which narrowed the range of cloud sensitivity to environmental RH, the ice cloud parameterisation used in NorESM2-MM is a hybrid of iceopt=4 and iceopt=5.
+
 New in this simulation:
 
-- Modifications to the convection code included as SourceMod: zm_conv.F90: "zmst" modifications.
-- Parameter settings in iHAMOCC included as SourceMod: beleg_bgc.F90 
-- *New* namelist additions compared to repository for CAM6-Nor: 
-  - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_20oct16' -> '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
+- Modified "aist" threshold in cldfrc2m.F90 included as SourceMods
+- Ice cloud parameterisation iceopt changed from 4 to 5
+- CLUBB gamma decreased from 0.288 to 0.283
 - Namelist changes compared to repository for CAM6-Nor:
-    - cldfrc2m_rhmini = 0.80D0 -> 0.90D0
-    - cldfrc_iceopt = 4 -> 5
-    - clubb_gamma_coef = 0.288 -> 0.283
-    - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_20oct16' -> '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
+   - cldfrc2m_rhmini = 0.80D0 -> 0.90D0
+   - cldfrc_iceopt = 4 -> 5
+   - clubb_gamma_coef = 0.288 -> 0.283
+   
+Continued to use:
+
+- the modifications to the parameters bkopal, rcalc and ropal in iHAMOCC included as SourceMod
+- the modifications to the convection code included as SourceMod: zm_conv.F90: "zmst" modifications.
+- aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
+- the namelist changes compared to repository for CLM5
     
-For all user name list specifics, see bottom of this page
+For all SourceMods and user name list specifics, see bottom of this page
 
 
 
@@ -71,11 +78,47 @@ For all user name list specifics, see bottom of this page
 
 # Code modifications (SourceMods)
 
+## ice cloud parameterisation changes
+
+in components/cam/src/physics/cam/cldfrc2m.F90
+
+Line 47 and 48 from 
+
+```
+
+real(r8),  parameter :: qist_min     = 1.e-7_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ]
+real(r8),  parameter :: qist_max     = 5.e-3_r8      ! Maximum in-stratus ice IWC constraint [ kg/kg ]
+  
+
+```
+to 
+
+```
+real(r8),  parameter :: qist_min     = 5.e-6_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ] 
+real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IWC constraint [ kg/kg ]
+```
+
+
+Line 883 and Line 1137 from
+
+```
+
+aist = max(0._r8,min(1._r8,qi/qist_min)) 
+
+```
+to 
+
+```
+aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
+
+```
+
+
 ## iHAMOCC modifications
 
 In components/micom/hamocc/beleg_bgc.F90
 
-Line 209
+Line 209 from
 
 ```
 bkopal = 1.e-6    !i.e. 1.0 mmol Si/m3 
@@ -110,8 +153,13 @@ Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
 
 # User name lists
 
-## Parameterisation of ice-cloud fraction
-The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.  In this simulation the iceopt = 4, where there is no such dependence. This was changed later in the spinup of NorESM2-MM.
+## gamma
+
+*Gamma* controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.
+
+## iceopt
+
+Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity. 
 
 ## user_nl_cam
 ``` 
