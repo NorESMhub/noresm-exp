@@ -158,6 +158,9 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
 
 ## user_nl_cam
 ``` 
+! Users should add all user specific namelist changes below in the form of
+! namelist_var = new_namelist_value
+
 &dyn_fv_inparm
  fv_am_correction= .true.
  fv_am_diag      = .true.
@@ -174,7 +177,7 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
  clubb_history  = .false.
  history_budget = .false.
  history_vdiag  = .false.
-
+ 
 &zmconv_nl
  zmconv_c0_lnd    =  0.0200D0
  zmconv_c0_ocn    =  0.0200D0
@@ -191,7 +194,6 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
 
 &cldfrc2m_nl
  cldfrc2m_rhmini =0.90D0
-
 
 ``` 
 
