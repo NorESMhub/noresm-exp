@@ -17,32 +17,18 @@ http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850OCBDRDDMS_f09_tn14_sg30_qmn
 
 # Summary of simulation
 
-From the NorESM2-LM
-- To reduce the net radiation imbalance @TOM (top of model) the sea-salt emissions were increased by 10% 
-- Increased (x2) error tolerance in energy conservation test in CICE
-- Modifications to the convection code included as SourceMod 
-- Continued to use the previous namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
-- *New* namelist additions compared to repository for CAM6-Nor:
-  - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_20oct16' -> '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
- - Namelist changes compared to repository for MICOM:
-   - bkopal = 1.e-6 -> 5.e-6
-   - rcalc = 48. -> 35.
-   - ropal = 35. -> 45.
- 
-For all user name list specifics, see bottom of this page
+New in this simulation: 
+- Increased width of Strait of Gibraltar from 15 km to 30 km (in user_nl_micom: CWMWTH = 15.e3, 15.e3, -> 30.e3, 30.e3,)
 
-
-- Namelist changes compared to repository for CAM6-Nor:
-    - cldfrc_iceopt = 5 -> 4
-    - clubb_gamma_coef = 0.308 -> 0.288
-    - tau_0_ubc = .false. -> .true.
-    - micro_mg_dcs = 500.D-6 -> 5.5e-4
-    - zmconv_c0_lnd = 0.0300D0 -> 0.0200D0
-    - zmconv_c0_ocn = 0.0300D0 -> 0.0200D0
+Continued to use:
+- the modifications to the parameterisation of ice clouds (iceopt=5 and cldfrc2m.F90)
+- the modifications to the parameters bkopal, rcalc and ropal in iHAMOCC included as SourceMod
+- the modifications to the convection code included as SourceMod: zm_conv.F90: "zmst" modifications.
+- aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
+- the namelist changes compared to repository as in N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
     
- - Namelist changes compared to repository for CLM5:
-   - reset_snow = .true.
-  
+For all SourceMods and user name list specifics, see bottom of this page
+
 
 # Simulation specifics
 
@@ -80,14 +66,44 @@ For all user name list specifics, see bottom of this page
 
 
 ```
-
 # Code modifications (SourceMods)
+
+## ice cloud parameterisation changes
+
+in components/cam/src/physics/cam/cldfrc2m.F90
+
+Line 47 and 48 from 
+
+```
+real(r8),  parameter :: qist_min     = 1.e-7_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ]
+real(r8),  parameter :: qist_max     = 5.e-3_r8      ! Maximum in-stratus ice IWC constraint [ kg/kg ]
+```
+
+to 
+
+```
+real(r8),  parameter :: qist_min     = 5.e-6_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ] 
+real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IWC constraint [ kg/kg ]
+```
+
+
+Line 883 and Line 1137 from
+
+```
+aist = max(0._r8,min(1._r8,qi/qist_min)) 
+```
+to 
+
+```
+aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
+```
+
 
 ## iHAMOCC modifications
 
 In components/micom/hamocc/beleg_bgc.F90
 
-Line 209
+Line 209 from
 
 ```
 bkopal = 1.e-6    !i.e. 1.0 mmol Si/m3 
@@ -114,7 +130,6 @@ to
 ```
 
 
-
 ## Includes the long wave aod error
 
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
@@ -123,11 +138,22 @@ Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
 
 # User name lists
 
+## gamma
+
+*Gamma* controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.
+
+## iceopt
+
+Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity. 
+
+
+## user_nl_micom
+
+``` 
+set CWMWTH = "      30.e3,      30.e3"
+``` 
 ## user_nl_cam
 ``` 
-! Users should add all user specific namelist changes below in the form of
-! namelist_var = new_namelist_value
-
 &dyn_fv_inparm
  fv_am_correction= .true.
  fv_am_diag      = .true.
@@ -136,31 +162,32 @@ Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
 
 &phys_ctl_nl
  dme_energy_adjust = .true.
+ aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
 
 &circ_diag_nl
  do_circulation_diags = .true.
 
  clubb_history  = .false.
  history_budget = .false.
- history_vdiag  = .true.
+ history_vdiag  = .false.
 
 &zmconv_nl
- zmconv_c0_lnd          =  0.0200D0
- zmconv_c0_ocn          =  0.0200D0
- zmconv_ke              =  8.0E-6
+ zmconv_c0_lnd    =  0.0200D0
+ zmconv_c0_ocn    =  0.0200D0
+ zmconv_ke        =  8.0E-6
 
 &micro_mg_nl
- micro_mg_dcs             = 5.5e-4
+ micro_mg_dcs     = 5.5e-4
 
 &clubb_params_nl
- clubb_gamma_coef = 0.288
+ clubb_gamma_coef = 0.283
 
 &gw_drag_nl
- tau_0_ubc                = .true.
+ tau_0_ubc        = .true.
 
-&cldfrc_nl
- cldfrc_iceopt          =  4                                
-
+&cldfrc2m_nl
+ cldfrc2m_rhmini =0.90D0
+                             
 ``` 
 
 ## user_nl_clm
@@ -168,19 +195,18 @@ Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
 finidat = '/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
 use_init_interp = .true.
 reset_snow = .true.
-
 ``` 
 # Time series of spinup
 
 <figure>
-  <img src="images/spinupmm2.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <img src="images/spinupmm3.png" alt="NorESM2-MM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-MM spinup simulation</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
   </figcaption>
 </figure>
 
 <figure>
-  <img src="images/spinupmm_emis2.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <img src="images/spinupmm_emis3.png" alt="NorESM2-MM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-MM spinup simulation</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
   </figcaption>
