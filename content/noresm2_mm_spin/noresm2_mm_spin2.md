@@ -16,32 +16,21 @@ http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850OCBDRDDMS_f09_tn14_qmnmxrhm
 
 # Summary of simulation
 
-From the NorESM2-LM
-- To reduce the net radiation imbalance @TOM (top of model) the sea-salt emissions were increased by 10% 
-- Increased (x2) error tolerance in energy conservation test in CICE
-- Modifications to the convection code included as SourceMod 
-- Continued to use the previous namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
-- *New* namelist additions compared to repository for CAM6-Nor:
+New in this simulation:
+
+- Modifications to the convection code included as SourceMod: zm_conv.F90: "zmst" modifications.
+- Parameter settings in iHAMOCC included as SourceMod: beleg_bgc.F90 
+- *New* namelist additions compared to repository for CAM6-Nor: 
   - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_20oct16' -> '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
- - Namelist changes compared to repository for MICOM:
-   - bkopal = 1.e-6 -> 5.e-6
-   - rcalc = 48. -> 35.
-   - ropal = 35. -> 45.
- 
+- Namelist changes compared to repository for CAM6-Nor:
+    - cldfrc2m_rhmini = 0.80D0 -> 0.90D0
+    - cldfrc_iceopt = 4 -> 5
+    - clubb_gamma_coef = 0.288 -> 0.283
+    - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_20oct16' -> '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
+    
 For all user name list specifics, see bottom of this page
 
 
-- Namelist changes compared to repository for CAM6-Nor:
-    - cldfrc_iceopt = 5 -> 4
-    - clubb_gamma_coef = 0.308 -> 0.288
-    - tau_0_ubc = .false. -> .true.
-    - micro_mg_dcs = 500.D-6 -> 5.5e-4
-    - zmconv_c0_lnd = 0.0300D0 -> 0.0200D0
-    - zmconv_c0_ocn = 0.0300D0 -> 0.0200D0
-    
- - Namelist changes compared to repository for CLM5:
-   - reset_snow = .true.
-  
 
 # Simulation specifics
 
@@ -49,9 +38,9 @@ For all user name list specifics, see bottom of this page
 | --- | :--- | 
 | CESM parent| CESM2.0.0  | 
 | Parent |   N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220  |
-| Run type  | startup |
-| Branch time from parent | -|
-| Simulated years | 01-01-0001 - 31-12-0120 |   
+| Run type  | branch |
+| Branch time from parent | 01-01-121 |
+| Simulated years | 01-01-0121 - 31-12-0210 |   
 | Compset | 1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
 | Git branch | featureCESM2-OsloDevelopment | 
 | Git commit | 46a9911 |
@@ -113,7 +102,6 @@ to
 ```
 
 
-
 ## Includes the long wave aod error
 
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
@@ -122,11 +110,11 @@ Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
 
 # User name lists
 
+## Parameterisation of ice-cloud fraction
+The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.  In this simulation the iceopt = 4, where there is no such dependence. This was changed later in the spinup of NorESM2-MM.
+
 ## user_nl_cam
 ``` 
-! Users should add all user specific namelist changes below in the form of
-! namelist_var = new_namelist_value
-
 &dyn_fv_inparm
  fv_am_correction= .true.
  fv_am_diag      = .true.
@@ -135,30 +123,32 @@ Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
 
 &phys_ctl_nl
  dme_energy_adjust = .true.
+ aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
 
 &circ_diag_nl
  do_circulation_diags = .true.
 
  clubb_history  = .false.
  history_budget = .false.
- history_vdiag  = .true.
+ history_vdiag  = .false.
 
 &zmconv_nl
- zmconv_c0_lnd          =  0.0200D0
- zmconv_c0_ocn          =  0.0200D0
- zmconv_ke              =  8.0E-6
+ zmconv_c0_lnd    =  0.0200D0
+ zmconv_c0_ocn    =  0.0200D0
+ zmconv_ke        =  8.0E-6
 
 &micro_mg_nl
- micro_mg_dcs             = 5.5e-4
+ micro_mg_dcs     = 5.5e-4
 
 &clubb_params_nl
- clubb_gamma_coef = 0.288
+ clubb_gamma_coef = 0.283
 
 &gw_drag_nl
- tau_0_ubc                = .true.
+ tau_0_ubc        = .true.
 
-&cldfrc_nl
- cldfrc_iceopt          =  4                                
+&cldfrc2m_nl
+ cldfrc2m_rhmini =0.90D0
+
 
 ``` 
 
