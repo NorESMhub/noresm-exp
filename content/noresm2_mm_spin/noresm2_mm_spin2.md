@@ -85,12 +85,10 @@ in components/cam/src/physics/cam/cldfrc2m.F90
 Line 47 and 48 from 
 
 ```
-
 real(r8),  parameter :: qist_min     = 1.e-7_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ]
 real(r8),  parameter :: qist_max     = 5.e-3_r8      ! Maximum in-stratus ice IWC constraint [ kg/kg ]
-  
-
 ```
+
 to 
 
 ```
@@ -102,15 +100,12 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
 Line 883 and Line 1137 from
 
 ```
-
 aist = max(0._r8,min(1._r8,qi/qist_min)) 
-
 ```
 to 
 
 ```
 aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
-
 ```
 
 
