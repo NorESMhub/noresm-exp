@@ -2,4 +2,4 @@
 # Useful for MyBinder configuration
 pandas
 numpy
-jupyter-book
+jupyter-book < 0.7
