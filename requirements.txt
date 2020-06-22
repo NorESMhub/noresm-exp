@@ -2,8 +2,4 @@
 # Useful for MyBinder configuration
 pandas
 numpy
-folium
-matplotlib
-nbinteract
-scipy
 jupyter-book
