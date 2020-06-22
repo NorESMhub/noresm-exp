@@ -58,7 +58,6 @@
     url: /noresm2_lm_spin/noresm2_lm_spin13
   not_numbered: true
   expand_sections: true
-  
 
 # NorESM2-MM spin up experiments
 - title: NorESM2-MM spin up experiments
