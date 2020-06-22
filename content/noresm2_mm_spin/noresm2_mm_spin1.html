@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_mm_spin/noresm2_mm_spin1.html",
   "headline": "Data storage",
-  "datePublished": "2020-06-03T20:36:06+00:00",
-  "dateModified": "2020-06-03T20:36:06+00:00",
+  "datePublished": "2020-06-22T07:18:45+00:00",
+  "dateModified": "2020-06-22T07:18:45+00:00",
   "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220# Path to case directoryon Fram @...",
   "author": {
     "@type": "Person",
@@ -758,8 +758,6 @@ initFunction(initPrint)
           href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin_intro.html"
         >
           
-            1.
-          
           NorESM2-MM spin up experiments
         </a>
       </li>
@@ -772,6 +770,90 @@ initFunction(initPrint)
       
       
 
+      
+        
+
+        
+
+        <ul class="c-sidebar__sections">
+          
+            
+            
+
+            
+            
+            
+            
+
+            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin1">
+              <a class="c-sidebar__entry"
+                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin1.html"
+              >
+                
+                N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
+              </a>
+            </li>
+            
+            
+          
+            
+            
+
+            
+            
+            
+            
+
+            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin2">
+              <a class="c-sidebar__entry"
+                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin2.html"
+              >
+                
+                N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
+              </a>
+            </li>
+            
+            
+          
+            
+            
+
+            
+            
+            
+            
+
+            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin3">
+              <a class="c-sidebar__entry"
+                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin3.html"
+              >
+                
+                N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
+              </a>
+            </li>
+            
+            
+          
+            
+            
+
+            
+            
+            
+            
+
+            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin4">
+              <a class="c-sidebar__entry"
+                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin4.html"
+              >
+                
+                N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
+              </a>
+            </li>
+            
+            
+          
+        </ul>
       
 
       
@@ -822,7 +904,7 @@ initFunction(initPrint)
           href=".html"
         >
           
-            2.
+            1.
           
           Github repository
         </a>
@@ -997,7 +1079,7 @@ initFunction(initPrint)
 
 </code></pre></div></div>
 
-<p>Code modifications (SourceMods)</p>
+<h1 id="code-modifications-sourcemods">Code modifications (SourceMods)</h1>
 
 <h2 id="includes-the-long-wave-aod-error">Includes the long wave aod error</h2>
 
@@ -1006,6 +1088,14 @@ initFunction(initPrint)
 <p>Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314</p>
 
 <h1 id="user-name-lists">User name lists</h1>
+
+<h2 id="gamma">gamma</h2>
+
+<p><em>Gamma</em> controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.</p>
+
+<h2 id="iceopt">iceopt</h2>
+
+<p>Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.  In this simulation the iceopt = 4, for which there is no such dependence. This was changed later in N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314</p>
 
 <h2 id="user_nl_cam">user_nl_cam</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! Users should add all user specific namelist changes below in the form of
@@ -1056,11 +1146,19 @@ reset_snow = .true.
 <h1 id="time-series-of-spinup">Time series of spinup</h1>
 
 <figure>
-  <img src="images/spinup1.png" alt="NorESM2-MM spinup simulations" style="width:120%" />
+  <img src="images/spinupmm1.png" alt="NorESM2-MM spinup simulations" style="width:120%" />
   <figcaption><b>NorESM2-MM spinup simulation</b><br />
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. <b>Right column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
   </figcaption>
 </figure>
+
+<figure>
+  <img src="images/spinupmm_emis1.png" alt="NorESM2-MM spinup simulations" style="width:120%" />
+  <figcaption><b>NorESM2-MM spinup simulation</b><br />
+    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+  </figcaption>
+</figure>
+
 
             </div>
             <div class="c-textbook__footer" id="textbook_footer">

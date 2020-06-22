@@ -67,8 +67,7 @@ The fist simulation (of many) in the NorESM2-MM spin up tree. No SourceMods incl
 
 ```
 
- Code modifications (SourceMods)
-
+# Code modifications (SourceMods)
 
 ## Includes the long wave aod error
 
@@ -77,6 +76,16 @@ The fist simulation (of many) in the NorESM2-MM spin up tree. No SourceMods incl
 Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
 
 # User name lists
+
+## gamma
+
+*Gamma* controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.
+
+## iceopt
+
+Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.  In this simulation the iceopt = 4, for which there is no such dependence. This was changed later in N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
+
+
 
 ## user_nl_cam
 ``` 
@@ -129,8 +138,16 @@ reset_snow = .true.
 # Time series of spinup
 
 <figure>
-  <img src="images/spinup1.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <img src="images/spinupmm1.png" alt="NorESM2-MM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-MM spinup simulation</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. <b>Right column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
   </figcaption>
 </figure>
+
+<figure>
+  <img src="images/spinupmm_emis1.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <figcaption><b>NorESM2-MM spinup simulation</b><br>
+    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+  </figcaption>
+</figure>
+

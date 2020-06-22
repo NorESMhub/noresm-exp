@@ -2,9 +2,4 @@
 # Useful for MyBinder configuration
 pandas
 numpy
-datascience
-folium
-matplotlib
-nbinteract
-scipy
-jupyter-book
+jupyter-book < 0.7
