@@ -2,48 +2,42 @@
 # Data storage
 The data is stored on NIRD @ sigma2
 
-/projects/NS2345K/noresm/cases/N1850_f09_tn14_20190604
+/projects/NS2345K/noresm/cases/N1850_f09_tn14_20190610
 
 
 # Path to case directory
 
 on Fram @ sigma2
 
-/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850_f09_tn14_20190604/
+/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850_f09_tn14_20190610/
 
 # Path to diagnostics
 
-http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f09_tn14_20190604/
+http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f09_tn14_20190610/
 
 # Summary of simulation
 
 New in this simulation: 
-- CESM2.0 updated to CESM2.1 (branch featureCESM2.1.0-OsloDevelopment)
-- Bug fix in moist plume calculation and initialisation of tu (moist thermo in zm_conv.F90)
-- Different reference time in netCDF output of BLOM/MICOM (rdlim.F), do not change answer.
-- Name list changes to user_nl_cam:
-  - Decreased gamma from 0.308 to 0.283
-  - cldfrc2m_rhmini = 0.80D0 -> 0.90D0
-  - micro_mg_dcs = 500.D-6 -> 5.5e-4
-- Compset name changed from N1850OCBDRDDMS to N1850, but the copset longname is the same
-
+- Modifications to cldfrc2m.F90: same as N1850_f09_tn14_20190604 except  qist_min = 5.e-6_r8 -> 4.e-6_r8
 
 Continued to use:
+- CESM2.1.0 (branch featureCESM2.1.0-OsloDevelopment)
+-  clubb_gamma_coef = 0.283
 - the correction of bug in the second-order in time term of the AM correction (cd_core.F90)
 - the removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC (mo_riverinpt.F90)
 - the increased (x2) error tolerance in energy conservation test in CICE
 - the long wave aerosol optical depth (AOD) bug fixer optinterpol.F90 included as SourceMod
 - the updated emission files for CAM6-Nor (often referred to as FRC2)
 - the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)
-- the increase in width of Strait of Gibraltar from 15 km to 30 km
+- the increase in width of Strait of Gibraltar  from 15 km to 30 km
 - the modifications to the parameterisation of ice clouds (iceopt=5 and cldfrc2m.F90)
 - the modifications to the parameters bkopal, rcalc and ropal in iHAMOCC included as SourceMod
 - the modifications to the convection code included as SourceMod: zm_conv.F90: "zmst" modifications.
 - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
+- same namelist changes as N1850_f09_tn14_20190604
 
-    
 File modifications to 
-- CAM6-Nor: cd_core.F90, optinterpol.F90. 
+- CAM6-Nor: zm_conv.F90, cd_core.F90, optinterpol.F90. 
 - CICE:  ice_therm_vertical.F90
 - iHAMOCC: mo_riverinpt.F90, beleg_bgc.F90
 
@@ -60,13 +54,13 @@ For all SourceMods and user name list specifics, see bottom of this page
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
-| Parent | N1850OCBDRDDMS_f09_tn14_20190515 |
-| Run type  | hybrid |
-| Branch time from parent | 01-01-0451 |
-| Simulated years | 01-01-0451 - 31-12-0480 |   
+| Parent | N1850OCBDRDDMS_f09_tn14_20190604 |
+| Run type  | branch |
+| Branch time from parent | 01-01-0481 |
+| Simulated years | 01-01-0481 - 31-12-0510 |   
 | Compset | 1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
 | Git branch | featureCESM2.1.0-OsloDevelopment | 
-| Git commit | eac8f29 |
+| Git commit | 4e019d7 |
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 
@@ -95,7 +89,7 @@ For all SourceMods and user name list specifics, see bottom of this page
 
 
 ## Ice cloud parameterisation changes
-Modified "aist" threshold
+
 in components/cam/src/physics/cam/cldfrc2m.F90
 
 Line 47 and 48 from 
@@ -108,7 +102,7 @@ real(r8),  parameter :: qist_max     = 5.e-3_r8      ! Maximum in-stratus ice IW
 to 
 
 ```
-real(r8),  parameter :: qist_min     = 5.e-6_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ] 
+real(r8),  parameter :: qist_min     = 4.e-6_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ] 
 real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IWC constraint [ kg/kg ]
 ```
 
@@ -135,32 +129,12 @@ aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
 Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity. 
 
 
+
+``` 
 ## user_nl_cam
 ``` 
 ! Users should add all user specific namelist changes below in the form of
 ! namelist_var = new_namelist_value
-
-&dyn_fv_inparm
- fv_am_correction= .true.
- fv_am_diag      = .true.
- fv_am_fix_lbl   = .true.
- fv_am_fixer     = .true.
-
-&phys_ctl_nl
- dme_energy_adjust = .true.
- aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
-
-&circ_diag_nl
- do_circulation_diags = .true.
-
- clubb_history  = .false.
- history_budget = .false.
- history_vdiag  = .false.
-
-&zmconv_nl
- zmconv_c0_lnd    =  0.0200D0
- zmconv_c0_ocn    =  0.0200D0
- zmconv_ke        =  8.0E-6
 
 &micro_mg_nl
  micro_mg_dcs     = 5.5e-4
@@ -168,25 +142,29 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
 &clubb_params_nl
  clubb_gamma_coef = 0.283
 
-&gw_drag_nl
- tau_0_ubc        = .true.
-
 &cldfrc2m_nl
  cldfrc2m_rhmini =0.90D0
+
                                                                                                                                    
 ``` 
 
+## user_nl_clm
+``` 
+finidat = '/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
+use_init_interp = .true.
+reset_snow = .true.
+``` 
 # Time series of spinup
 
 <figure>
-  <img src="images/spinupmm11.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <img src="images/spinupmm12.png" alt="NorESM2-MM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-MM spinup simulation</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
   </figcaption>
 </figure>
 
 <figure>
-  <img src="images/spinupmm_emis11.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <img src="images/spinupmm_emis12.png" alt="NorESM2-MM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-MM spinup simulation</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
   </figcaption>
