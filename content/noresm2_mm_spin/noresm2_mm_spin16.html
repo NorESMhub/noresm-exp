@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_mm_spin/noresm2_mm_spin16.html",
   "headline": "Data storage",
-  "datePublished": "2020-06-24T13:26:32+00:00",
-  "dateModified": "2020-06-24T13:26:32+00:00",
+  "datePublished": "2020-06-24T13:30:57+00:00",
+  "dateModified": "2020-06-24T13:30:57+00:00",
   "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850_f09_tn14_20190726# Path to case directoryon Fram @ sigma2/cluster/proje...",
   "author": {
     "@type": "Person",
@@ -1136,23 +1136,22 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
 
 <p>Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## user_nl_cam
+<h2 id="user_nl_cam">user_nl_cam</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! Users should add all user specific namelist changes below in the form of
+! namelist_var = new_namelist_value
+
+&amp;micro_mg_nl
+ micro_mg_dcs     = 5.5e-4
+
+&amp;clubb_params_nl
+ clubb_gamma_coef = 0.286
+
+&amp;cldfrc2m_nl
+ cldfrc2m_rhmini =0.90D0
+                                                                                                                                   
 </code></pre></div></div>
-<p>! Users should add all user specific namelist changes below in the form of
-! namelist_var = new_namelist_value</p>
-
-<p>&amp;micro_mg_nl
- micro_mg_dcs     = 5.5e-4</p>
-
-<p>&amp;clubb_params_nl
- clubb_gamma_coef = 0.286</p>
-
-<p>&amp;cldfrc2m_nl
- cldfrc2m_rhmini =0.90D0</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## user_nl_cam
-</code></pre></div></div>
-<p>&amp;seq_infodata_inparm
+<h2 id="user_nl_cpl">user_nl_cpl</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;seq_infodata_inparm
   histaux_a2x      = .true.
   histaux_a2x1hr   = .true.
   histaux_a2x1hri  = .true.
@@ -1161,9 +1160,9 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
   histaux_a2x24hr = .true.
   histaux_l2x     = .false.
   histaux_l2x1yrg = .false.
-  histaux_r2x     = .true.</p>
-
-<p>```</p>
+  histaux_r2x     = .true.
+  
+</code></pre></div></div>
 
 <h1 id="time-series-of-spinup">Time series of spinup</h1>
 
