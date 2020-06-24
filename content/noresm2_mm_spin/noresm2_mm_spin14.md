@@ -129,8 +129,6 @@ aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
 Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity. 
 
 
-
-``` 
 ## user_nl_cam
 ``` 
 ! Users should add all user specific namelist changes below in the form of
@@ -147,12 +145,7 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
                                                                                                                                    
 ``` 
 
-## user_nl_clm
-``` 
-finidat = '/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
-use_init_interp = .true.
-reset_snow = .true.
-``` 
+
 # Time series of spinup
 
 <figure>
