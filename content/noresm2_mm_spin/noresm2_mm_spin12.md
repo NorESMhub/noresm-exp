@@ -41,7 +41,7 @@ File modifications to
 - CICE:  ice_therm_vertical.F90
 - iHAMOCC: mo_riverinpt.F90, beleg_bgc.F90
 
-were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed. Also the new emission files (frc2) were included and no longer needed to be listed in user_nl_cam
+were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed. Also the new emission files (frc2) and many of the parameter settings in user_nl_cam were included and no longer needed to be listed in user_nl_cam.
 
 The increase in width of Strait of Gibraltar from 15 km to 30 km was included as default and no longer listed in user_nl_micom
 
