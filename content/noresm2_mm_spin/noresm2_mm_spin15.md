@@ -2,27 +2,27 @@
 # Data storage
 The data is stored on NIRD @ sigma2
 
-/projects/NS2345K/noresm/cases/N1850_f09_tn14_20190610
+/projects/NS2345K/noresm/cases/N1850_f09_tn14_20190701
 
 
 # Path to case directory
 
 on Fram @ sigma2
 
-/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850_f09_tn14_20190610/
+/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850_f09_tn14_20190701/
 
 # Path to diagnostics
 
-http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f09_tn14_20190610/
+http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f09_tn14_20190701/
 
 # Summary of simulation
 
 New in this simulation: 
-- Modifications to cldfrc2m.F90: same as N1850_f09_tn14_20190604 except  qist_min = 5.e-6_r8 -> 4.e-6_r8
+- clubb_gamma_coef = 0.288 -> 0.286
 
 Continued to use:
+- the modifications to cldfrc2m.F90
 - CESM2.1.0 (branch featureCESM2.1.0-OsloDevelopment)
--  clubb_gamma_coef = 0.283
 - the correction of bug in the second-order in time term of the AM correction (cd_core.F90)
 - the removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC (mo_riverinpt.F90)
 - the increased (x2) error tolerance in energy conservation test in CICE
@@ -54,10 +54,10 @@ For all SourceMods and user name list specifics, see bottom of this page
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
-| Parent | N1850_f09_tn14_20190604 |
+| Parent | N1850_f09_tn14_20190622 |
 | Run type  | branch |
-| Branch time from parent | 01-01-0481 |
-| Simulated years | 01-01-0481 - 31-12-0510 |   
+| Branch time from parent | 01-01-0571 |
+| Simulated years | 01-01-0571 - 31-12-0700 |   
 | Compset | 1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
 | Git branch | featureCESM2.1.0-OsloDevelopment | 
 | Git commit | 4e019d7 |
@@ -140,11 +140,10 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
  micro_mg_dcs     = 5.5e-4
 
 &clubb_params_nl
- clubb_gamma_coef = 0.283
+ clubb_gamma_coef = 0.286
 
 &cldfrc2m_nl
  cldfrc2m_rhmini =0.90D0
-
                                                                                                                                    
 ``` 
 
@@ -157,14 +156,14 @@ reset_snow = .true.
 # Time series of spinup
 
 <figure>
-  <img src="images/spinupmm12.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <img src="images/spinupmm15.png" alt="NorESM2-MM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-MM spinup simulation</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
   </figcaption>
 </figure>
 
 <figure>
-  <img src="images/spinupmm_emis12.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <img src="images/spinupmm_emis15.png" alt="NorESM2-MM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-MM spinup simulation</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
   </figcaption>
