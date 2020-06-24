@@ -18,7 +18,14 @@ http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f09_tn14_20190604/
 # Summary of simulation
 
 New in this simulation: 
-- CESM2.0.0 updated to CESM2.1.0
+- CESM2.0 updated to CESM2.1
+- Bug fix in moist plume calculation and initialisation of tu (moist thermo in zm_conv.F90)
+- Different reference time in netCDF output of BLOM/MICOM (rdlim.F), do not change answer.
+- Name list changes to user_nl_cam:
+  - Decreased gamma from 0.308 to 0.283
+  - cldfrc2m_rhmini = 0.80D0 -> 0.90D0
+  - micro_mg_dcs = 500.D-6 -> 5.5e-4
+
 
 Continued to use:
 - the correction of bug in the second-order in time term of the AM correction (cd_core.F90)
@@ -32,7 +39,7 @@ Continued to use:
 - the modifications to the parameters bkopal, rcalc and ropal in iHAMOCC included as SourceMod
 - the modifications to the convection code included as SourceMod: zm_conv.F90: "zmst" modifications.
 - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
-- same namelist changes as N1850OCBDRDDMS_f09_tn14_20190411
+
     
 File modifications to 
 - CAM6-Nor: cd_core.F90, optinterpol.F90. 
@@ -83,7 +90,7 @@ For all SourceMods and user name list specifics, see bottom of this page
 
 
 ## Ice cloud parameterisation changes
-
+Modified "aist" threshold
 in components/cam/src/physics/cam/cldfrc2m.F90
 
 Line 47 and 48 from 
