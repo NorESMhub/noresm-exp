@@ -35,7 +35,7 @@ Continued to use:
 - the long wave aerosol optical depth (AOD) bug fixer optinterpol.F90 included as SourceMod
 - the updated emission files for CAM6-Nor (often referred to as FRC2)
 - the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)
-- the increase in width of Strait of Gibraltar  from 15 km to 30 km
+- the increase in width of Strait of Gibraltar from 15 km to 30 km
 - the modifications to the parameterisation of ice clouds (iceopt=5 and cldfrc2m.F90)
 - the modifications to the parameters bkopal, rcalc and ropal in iHAMOCC included as SourceMod
 - the modifications to the convection code included as SourceMod: zm_conv.F90: "zmst" modifications.
@@ -48,6 +48,10 @@ File modifications to
 - iHAMOCC: mo_riverinpt.F90, beleg_bgc.F90
 
 were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed. Also the new emission files (frc2) were included and no longer needed to be listed in user_nl_cam
+
+The increase in width of Strait of Gibraltar from 15 km to 30 km was included as default and no longer listed in user_nl_micom
+
+The reset snow addition in user_nl_clm was included as default and no longer needed.
 
 For all SourceMods and user name list specifics, see bottom of this page
 
@@ -131,11 +135,6 @@ aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
 Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity. 
 
 
-## user_nl_micom
-
-``` 
-set CWMWTH = "      30.e3,      30.e3"
-``` 
 ## user_nl_cam
 ``` 
 ! Users should add all user specific namelist changes below in the form of
@@ -177,12 +176,6 @@ set CWMWTH = "      30.e3,      30.e3"
                                                                                                                                    
 ``` 
 
-## user_nl_clm
-``` 
-finidat = '/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
-use_init_interp = .true.
-reset_snow = .true.
-``` 
 # Time series of spinup
 
 <figure>
