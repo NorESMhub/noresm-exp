@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Data storage</title>
-  <meta name="description" content="# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_08052019# Path to case directory/home/sm_adagj/noresm...">
+  <meta name="description" content="# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_20190417# Path to case directoryon Fram @ sigma2/clus...">
 
-  <link rel="canonical" href="https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin/noresm2_lm_spin9.html">
+  <link rel="canonical" href="https://noresmhub.github.io//noresm-exp/content/noresm2_mm_spin/noresm2_mm_spin6.html">
   <link rel="alternate" type="application/rss+xml" title="NorESM Experiments" href="https://noresmhub.github.io//noresm-exp/feed.xml">
 
-  <meta property="og:url"         content="https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin/noresm2_lm_spin9.html" />
+  <meta property="og:url"         content="https://noresmhub.github.io//noresm-exp/content/noresm2_mm_spin/noresm2_mm_spin6.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Data storage" />
-<meta property="og:description" content="# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_08052019# Path to case directory/home/sm_adagj/noresm..." />
+<meta property="og:description" content="# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_20190417# Path to case directoryon Fram @ sigma2/clus..." />
 <meta property="og:image"       content="https://noresmhub.github.io//noresm-exp/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin/noresm2_lm_spin9.html",
+  "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_mm_spin/noresm2_mm_spin6.html",
   "headline": "Data storage",
   "datePublished": "2020-06-24T08:58:49+00:00",
   "dateModified": "2020-06-24T08:58:49+00:00",
-  "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_08052019# Path to case directory/home/sm_adagj/noresm...",
+  "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_20190417# Path to case directoryon Fram @ sigma2/clus...",
   "author": {
     "@type": "Person",
     "name": "Ada Gjermundsen"
@@ -968,44 +968,49 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <h1 id="data-storage">Data storage</h1>
-<p>The data is stored on NIRD @ sigma2
-/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_08052019</p>
+              
+<h1 id="data-storage">Data storage</h1>
+<p>The data is stored on NIRD @ sigma2</p>
+
+<p>/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_20190417</p>
 
 <h1 id="path-to-case-directory">Path to case directory</h1>
 
-<p>/home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_08052019/</p>
+<p>on Fram @ sigma2</p>
 
-<p>copy on Vilje @ sigma2</p>
-
-<p>/home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_08052019/</p>
+<p>/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850OCBDRDDMS_f09_tn14_20190417/</p>
 
 <h1 id="path-to-diagnostics">Path to diagnostics</h1>
 
-<p>–</p>
+<p>http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850OCBDRDDMS_f09_tn14_20190417/</p>
 
 <h1 id="summary-of-simulation">Summary of simulation</h1>
+
 <p>New in this simulation:</p>
 <ul>
-  <li>Increased gamma to 0.261 (from 0.258)</li>
+  <li>The long wave aerosol optical depth (AOD) bug fixer pmxsub.F90 was replaced by optinterpol.F90</li>
+  <li>Removed the modification to fall speed parameters for droplets</li>
 </ul>
 
-<p>Continued to use</p>
+<p>Continued to use:</p>
 <ul>
-  <li>CESM2.1</li>
-  <li>new emission files to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.</li>
-  <li>the long wave aerosol optical depth (AOD) bug fixer</li>
+  <li>the updated emission files for CAM6-Nor (often referred to as FRC2)</li>
   <li>the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)</li>
-  <li>Nebula @ nsc.liu</li>
-  <li>the increased width of Strait of Gibraltar</li>
-  <li>the increased (x2) error tolerance in energy conservation test in CICE (code changes included in the main CICE code)</li>
-  <li>the modifications to the parameters <em>bkopal, rcalc and ropal</em> in iHAMOCC  included as SourceMod</li>
-  <li>the modifications to the convection code included as SourceMod</li>
-  <li>the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5</li>
+  <li>the increase in width of Strait of Gibraltar  from 15 km to 30 km</li>
+  <li>the modifications to the parameterisation of ice clouds (iceopt=5 and cldfrc2m.F90)</li>
+  <li>the modifications to the parameters bkopal, rcalc and ropal in iHAMOCC included as SourceMod</li>
+  <li>the modifications to the convection code included as SourceMod: zm_conv.F90: “zmst” modifications.</li>
+  <li>aerotab_table_dir = ‘/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17’</li>
+  <li>the namelist changes compared to repository as in N1850OCBDRDDMS_f09_tn14_20190411</li>
 </ul>
 
-<p>File modifications to components/mosart/src/riverroute/RtmRestFile.F90 which fixed the problems with fill values on Nebula 
-and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment and the SourceMods no longer needed</p>
+<p>Excluded:</p>
+<ul>
+  <li>Modification of fall speed parameters for droplets. Included in SourceMod/src.cam/micro_mg_utils.F90 in N1850OCBDRDDMS_f09_tn14_20190411</li>
+  <li>AOD fix in in SourceMod/src.cam/ pmxsub.F90</li>
+</ul>
+
+<p>For all SourceMods and user name list specifics, see bottom of this page</p>
 
 <h1 id="simulation-specifics">Simulation specifics</h1>
 
@@ -1019,11 +1024,11 @@ and to components/micom/phy/rdlim.F which fixed the time variable output problem
   <tbody>
     <tr>
       <td>CESM parent</td>
-      <td style="text-align: left">CESM2.1.0</td>
+      <td style="text-align: left">CESM2.0.0</td>
     </tr>
     <tr>
       <td>Parent</td>
-      <td style="text-align: left">N1850OCBDRDDMS_f19_tn14_25042019</td>
+      <td style="text-align: left">N1850OCBDRDDMS_f09_tn14_20190411</td>
     </tr>
     <tr>
       <td>Run type</td>
@@ -1031,11 +1036,11 @@ and to components/micom/phy/rdlim.F which fixed the time variable output problem
     </tr>
     <tr>
       <td>Branch time from parent</td>
-      <td style="text-align: left">0996-01-01</td>
+      <td style="text-align: left">01-01-0301</td>
     </tr>
     <tr>
       <td>Simulated years</td>
-      <td style="text-align: left">01-01-0996 - 31-12-1035</td>
+      <td style="text-align: left">01-01-0301 - 31-12-0360</td>
     </tr>
     <tr>
       <td>Compset</td>
@@ -1043,37 +1048,36 @@ and to components/micom/phy/rdlim.F which fixed the time variable output problem
     </tr>
     <tr>
       <td>Git branch</td>
-      <td style="text-align: left">featureCESM2.1.0-OsloDevelopment</td>
+      <td style="text-align: left">featureCESM2-OsloDevelopment</td>
     </tr>
     <tr>
       <td>Git commit</td>
-      <td style="text-align: left">4f28317</td>
+      <td style="text-align: left">46a9911</td>
     </tr>
     <tr>
       <td>Resolution</td>
-      <td style="text-align: left">f19_tn14</td>
+      <td style="text-align: left">f09_tn14</td>
     </tr>
     <tr>
       <td>Machine</td>
-      <td style="text-align: left">Nebula</td>
+      <td style="text-align: left">Fram</td>
     </tr>
   </tbody>
 </table>
 
 <h1 id="node-allocation">Node allocation</h1>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
- &lt;entry id="NTASKS"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;entry id="NTASKS"&gt;
       &lt;type&gt;integer&lt;/type&gt;
       &lt;values&gt;
-        &lt;value compclass="ATM"&gt;768&lt;/value&gt;
-        &lt;value compclass="CPL"&gt;768&lt;/value&gt;
-        &lt;value compclass="OCN"&gt;186&lt;/value&gt;
+        &lt;value compclass="ATM"&gt;1536&lt;/value&gt;
+        &lt;value compclass="CPL"&gt;1536&lt;/value&gt;
+        &lt;value compclass="OCN"&gt;91&lt;/value&gt;
         &lt;value compclass="WAV"&gt;300&lt;/value&gt;
-        &lt;value compclass="GLC"&gt;768&lt;/value&gt;
-        &lt;value compclass="ICE"&gt;504&lt;/value&gt;
-        &lt;value compclass="ROF"&gt;8&lt;/value&gt;
-        &lt;value compclass="LND"&gt;256&lt;/value&gt;
+        &lt;value compclass="GLC"&gt;1536&lt;/value&gt;
+        &lt;value compclass="ICE"&gt;736&lt;/value&gt;
+        &lt;value compclass="ROF"&gt;20&lt;/value&gt;
+        &lt;value compclass="LND"&gt;780&lt;/value&gt;
         &lt;value compclass="ESP"&gt;1&lt;/value&gt;
       &lt;/values&gt;
       &lt;desc&gt;number of tasks for each component&lt;/desc&gt;
@@ -1081,8 +1085,44 @@ and to components/micom/phy/rdlim.F which fixed the time variable output problem
 
 
 </code></pre></div></div>
-
 <h1 id="code-modifications-sourcemods">Code modifications (SourceMods)</h1>
+
+<h2 id="modification-of-fall-speed-parameters-for-droplets">Modification of fall speed parameters for droplets</h2>
+
+<p>In components/cam/src/physics/cam/micro_mg_utils.F90</p>
+
+<p>Line 138 from</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>real(r8), parameter, public :: ai = 700._r8 
+</code></pre></div></div>
+
+<p>to</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>real(r8), parameter, public :: ai = 750._r8 
+</code></pre></div></div>
+
+<h2 id="ice-cloud-parameterisation-changes">Ice cloud parameterisation changes</h2>
+
+<p>in components/cam/src/physics/cam/cldfrc2m.F90</p>
+
+<p>Line 47 and 48 from</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>real(r8),  parameter :: qist_min     = 1.e-7_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ]
+real(r8),  parameter :: qist_max     = 5.e-3_r8      ! Maximum in-stratus ice IWC constraint [ kg/kg ]
+</code></pre></div></div>
+
+<p>to</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>real(r8),  parameter :: qist_min     = 5.e-6_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ] 
+real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IWC constraint [ kg/kg ]
+</code></pre></div></div>
+
+<p>Line 883 and Line 1137 from</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aist = max(0._r8,min(1._r8,qi/qist_min)) 
+</code></pre></div></div>
+<p>to</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
+</code></pre></div></div>
 
 <h2 id="increase-in-dms-emissions--high-latitudes">Increase in DMS emissions @ high latitudes</h2>
 
@@ -1100,32 +1140,73 @@ and to components/micom/phy/rdlim.F which fixed the time variable output problem
 
 </code></pre></div></div>
 
-<p>and Line 287 AND Line 288</p>
+<p>and Line 287</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmspar(5)=1.25*0.109784522E-01  !2*0.02   production with delsil 
-dmspar(4)=1.25*0.107638502E+00  !2*1.3e-5 production with delcar 
 
 </code></pre></div></div>
 <p>to</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmspar(5)=1.25*0.02      ! production with delsil, following Kloster et al., 06 Table 1, but increased by a factor of 
-dmspar(4)=1.25*0.10      ! production with delcar, following Kloster et al., 06 Table 1,  but reduced by ~7%
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al., 06 Table 1, but increased by a factor of 2
+      
 </code></pre></div></div>
 
-<h2 id="moist-convection-in-cam">Moist convection in CAM</h2>
-<p>Moist convection modifications (“zmst” modifications) in</p>
+<h2 id="other-ihamocc-modifications">Other iHAMOCC modifications</h2>
 
-<p>components/cam/src/NorESM/zm_convF90:</p>
+<p>In components/micom/hamocc/beleg_bgc.F90</p>
+
+<p>Line 209 from</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bkopal = 1.e-6    !i.e. 1.0 mmol Si/m3 
+</code></pre></div></div>
+
+<p>to</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bkopal = 5.e-6    !i.e. 1.0 mmol Si/m3 
+</code></pre></div></div>
+
+<p>Line 269 from</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#elif defined(WLIN) 
+      rcalc = 48.  ! calcium carbonate to organic phosphorous production ratio
+      ropal = 35.  ! opal to organic phosphorous production ratio 
+</code></pre></div></div>
+<p>to</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#elif defined(WLIN) 
+      rcalc = 35.  ! calcium carbonate to organic phosphorous production ratio
+      ropal = 45.  ! opal to organic phosphorous production ratio 
+</code></pre></div></div>
 
 <h2 id="long-wave-aod-fix">Long wave AOD fix</h2>
 
-<p>Long wave aerosol optical depth (AOD) bug fixer: optinterpol.F90</p>
+<p>Long wave aerosol optical depth (AOD) bug fixer: pmxsub.F90</p>
 
 <p><strong>Information about the bug:</strong> The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.</p>
 
 <h1 id="user-name-lists">User name lists</h1>
 
+<h2 id="new-emission-files-files-in-cam6-nor-frc2">New emission files files in CAM6-Nor (FRC2)</h2>
+
+<p>A new set of emission files have been made to avoid the occurence of random mid-month model crashes. These crashes are related to the reading of emission files, but are still under investigation.</p>
+
+<p>For list of files, please see user_nl_cam below</p>
+
+<h2 id="gamma">gamma</h2>
+
+<p><em>Gamma</em> controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.</p>
+
+<h2 id="iceopt">iceopt</h2>
+
+<p>Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.</p>
+
+<h2 id="user_nl_micom">user_nl_micom</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set CWMWTH = "      30.e3,      30.e3"
+</code></pre></div></div>
 <h2 id="user_nl_cam">user_nl_cam</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;dyn_fv_inparm
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! Users should add all user specific namelist changes below in the form of
+! namelist_var = new_namelist_value
+
+&amp;dyn_fv_inparm
  fv_am_correction= .true.
  fv_am_diag      = .true.
  fv_am_fix_lbl   = .true.
@@ -1133,75 +1214,77 @@ dmspar(4)=1.25*0.10      ! production with delcar, following Kloster et al., 06 
 
 &amp;phys_ctl_nl
  dme_energy_adjust = .true.
+ aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
 
+&amp;circ_diag_nl
+ do_circulation_diags = .true.
+
+ clubb_history  = .false.
+ history_budget = .false.
+ history_vdiag  = .false.
 
 &amp;zmconv_nl
- zmconv_c0_lnd          =  0.0200D0
- zmconv_c0_ocn          =  0.0200D0
- zmconv_ke              =  8.0E-6
+ zmconv_c0_lnd    =  0.0200D0
+ zmconv_c0_ocn    =  0.0200D0
+ zmconv_ke        =  8.0E-6
 
 &amp;micro_mg_nl
- micro_mg_dcs             = 5.0e-4
+ micro_mg_dcs     = 5.5e-4
 
 &amp;clubb_params_nl
- clubb_gamma_coef = 0.261
+ clubb_gamma_coef = 0.283
 
 &amp;gw_drag_nl
- tau_0_ubc                = .true.
+ tau_0_ubc        = .true.
 
-&amp;cldfrc_nl
- cldfrc_iceopt          =  4
+&amp;cldfrc2m_nl
+ cldfrc2m_rhmini =0.90D0
 
-&amp;phys_ctl_nl
-aerotab_table_dir =
-'/nobackup/forsk/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
+&amp;chem_inparm
+ ext_frc_specifier = 'H2O    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/elev/H2O_emission_CH4_oxidationx2_elev_3DmonthlyL70_1850climoCMIP6piControl001_y21-50avg_c180802.nc',
+         'BC_AX  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_AX_airALL_vertical_1850_0.9x1.25_version20180512.nc',
+         'BC_AX  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_AX_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc',
+         'BC_N   -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_N_airALL_vertical_1850_0.9x1.25_version20180512.nc',
+         'BC_N   -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_N_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc',
+         'BC_NI  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_NI_bbAGRIBORFDEFOPEATSAVATEMF_vertical_1850_0.9x1.25_version20180512.nc',
+         'OM_NI  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_airALL_vertical_1850_0.9x1.25_version20180512.nc',
+         'OM_NI  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc',
+         'OM_NI  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_bbAGRIBORFDEFOPEATSAVATEMF_vertical_1850_0.9x1.25_version20180512.nc',
+         'SO2    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_airALL_vertical_1850_0.9x1.25_version20180512.nc',
+         'SO2    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc',
+         'SO2    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_bbAGRIBORFDEFOPEATSAVATEMF_vertical_1850_0.9x1.25_version20180512.nc',
+         'SO2    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_volcCONTEXPL_vertical_1850_0.9x1.25_version20180512.nc',
+         'SO4_PR -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_airALL_vertical_1850_0.9x1.25_version20180512.nc',
+         'SO4_PR -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc',
+         'SO4_PR -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_bbAGRIBORFDEFOPEATSAVATEMF_vertical_1850_0.9x1.25_version20180512.nc',
+         'SO4_PR -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_volcCONTEXPL_vertical_1850_0.9x1.25_version20180512.nc'
+ tracer_cnst_file  = 'tracer_cnst_WACCM6_halons_3DmonthlyL70_1850climoCMIP6piControl001_y21-50avg_c180802.nc'
 
-ext_frc_specifier              = 'H2O    -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/elev/H2O_emission_CH4_oxidationx2_elev_3DmonthlyL70_1850climoCMIP6piControl001_y21-50avg_c180802.nc',
-         'BC_AX  -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_AX_airALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'BC_AX  -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_AX_anthroprofALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'BC_N   -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_N_airALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'BC_N   -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_N_anthroprofALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'BC_NI  -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_NI_bbALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'OM_NI  -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_airALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'OM_NI  -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_anthroprofALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'OM_NI  -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_bbALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'SO2    -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_airALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'SO2    -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_anthroprofALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'SO2    -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_bbALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'SO2    -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_volcALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'SO4_PR -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_airALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'SO4_PR -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_anthroprofALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'SO4_PR -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_bbALL_vertical_1850_1.9x2.5_version20180512.nc',
-         'SO4_PR -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_volcALL_vertical_1850_1.9x2.5_version20180512.nc'
+&amp;prescribed_ozone_nl
+ prescribed_ozone_file          = 'ozone_strataero_cyclical_WACCM6_L70_CMIP6-piControl.001_y21-50avg_zm_5day_c180802.nc'
 
- srf_emis_specifier             = 'BC_AX  -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_AX_anthrosurfALL_surface_1850_1.9x2.5_version20180512.nc',
-         'BC_N   -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_N_anthrosurfALL_surface_1850_1.9x2.5_version20180512.nc',
-         'OM_NI  -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_anthrosurfALL_surface_1850_1.9x2.5_version20180512.nc',
-         'SO2    -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_anthrosurfALL_surface_1850_1.9x2.5_version20180512.nc',
-         'SO4_PR -&gt;  /nobackup/forsk/noresm/inputdata//atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_anthrosurfALL_surface_1850_1.9x2.5_version20180512.nc'
 
+                             
 </code></pre></div></div>
 
 <h2 id="user_nl_clm">user_nl_clm</h2>
-<p>Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>finidat = '/nobackup/forsk/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>finidat = '/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
 use_init_interp = .true.
 reset_snow = .true.
-
-</code></pre></div></div>
-<h2 id="user_nl_micom">user_nl_micom</h2>
-
-<p>Increased width of Strait of Gibraltar from 15 km to 30 km</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set CWMWTH = "      30.e3,      30.e3"
-
 </code></pre></div></div>
 <h1 id="time-series-of-spinup">Time series of spinup</h1>
 
 <figure>
-  <img src="images/spinup9.png" alt="NorESM2-LM spinup simulations" style="width:120%" />
-  <figcaption><b>NorESM2-LM spinup simulations</b><br />
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. <b>Right column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
+  <img src="images/spinupmm6.png" alt="NorESM2-MM spinup simulations" style="width:120%" />
+  <figcaption><b>NorESM2-MM spinup simulation</b><br />
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="images/spinupmm_emis6.png" alt="NorESM2-MM spinup simulations" style="width:120%" />
+  <figcaption><b>NorESM2-MM spinup simulation</b><br />
+    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
   </figcaption>
 </figure>
 
