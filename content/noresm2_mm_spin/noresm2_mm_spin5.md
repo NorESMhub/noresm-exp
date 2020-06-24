@@ -120,7 +120,7 @@ aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
 
 In components/micom/hamocc/beleg_bgc.F90
 
-Line 175 changed from 
+Line 191 changed from 
 
 ```
 epsher = 0.9         !dimensionless fraction -fraction of grazing egested
@@ -134,7 +134,7 @@ epsher = 0.85         !dimensionless fraction -fraction of grazing egested
 
 ```
 
-and Line 287
+and Line 304
 
 ```
 dmspar(5)=1.25*0.109784522E-01  !2*0.02   production with delsil 
