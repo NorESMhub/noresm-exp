@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_mm_spin/noresm2_mm_spin13.html",
   "headline": "Data storage",
-  "datePublished": "2020-06-24T13:24:04+00:00",
-  "dateModified": "2020-06-24T13:24:04+00:00",
+  "datePublished": "2020-06-24T13:26:32+00:00",
+  "dateModified": "2020-06-24T13:26:32+00:00",
   "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850_f09_tn14_20190615# Path to case directoryon Fram @ sigma2/cluster/proje...",
   "author": {
     "@type": "Person",
@@ -1134,27 +1134,21 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
 
 <p>Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## user_nl_cam
+<h2 id="user_nl_cam">user_nl_cam</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! Users should add all user specific namelist changes below in the form of
+! namelist_var = new_namelist_value
+
+&amp;micro_mg_nl
+ micro_mg_dcs     = 5.5e-4
+
+&amp;clubb_params_nl
+ clubb_gamma_coef = 0.285
+
+&amp;cldfrc2m_nl
+ cldfrc2m_rhmini =0.90D0
+                                                                                                                                   
 </code></pre></div></div>
-<p>! Users should add all user specific namelist changes below in the form of
-! namelist_var = new_namelist_value</p>
 
-<p>&amp;micro_mg_nl
- micro_mg_dcs     = 5.5e-4</p>
-
-<p>&amp;clubb_params_nl
- clubb_gamma_coef = 0.285</p>
-
-<p>&amp;cldfrc2m_nl
- cldfrc2m_rhmini =0.90D0</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-## user_nl_clm
-</code></pre></div></div>
-<p>finidat = ‘/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc’
-use_init_interp = .true.
-reset_snow = .true.
-```</p>
 <h1 id="time-series-of-spinup">Time series of spinup</h1>
 
 <figure>
