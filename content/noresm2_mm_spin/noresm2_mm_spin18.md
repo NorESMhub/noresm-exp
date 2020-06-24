@@ -23,6 +23,7 @@ New in this simulation:
 
 
 Continued to use:
+- preprocessorDefinitions.h: CPP flags: "#undef AEROCOM”, "#define AEROFFL"
 - clubb_gamma_coef =  0.286
 - the modifications to cldfrc2m.F90
 - CESM2.1.0 (branch featureCESM2.1.0-OsloDevelopment)
