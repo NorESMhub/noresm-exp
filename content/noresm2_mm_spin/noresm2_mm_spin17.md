@@ -18,6 +18,7 @@ http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f09_tn14_20190812/
 # Summary of simulation
 
 New in this simulation: 
+- Included preprocessorDefinitions.h: CPP flags: "#undef AEROCOM”, "#define AEROFFL" in SourceMods/src.cam/
 - Removed cime_comp_mod.F90 (used to modifie a write alarm to enable CPLHIST output)
 - Changes in history settings (for extended output) in user_nl_cam and user_nl_clm and removed CPLHIST output to user_nl_cpl
 
@@ -37,7 +38,6 @@ Continued to use:
 - the modifications to the parameters bkopal, rcalc and ropal in iHAMOCC included as SourceMod
 - the modifications to the convection code included as SourceMod: zm_conv.F90: "zmst" modifications.
 - aerotab_table_dir = '/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
-- same namelist changes as N1850_f09_tn14_20190604
 
 File modifications to 
 - CAM6-Nor: zm_conv.F90, cd_core.F90, optinterpol.F90. 
