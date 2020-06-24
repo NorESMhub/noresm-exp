@@ -71,21 +71,37 @@
     url: /noresm2_mm_spin/noresm2_mm_spin3
   - title: N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
     url: /noresm2_mm_spin/noresm2_mm_spin4
+  - title: N1850OCBDRDDMS_f09_tn14_20190411
+    url: /noresm2_mm_spin/noresm2_mm_spin5
+  - title: N1850OCBDRDDMS_f09_tn14_20190417
+    url: /noresm2_mm_spin/noresm2_mm_spin6
+  - title: N1850OCBDRDDMS_f09_tn14_20190425
+    url: /noresm2_mm_spin/noresm2_mm_spin7
+  - title: N1850OCBDRDDMS_f09_tn14_20190506
+    url: /noresm2_mm_spin/noresm2_mm_spin8
+  - title: N1850OCBDRDDMS_f09_tn14_20190512
+    url: /noresm2_mm_spin/noresm2_mm_spin9
+  - title: N1850OCBDRDDMS_f09_tn14_20190515   
+    url: /noresm2_mm_spin/noresm2_mm_spin10
+  - title: N1850_f09_tn14_20190604
+    url: /noresm2_mm_spin/noresm2_mm_spin11
+  - title: N1850_f09_tn14_20190610
+    url: /noresm2_mm_spin/noresm2_mm_spin12
+  - title: N1850_f09_tn14_20190615
+    url: /noresm2_mm_spin/noresm2_mm_spin13
+  - title: N1850_f09_tn14_20190622
+    url: /noresm2_mm_spin/noresm2_mm_spin14
+  - title: N1850_f09_tn14_20190701
+    url: /noresm2_mm_spin/noresm2_mm_spin15
+  - title: N1850_f09_tn14_20190726
+    url: /noresm2_mm_spin/noresm2_mm_spin16
+  - title: N1850_f09_tn14_20190812
+    url: /noresm2_mm_spin/noresm2_mm_spin17
+  - title: N1850_f09_tn14_20190913
+    url: /noresm2_mm_spin/noresm2_mm_spin18
   not_numbered: true
   expand_sections: true
-#    file: N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
-#    file: N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
-#    file: N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
-#    file: N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
-#    file: N1850OCBDRDDMS_f09_tn14_20190411
-#    file: N1850OCBDRDDMS_f09_tn14_20190417
-#    file: N1850OCBDRDDMS_f09_tn14_20190425
-#    file: N1850OCBDRDDMS_f09_tn14_20190506
-#    file: N1850OCBDRDDMS_f09_tn14_20190512
-#   file: N1850OCBDRDDMS_f09_tn14_20190515
-#    file: N1850_f09_tn14_20190524
-#  not_numbered: true
-#  expand_sections: true
+
   
 # External link
 - title: Github repository
