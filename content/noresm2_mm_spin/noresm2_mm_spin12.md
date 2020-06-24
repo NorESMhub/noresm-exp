@@ -54,7 +54,7 @@ For all SourceMods and user name list specifics, see bottom of this page
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
-| Parent | N1850OCBDRDDMS_f09_tn14_20190604 |
+| Parent | N1850_f09_tn14_20190604 |
 | Run type  | branch |
 | Branch time from parent | 01-01-0481 |
 | Simulated years | 01-01-0481 - 31-12-0510 |   
