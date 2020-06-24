@@ -18,7 +18,7 @@ http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f09_tn14_20190604/
 # Summary of simulation
 
 New in this simulation: 
-- CESM2.0 updated to CESM2.1
+- CESM2.0.0 updated to CESM2.1.0
 
 Continued to use:
 - the correction of bug in the second-order in time term of the AM correction (cd_core.F90)
@@ -49,7 +49,7 @@ For all SourceMods and user name list specifics, see bottom of this page
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
 | Parent | N1850OCBDRDDMS_f09_tn14_20190515 |
-| Run type  | branch |
+| Run type  | hybrid |
 | Branch time from parent | 01-01-0451 |
 | Simulated years | 01-01-0451 - 31-12-0480 |   
 | Compset | 1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
