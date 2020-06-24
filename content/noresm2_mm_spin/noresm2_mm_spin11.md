@@ -25,6 +25,7 @@ New in this simulation:
   - Decreased gamma from 0.308 to 0.283
   - cldfrc2m_rhmini = 0.80D0 -> 0.90D0
   - micro_mg_dcs = 500.D-6 -> 5.5e-4
+- Compset name changed from N1850OCBDRDDMS to N1850, but the copset longname is the same
 
 
 Continued to use:
