@@ -303,7 +303,7 @@ reset_snow = .true.
 # Time series of spinup
 
 <figure>
-  <img src="images/spinupmm8.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <img src="images/spinupmm_8.png" alt="NorESM2-MM spinup simulations" style="width:120%">
   <figcaption><b>NorESM2-MM spinup simulation</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
   </figcaption>
