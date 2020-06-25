@@ -26,8 +26,8 @@ The fist simulation (of many) in the NorESM2-MM spin up tree. No SourceMods incl
     - zmconv_c0_lnd = 0.0300D0 -> 0.0200D0
     - zmconv_c0_ocn = 0.0300D0 -> 0.0200D0
     
- - Namelist changes compared to repository for CLM5:
-   - reset_snow = .true.
+- Namelist changes compared to repository for CLM5:
+    - reset_snow = .true.
   
 
 # Simulation specifics
