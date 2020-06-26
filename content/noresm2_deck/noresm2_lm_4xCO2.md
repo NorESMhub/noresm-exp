@@ -78,7 +78,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NCO2x4_f19_tn14_20190724/ |
 
 
-## NCO2x4_f19_tn14_20191129 (501 - 620, run on Nebula @ smhi)
+## NCO2x4_f19_tn14_20191129 (501 - 620)
 
 |  |  |  
 | --- | :--- | 
@@ -91,7 +91,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Git branch | featureCESM2.1.0-OsloDevelopment |
 | Git commit | 7c32613 |
 | Resolution | f19_tn14 |
-| Machine  |  Nebula  |
+| Machine  |  Nebula @ smhi |
 | Case folder |  /home/sm_adagj/noresm/cases-cmip6/NCO2x4_f19_tn14_20191129 |
 | Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NCO2x4_f19_tn14_20191129/ |
 
