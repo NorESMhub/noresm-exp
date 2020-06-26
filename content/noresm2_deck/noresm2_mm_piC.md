@@ -20,20 +20,56 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 ```
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/
 ```
+# Simulation specifics
 
-# Path to case directories
+## N1850frc2_f09_tn14_20191001 (1200 - 1299)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f09_tn14_20190913 |
+| Run type  | hybrid |
+| Branch time from parent | 1200-01-01 |
+| Simulated years | 01-01-1200 - 31-12-1299|   
+| Compset | 1850_CAM60%NORESM%FRC2_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 47aa2a4 |
+| Resolution | f09_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191001|
+| Diagnostics |http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850frc2_f09_tn14_20191001/ |
 
-on Fram @ sigma2
+## N1850frc2_f09_tn14_20191012 (1300 - 1450)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850frc2_f09_tn14_20191001 |
+| Run type  | branch |
+| Branch time from parent | 1300-01-01 |
+| Simulated years | 01-01-1300 - 31-12-1450|   
+| Compset | 1850_CAM60%NORESM%FRC2_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 8141ee9 |
+| Resolution | f09_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191012|
+| Diagnostics |http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850frc2_f09_tn14_20191012/ |
 
-- /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191001
-- /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191012
-- /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191113
+## N1850frc2_f09_tn14_20191113 (1450 - 1699)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850frc2_f09_tn14_20191001 |
+| Run type  | branch |
+| Branch time from parent | 1450-01-01 |
+| Simulated years | 01-01-1450 - 31-12-1699|   
+| Compset | 1850_CAM60%NORESM%FRC2_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 7a21a65  |
+| Resolution | f09_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191113|
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850frc2_f09_tn14_20191113/ |
 
-# Path to diagnostics
-
-http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850frc2_f09_tn14_20191001/
-http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850frc2_f09_tn14_20191012/
-http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850frc2_f09_tn14_20191113/
 
 # Time series of spinup
 
