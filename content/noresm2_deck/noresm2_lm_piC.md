@@ -17,7 +17,7 @@ The NorESM2-LM pre-industial experiment, piControl, covers the years 1600 - 1999
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 
 ```
- /projects/NS9034K/CMIP6/CMIP/NCC/
+ /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/piControl/r1i1p1f1/
 ```
 
 # Path to case directories
