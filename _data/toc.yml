@@ -57,7 +57,7 @@
   - title: N1850_f19_tn14_11062019
     url: /noresm2_lm_spin/noresm2_lm_spin13
   not_numbered: true
-  expand_sections: true
+  expand_sections: false
 
 # NorESM2-MM spin up experiments
 - title: NorESM2-MM spin up experiments
@@ -100,7 +100,7 @@
   - title: N1850_f09_tn14_20190913
     url: /noresm2_mm_spin/noresm2_mm_spin18
   not_numbered: true
-  expand_sections: true
+  expand_sections: false
 
   
 # External link
