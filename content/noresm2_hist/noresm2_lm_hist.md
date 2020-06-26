@@ -24,15 +24,15 @@ Fully coupled historical simulations start with **NHIST_**
 
 In addition, all these simulations have two equivalent simulations which are run with pre-industrial aerosol emissions (iaer) and with pre-industrial near-term climate forcers (pintcf):
 
-**Ensemble member 1: **
+**Ensemble member 1:**
 - NHISTpiaer_f19_tn14_20190721 (1850 - 1949)
 - NHISTpintcf_f19_tn14_20190720 (1950 - 2014)
   
-**Ensemble member 2: **
+**Ensemble member 2:**
 - NHISTpiaer_02_f19_tn14_20190909 (1850 - 1949)
 - NHISTpintcf_02_f19_tn14_20190909 (1950 - 2014)
 
-**Ensemble member 3: **
+**Ensemble member 3:**
 - NHISTpiaer_03_f19_tn14_20190909 (1850 - 1949)
 - NHISTpintcf_03_f19_tn14_20190909 (1950 - 2014)
  
