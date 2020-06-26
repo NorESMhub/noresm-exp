@@ -26,6 +26,16 @@
   url: /intro
   not_numbered: true
   
+# NorESM2-MM DECK experiments
+- title: NorESM2-MM DECK
+  url: /noresm2_deck/noresm2_mm_deck
+  not_numbered: true
+  
+# NorESM2-LM DESCK experiments
+- title: NorESM2-LM DECK
+  url: /noresm2_deck/noresm2_lm_deck
+  not_numbered: true
+  
 # NorESM2-MM historical experiments
 - title: NorESM2-MM historical 
   url: /noresm2_hist/noresm2_mm_hist
