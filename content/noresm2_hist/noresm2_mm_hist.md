@@ -10,17 +10,17 @@ All raw data from NorESM2-MM historical simulations are stored on NIRD @ sigma2 
 
 Fully coupled historical simulations start with NHIST_
 
-- Ensemble member 1: 
-  - NHISTfrc2_f09_tn14_20191001 (1850 - 1949) 
-  - NHISTfrc2_f09_tn14_20191025 (1950-2014)
+**Ensemble member 1:** 
+- NHISTfrc2_f09_tn14_20191001 (1850 - 1949) 
+- NHISTfrc2_f09_tn14_20191025 (1950-2014)
   
-- Ensemble member 2: 
-  - NHISTfrc2_02_f09_tn14_20200427 (1850 - 1949)
-  - NHISTfrc2_02_f09_tn14_20200519 (1950-2014)
+**Ensemble member 2:** 
+- NHISTfrc2_02_f09_tn14_20200427 (1850 - 1949)
+- NHISTfrc2_02_f09_tn14_20200519 (1950-2014)
   
-- Ensemble member 3: 
-  - NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949) 
-  - years 1950-2014 not completed,
+**Ensemble member 3:**
+- NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949) 
+- years 1950-2014 not completed,
 
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 
@@ -32,9 +32,11 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with NFHIST_
 
-The AMIP simulation which is part of DECK:
+The AMIP simulation which is part of DECK uses observed SSTs :
 
-- NFHISTfrc2_f09_mg17_20191107 (1975 - 2012)
+- **NFHISTfrc2_f09_mg17_20191107 (1975 - 2012)**
+
+Please note,  this simulations does not have the NorESM2 derived DMS emissions, but uses Lana.
 
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 

@@ -18,23 +18,23 @@ Fully coupled historical simulations start with **NHIST_**
 - **NHIST_02_f19_tn14_20190801 (1850 - 1949)**
 - **NHIST_02_f19_tn14_20190813 (1950 - 2014)**
 
-**Ensemble member 3: **
+**Ensemble member 3:**
 - **NHIST_03_f19_tn14_20190801 (1850 - 1949)**
 - **NHIST_03_f19_tn14_20190813 (1950 - 2014)**
 
 In addition, all these simulations have two equivalent simulations which are run with pre-industrial aerosol emissions (iaer) and with pre-industrial near-term climate forcers (pintcf):
 
 **Ensemble member 1:**
-- NHISTpiaer_f19_tn14_20190721 (1850 - 1949)
-- NHISTpintcf_f19_tn14_20190720 (1950 - 2014)
+- NHISTpiaer_f19_tn14_20190721 (1850 - 2014)
+- NHISTpintcf_f19_tn14_20190720 (1850 - 2014)
   
 **Ensemble member 2:**
-- NHISTpiaer_02_f19_tn14_20190909 (1850 - 1949)
-- NHISTpintcf_02_f19_tn14_20190909 (1950 - 2014)
+- NHISTpiaer_02_f19_tn14_20190909 (1850 - 2014)
+- NHISTpintcf_02_f19_tn14_20190909 (1850 - 2014)
 
 **Ensemble member 3:**
-- NHISTpiaer_03_f19_tn14_20190909 (1850 - 1949)
-- NHISTpintcf_03_f19_tn14_20190909 (1950 - 2014)
+- NHISTpiaer_03_f19_tn14_20190909 (1850 - 2014)
+- NHISTpintcf_03_f19_tn14_20190909 (1850 - 2014)
  
 
 The cmorized data can be accessed on NIRD @ sigma2 under: 
