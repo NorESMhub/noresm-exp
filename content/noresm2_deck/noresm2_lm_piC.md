@@ -10,7 +10,7 @@ All raw data from NorESM2-LM historical simulations are stored on NIRD @ sigma2 
 
 The NorESM2-LM pre-industial experiment, piControl, covers the years 1600 - 1999
 
-- N1850_f19_tn14_20190621 (1596 - 1800)
+- N1850_f19_tn14_20190621 (1600 - 1800)
 - N1850_f19_tn14_20190722 (1801 - 1900)
 - N1850_f19_tn14_20190802 (1901 - 1999)
 
@@ -22,7 +22,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 # Simulation specifics
 
-## N1850_f19_tn14_20190621 (1596 - 1800)
+## N1850_f19_tn14_20190621 (1600 - 1800)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
