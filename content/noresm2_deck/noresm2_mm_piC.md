@@ -7,7 +7,6 @@ All raw data from NorESM2-MM historical simulations are stored on NIRD @ sigma2 
 /projects/NS9560K/noresm/cases/
 ```
 
-
 The NorESM2-MM pre-industial experiment, piControl, covers the years 1200 - 1699
 
 - N1850frc2_f09_tn14_20191001 (1200 - 1299)
@@ -19,7 +18,7 @@ Please note that the year 1450 is calculated twice, in both N1850frc2_f09_tn14_2
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 
 ```
- /projects/NS9034K/CMIP6/CMIP/NCC/
+ /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/
 ```
 
 # Path to case directories
