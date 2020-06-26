@@ -32,6 +32,13 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with NFHIST_
 
+The AMIP simulation which is part of DECK:
+
+- NFHISTnorpddmsbc_f19_mg17_20191025 (1975- 2014)
+
+In addition, there exist atmosphere-only simulations with NorESM-derived SSTs (part of AerChemMIP and RFMIP).  They all cover the whole period 1850-2014.  However, these only exist in 2x2.
+
+
 - NFHISTnorbc_f19_20191107 (1850 - 2014)
   
   
@@ -68,7 +75,8 @@ on Fram @ sigma2
   - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190801 (1850 - 1949) 
   - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190813 (1950 - 2014)
   
-- AMIP:
+- AMIPs:
+  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)
   - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorbc_f19_20191107 (1850 - 2014)
   - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorbc_f19_20190730 (1850 - 2014)
 
