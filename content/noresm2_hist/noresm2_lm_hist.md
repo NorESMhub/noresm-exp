@@ -13,11 +13,13 @@ Fully coupled historical simulations start with **NHIST_**
 - Ensemble member 1: 
   - **NHIST_f19_tn14_20190625 (1850 - 1949)**
   - **NHIST_f19_tn14_20190710 (1950 - 2014)**
-  
+
+
 - Ensemble member 2: 
   - **NHIST_02_f19_tn14_20190801 (1850 - 1949)**
   - **NHIST_02_f19_tn14_20190813 (1950 - 2014)**
-  
+
+
 - Ensemble member 3: 
   - **NHIST_03_f19_tn14_20190801 (1850 - 1949)**
   - **NHIST_03_f19_tn14_20190813 (1950 - 2014)**
@@ -28,10 +30,12 @@ In addition, all these simulations have two equivalent simulations which are run
   - NHISTpiaer_f19_tn14_20190721 (1850 - 1949)
   - NHISTpintcf_f19_tn14_20190720 (1950 - 2014)
   
+  
 - Ensemble member 2: 
   - NHISTpiaer_02_f19_tn14_20190909 (1850 - 1949)
   - NHISTpintcf_02_f19_tn14_20190909 (1950 - 2014)
-  
+
+
 - Ensemble member 3: 
   - NHISTpiaer_03_f19_tn14_20190909 (1850 - 1949)
   - NHISTpintcf_03_f19_tn14_20190909 (1950 - 2014)
@@ -59,7 +63,7 @@ In addition, there exist atmosphere-only simulations with NorESM-derived SSTs(pa
 
 in addition to 60 or more perturbed simulations
  
- Please note that there exsists an AMIP simulation using the standard CESM flux description between ocean and atmosphere
+ Please note that there exsist AMIP simulations using the standard CESM flux description between ocean and atmosphere
 (flux=0), instead of the COARE flux description (flux=1) which is used in the fully-coupled NorESM2 simulations:
 
   - **NFHISTnorbc_f19_20190730 (1850 - 2014)**  
@@ -83,22 +87,25 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 on Fram @ sigma2
 
 - Fully coupled, ensemble member 1: 
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_f19_tn14_20190625 (1850 - 1949) 
-  - /cluster/projects/nn2345k/olivie/cases-cmip6/NHIST_f19_tn14_20190710 (1950 - 2014)
+  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_f19_tn14_20190625
+  - /cluster/projects/nn2345k/olivie/cases-cmip6/NHIST_f19_tn14_20190710
+
 
 - Fully coupled, ensemble member 2: 
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_02_f19_tn14_20190801 (1850 - 1949)
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_02_f19_tn14_20190813 (1950 - 2014)
+  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_02_f19_tn14_20190801
+  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_02_f19_tn14_20190813
+  
   
 - Fully coupled, ensemble member 3: 
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190801 (1850 - 1949) 
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190813 (1950 - 2014)
+  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190801
+  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190813
+  
   
 - AMIPs:
-  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)
-  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorbc_f19_20191107 (1850 - 2014)
-  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorbc_f19_20190730 (1850 - 2014)
-
+  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20191025
+  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorbc_f19_20191107
+  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorbc_f19_20190730
+  
 # Path to diagnostics
 
 http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_f19_tn14_20190710/
