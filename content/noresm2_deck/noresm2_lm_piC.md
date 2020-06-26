@@ -20,19 +20,57 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/piControl/r1i1p1f1/
 ```
 
-# Path to case directories
+# Simulation specifics
 
-on Fram @ sigma2
+## N1850_f19_tn14_20190621 (1596 - 1800)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f19_tn14_11062019 |
+| Run type  | branch |
+| Branch time from parent | 1596-01-01 |
+| Simulated years | 01-01-1596 - 31-12-1800 |   
+| Compset | 1850_CAM60%NORESM_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 6a0b992 |
+| Resolution | f19_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases6a0b992/N1850_f19_tn14_20190621|
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f19_tn14_20190621/|
 
-- /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases6a0b992/N1850_f19_tn14_20190621
-- /cluster/projects/nn2345k/olivie/cases-cmip6/N1850_f19_tn14_20190722
-- /cluster/projects/nn2345k/olivie/cases-cmip6/N1850_f19_tn14_20190802
+## N1850_f19_tn14_20190722 (1801 - 1900)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f19_tn14_20190621 |
+| Run type  | branch |
+| Branch time from parent | 1801-01-01 |
+| Simulated years | 01-01-1801 - 31-12-1900 |   
+| Compset | 1850_CAM60%NORESM_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | e2c861c |
+| Resolution | f19_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/N1850_f19_tn14_20190722 |
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f19_tn14_20190722/|
 
-# Path to diagnostics
+## N1850_f19_tn14_20190802 (1901 - 1999)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f19_tn14_20190722 |
+| Run type  | branch |
+| Branch time from parent | 1901-01-01 |
+| Simulated years | 01-01-1901 - 31-12-1999 |   
+| Compset | 1850_CAM60%NORESM_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | e2c861c |
+| Resolution | f19_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/N1850_f19_tn14_20190802 |
+| Diagnostics |http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f19_tn14_20190802/ |
 
-http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f19_tn14_20190621/
-http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f19_tn14_20190722/
-http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f19_tn14_20190802/
+
 
 # Time series of spinup
 
