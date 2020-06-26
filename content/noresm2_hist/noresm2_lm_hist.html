@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_hist/noresm2_lm_hist.html",
   "headline": "Data storage",
-  "datePublished": "2020-06-26T11:02:16+00:00",
-  "dateModified": "2020-06-26T11:02:16+00:00",
+  "datePublished": "2020-06-26T11:44:13+00:00",
+  "dateModified": "2020-06-26T11:44:13+00:00",
   "description": "# Data storageAll data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from NorESM2-MM historical simulatio...",
   "author": {
     "@type": "Person",
@@ -442,6 +442,68 @@ initFunction(initPrint)
         >
           
           Home
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/noresm2_hist/noresm2_mm_hist">
+        <a class="c-sidebar__entry"
+          href="/noresm-exp/noresm2_hist/noresm2_mm_hist.html"
+        >
+          
+          NorESM2-MM historical experiments
+        </a>
+      </li>
+
+      
+      
+
+      
+
+      
+      
+
+      
+
+      
+    
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter" data-url="/noresm2_hist/noresm2_lm_hist">
+        <a class="c-sidebar__entry"
+          href="/noresm-exp/noresm2_hist/noresm2_lm_hist.html"
+        >
+          
+          NorESM2-LM historical experiments
         </a>
       </li>
 
@@ -1243,25 +1305,48 @@ initFunction(initPrint)
 
 <h2 id="fully-coupled-simulations">Fully coupled simulations:</h2>
 
-<p>Fully coupled historical simulations start with NHIST_</p>
+<p>Fully coupled historical simulations start with <strong>NHIST_</strong></p>
 
 <ul>
   <li>Ensemble member 1:
     <ul>
-      <li>NHIST_f19_tn14_20190625 (1850 - 1949)</li>
-      <li>NHIST_f19_tn14_20190710 (1950 - 2014)</li>
+      <li><strong>NHIST_f19_tn14_20190625 (1850 - 1949)</strong></li>
+      <li><strong>NHIST_f19_tn14_20190710 (1950 - 2014)</strong></li>
     </ul>
   </li>
   <li>Ensemble member 2:
     <ul>
-      <li>NHIST_02_f19_tn14_20190801 (1850 - 1949)</li>
-      <li>NHIST_02_f19_tn14_20190813 (1950 - 2014)</li>
+      <li><strong>NHIST_02_f19_tn14_20190801 (1850 - 1949)</strong></li>
+      <li><strong>NHIST_02_f19_tn14_20190813 (1950 - 2014)</strong></li>
     </ul>
   </li>
   <li>Ensemble member 3:
     <ul>
-      <li>NHIST_03_f19_tn14_20190801 (1850 - 1949)</li>
-      <li>NHIST_03_f19_tn14_20190813 (1950 - 2014)</li>
+      <li><strong>NHIST_03_f19_tn14_20190801 (1850 - 1949)</strong></li>
+      <li><strong>NHIST_03_f19_tn14_20190813 (1950 - 2014)</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<p>In addition, all these simulations have two equivalent simulations which are run with pre-industrial aerosol emissions (iaer) and with pre-industrial near-term climate forcers (pintcf):</p>
+
+<ul>
+  <li>Ensemble member 1:
+    <ul>
+      <li>NHISTpiaer_f19_tn14_20190721 (1850 - 1949)</li>
+      <li>NHISTpintcf_f19_tn14_20190720 (1950 - 2014)</li>
+    </ul>
+  </li>
+  <li>Ensemble member 2:
+    <ul>
+      <li>NHISTpiaer_02_f19_tn14_20190909 (1850 - 1949)</li>
+      <li>NHISTpintcf_02_f19_tn14_20190909 (1950 - 2014)</li>
+    </ul>
+  </li>
+  <li>Ensemble member 3:
+    <ul>
+      <li>NHISTpiaer_03_f19_tn14_20190909 (1850 - 1949)</li>
+      <li>NHISTpintcf_03_f19_tn14_20190909 (1950 - 2014)</li>
     </ul>
   </li>
 </ul>
@@ -1273,28 +1358,34 @@ initFunction(initPrint)
 
 <h2 id="amip">AMIP:</h2>
 
-<p>Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with NFHIST_</p>
+<p>Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with <strong>NFHIST_</strong></p>
 
-<p>The AMIP simulation which is part of DECK:</p>
-
-<ul>
-  <li>NFHISTnorpddmsbc_f19_mg17_20191025 (1975- 2014)</li>
-</ul>
-
-<p>In addition, there exist atmosphere-only simulations with NorESM-derived SSTs (part of AerChemMIP and RFMIP).  They all cover the whole period 1850-2014.  However, these only exist in 2x2.</p>
+<p>The AMIP simulation which is part of DECK uses observed SSTs:</p>
 
 <ul>
-  <li>NFHISTnorbc_f19_20191107 (1850 - 2014)</li>
+  <li><strong>NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)</strong></li>
 </ul>
+
+<p>In addition, there exist atmosphere-only simulations with NorESM-derived SSTs(part of AerChemMIP and RFMIP). Please see https://noresm-docs.readthedocs.io/en/noresm2/configurations/amips.html#noresm2-derived-boundary-conditions-for-amip-style-simulations for a description of NorESM2 derived boundary conditions.   They all cover the whole period 1850-2014.  However, these simulations only exist for NorESM2-LM:</p>
+
+<ul>
+  <li><strong>NFHISTnorbc_f19_20191107 (1850 - 2014)</strong></li>
+  <li>NFHISTnorbc_piaer_f19_20191107 (like NFHISTnorbc_f19_20191107 but with pre-industrial aerosol emissions, 1850 - 2014)</li>
+  <li>NFHISTnorbc_pintcf_f19_20191107 (like NFHISTnorbc_f19_20191107 but with pre-industrial near-term climate forcers, 1850 - 2014)</li>
+</ul>
+
+<p>in addition to 60 or more perturbed simulations</p>
 
 <p>Please note that there exsists an AMIP simulation using the standard CESM flux description between ocean and atmosphere
 (flux=0), instead of the COARE flux description (flux=1) which is used in the fully-coupled NorESM2 simulations:</p>
 
 <ul>
-  <li>NFHISTnorbc_f19_20190730 (1850 - 2014),</li>
+  <li><strong>NFHISTnorbc_f19_20190730 (1850 - 2014)</strong></li>
+  <li>NFHISTnorbc_piaer_f19_20190730 (like NFHISTnorbc_f19_20190730 but with pre-industrial aerosol emissions, 1850 - 2014)</li>
+  <li>NFHISTnorbc_pintcf_f19_20190730 (like NFHISTnorbc_f19_20190730 but with pre-industrial near-term climate forcers, 1850 - 2014)</li>
 </ul>
 
-<p>this simulation was run with FLUX SCHEME=0. and d ALB COSZ AVG=.false. A comparison of AMIP simulations with and without these settings can be found here:</p>
+<p>these simulations were run with FLUX SCHEME=0. and d ALB COSZ AVG=.false. A comparison of AMIP simulations with and without these settings can be found here:</p>
 
 <p>http://ns2345k.web.sigma2.no/people/olivie/cmip6/cpl-fsst/cplfsstdiff_impact.v1.0.pdf</p>
 
@@ -1310,7 +1401,7 @@ initFunction(initPrint)
 <ul>
   <li>Fully coupled, ensemble member 1:
     <ul>
-      <li>cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_f19_tn14_20190625 (1850 - 1949)</li>
+      <li>/cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_f19_tn14_20190625 (1850 - 1949)</li>
       <li>/cluster/projects/nn2345k/olivie/cases-cmip6/NHIST_f19_tn14_20190710 (1950 - 2014)</li>
     </ul>
   </li>
@@ -1337,7 +1428,10 @@ initFunction(initPrint)
 
 <h1 id="path-to-diagnostics">Path to diagnostics</h1>
 
-<p>http://ns2345k.web.sigma2.no/noresm_diagnostics/NHISTfrc2_f09_tn14_20191025/</p>
+<p>http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_f19_tn14_20190710/
+http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_02_f19_tn14_20190813/
+http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_03_f19_tn14_20190813/
+http://ns2345k.web.sigma2.no/noresm_diagnostics/NFHISTnorpddmsbc_f19_mg17_20191025/</p>
 
 <h1 id="time-series-of-spinup">Time series of spinup</h1>
 
