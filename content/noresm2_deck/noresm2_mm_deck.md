@@ -7,7 +7,7 @@
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :--- |   :--- | 
-|N1850frc2_f09_tn14_20191001| 1200-01-01  | 1200 - 1299  |
+|N1850frc2_f09_tn14_20191001| - | 1200 - 1299  |
 |N1850frc2_f09_tn14_20191012| 1300-01-01  | 1300 - 1450  |
 |N1850frc2_f09_tn14_20191113| 1450-01-01  | 1450 - 1699  |
 
@@ -17,7 +17,7 @@ Please note that the year 1450 is calculated twice, in both N1850frc2_f09_tn14_2
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :--- |   :--- | 
-|NCO2x4frc2_f09_tn14_20191008|  1200-01-01  | 1 - 120 |
+|NCO2x4frc2_f09_tn14_20191008|  -  | 1 - 120 |
 |NCO2x4frc2_f09_tn14_20191028|  0121-01-01  | 121 - 150  |
 
 
@@ -25,7 +25,7 @@ Please note that the year 1450 is calculated twice, in both N1850frc2_f09_tn14_2
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :--- |   :--- | 
-|N1PCTfrc2_f09_tn14_20191008|  1200-01-01  | 1 - 120 |
+|N1PCTfrc2_f09_tn14_20191008|  -  | 1 - 120 |
 |N1PCTfrc2_f09_tn14_20191028|  0121-01-01  | 121 - 150  |
 
 
