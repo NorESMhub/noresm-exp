@@ -78,7 +78,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NCO2x4_f19_tn14_20190724/ |
 
 
-## NCO2x4_f19_tn14_20191129 (501 - 620, run on Nebula @ smhi)
+## NCO2x4_f19_tn14_20191129 (501 - 620)
 
 |  |  |  
 | --- | :--- | 
@@ -91,7 +91,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Git branch | featureCESM2.1.0-OsloDevelopment |
 | Git commit | 7c32613 |
 | Resolution | f19_tn14 |
-| Machine  |  Nebula  |
+| Machine  |  Nebula @ smhi |
 | Case folder |  /home/sm_adagj/noresm/cases-cmip6/NCO2x4_f19_tn14_20191129 |
 | Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NCO2x4_f19_tn14_20191129/ |
 
@@ -100,14 +100,14 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 <figure>
   <img src="images/noresm2lm_4xCO2.png" alt="NorESM2-LM abrupt-4xCO2 simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
+  <figcaption><b>NorESM2-LM abrupt-4xCO2 simulations</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
   </figcaption>
 </figure>
 
 <figure>
   <img src="images/noresm2lm_emis_4xCO2.png" alt="NorESM2-LM abrupt-4xCO2 simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
+  <figcaption><b>NorESM2-LM abrupt-4xCO2 simulations</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
   </figcaption>
 </figure>
