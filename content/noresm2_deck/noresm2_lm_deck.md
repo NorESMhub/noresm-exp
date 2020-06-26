@@ -3,7 +3,7 @@
 # A quick overview
 
 
-##piControl
+## piControl
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :--- |   :--- | 
@@ -12,7 +12,7 @@
 |N1850_f19_tn14_20190802|  1900-01-01  | 1901 - 1999  |
 
 
-#abrupt-4xCO2
+## abrupt-4xCO2
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :--- |   :--- | 
@@ -22,7 +22,7 @@
 |NCO2x4_f19_tn14_20191129|  0501-01-01  | 501 - 620  |
 
 
-#1pctCO2
+## 1pctCO2
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :--- |   :--- | 
@@ -30,5 +30,9 @@
 |N1PCT_f19_tn14_20190712|  0121-01-01  | 121 - 165  |
 
 
-# AMIP
-for AMIP please see NorESM2-LM historical
+## AMIP
+| Case name |  branch time (y-m-d) | Simulation time (y) |   
+| :--- | :--- |   :--- | 
+|NFHISTnorpddmsbc_f19_mg17_20191025|  -  | 1975 - 2014 |
+
+for AMIP details, please see NorESM2-LM historical
