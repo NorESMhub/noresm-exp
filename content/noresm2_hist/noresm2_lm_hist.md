@@ -18,7 +18,7 @@ Fully coupled historical simulations start with **NHIST_**
 - **NHIST_02_f19_tn14_20190801 (1850 - 1949)**
 - **NHIST_02_f19_tn14_20190813 (1950 - 2014)**
 
-**Ensemble member 3: **
+**Ensemble member 3:**
 - **NHIST_03_f19_tn14_20190801 (1850 - 1949)**
 - **NHIST_03_f19_tn14_20190813 (1950 - 2014)**
 
