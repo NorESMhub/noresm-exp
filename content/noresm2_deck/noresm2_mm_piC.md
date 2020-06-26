@@ -8,7 +8,7 @@ All raw data from NorESM2-MM historical simulations are stored on NIRD @ sigma2 
 ```
 
 
-The NorESM2-LM pre-industial experiment, piControl, covers the years 1200 - 1699
+The NorESM2-MM pre-industial experiment, piControl, covers the years 1200 - 1699
 
 - N1850frc2_f09_tn14_20191001 (1200 - 1299)
 - N1850frc2_f09_tn14_20191012 (1300 - 1450)
