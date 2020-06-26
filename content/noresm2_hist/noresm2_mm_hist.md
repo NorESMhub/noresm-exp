@@ -27,7 +27,22 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 ```
 /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/historical/
 ```
-  
+
+## AMIP:
+
+Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with NFHIST_
+
+The AMIP simulation which is part of DECK:
+
+- NFHISTfrc2_f09_mg17_20191107 (1975 - 2012)
+
+The cmorized data can be accessed on NIRD @ sigma2 under: 
+
+```
+ /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/amip/
+```
+
+
 # Path to case directory
 
 on Fram @ sigma2
