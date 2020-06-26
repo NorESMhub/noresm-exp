@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Data storage</title>
-  <meta name="description" content="# Data storageThe data is stored on NIRD @ sigma2 in /projects/NS2345K/noresm/cases/## Fully coupled:Fully coupled historcal simulations start with NHIST_- E...">
+  <meta name="description" content="# Data storageAll data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from NorESM2-MM historical simulatio...">
 
   <link rel="canonical" href="https://noresmhub.github.io//noresm-exp/content/noresm2_hist/noresm2_mm_hist.html">
   <link rel="alternate" type="application/rss+xml" title="NorESM Experiments" href="https://noresmhub.github.io//noresm-exp/feed.xml">
@@ -14,7 +14,7 @@
   <meta property="og:url"         content="https://noresmhub.github.io//noresm-exp/content/noresm2_hist/noresm2_mm_hist.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Data storage" />
-<meta property="og:description" content="# Data storageThe data is stored on NIRD @ sigma2 in /projects/NS2345K/noresm/cases/## Fully coupled:Fully coupled historcal simulations start with NHIST_- E..." />
+<meta property="og:description" content="# Data storageAll data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from NorESM2-MM historical simulatio..." />
 <meta property="og:image"       content="https://noresmhub.github.io//noresm-exp/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -26,9 +26,9 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_hist/noresm2_mm_hist.html",
   "headline": "Data storage",
-  "datePublished": "2020-06-26T08:08:10+00:00",
-  "dateModified": "2020-06-26T08:08:10+00:00",
-  "description": "# Data storageThe data is stored on NIRD @ sigma2 in /projects/NS2345K/noresm/cases/## Fully coupled:Fully coupled historcal simulations start with NHIST_- E...",
+  "datePublished": "2020-06-26T09:25:54+00:00",
+  "dateModified": "2020-06-26T09:25:54+00:00",
+  "description": "# Data storageAll data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from NorESM2-MM historical simulatio...",
   "author": {
     "@type": "Person",
     "name": "Ada Gjermundsen"
@@ -1234,44 +1234,108 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              
-<h1 id="data-storage">Data storage</h1>
-<p>The data is stored on NIRD @ sigma2 in /projects/NS2345K/noresm/cases/</p>
+              <h1 id="data-storage">Data storage</h1>
+<p>All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/</p>
 
-<h2 id="fully-coupled">Fully coupled:</h2>
+<p>All raw data from NorESM2-MM historical simulations are stored on NIRD @ sigma2 under:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/projects/NS9560K/noresm/cases/
+</code></pre></div></div>
+
+<h2 id="fully-coupled-simulations">Fully coupled simulations:</h2>
 
 <p>Fully coupled historcal simulations start with NHIST_</p>
 
 <ul>
-  <li>Ensemble member 1: NHISTfrc2_f09_tn14_20191001 (1850 - 1949) and NHISTfrc2_f09_tn14_20191025 (1950-2014)</li>
-  <li>Ensemble member 2: NHISTfrc2_02_f09_tn14_20200427 (1850 - 1949) and NHISTfrc2_02_f09_tn14_20200519 (1950-2014)</li>
-  <li>Ensemble member 3: NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949) -&gt; years 1950-2014 not completed,</li>
+  <li>Ensemble member 1:
+    <ul>
+      <li>NHISTfrc2_f09_tn14_20191001 (1850 - 1949)</li>
+      <li>NHISTfrc2_f09_tn14_20191025 (1950-2014)</li>
+    </ul>
+  </li>
+  <li>Ensemble member 2:
+    <ul>
+      <li>NHISTfrc2_02_f09_tn14_20200427 (1850 - 1949)</li>
+      <li>NHISTfrc2_02_f09_tn14_20200519 (1950-2014)</li>
+    </ul>
+  </li>
+  <li>Ensemble member 3:
+    <ul>
+      <li>NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949)</li>
+      <li>years 1950-2014 not completed,</li>
+    </ul>
+  </li>
 </ul>
 
-<p>The cmorized data can be accessed on NIRD @ sigma2 under: ::
-  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/historical/</p>
+<p>The cmorized data can be accessed on NIRD @ sigma2 under:</p>
 
-<h2 id="amip">AMIP</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/historical/
+</code></pre></div></div>
 
-<p>AMIP historical simulations start with NFHIST_</p>
+<h2 id="amip">AMIP:</h2>
+
+<p>Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with NFHIST_</p>
 
 <ul>
-  <li>Ensemble member 1: NFHISTfrc2_f09_mg17_20191106 (1850 - 1949) and NFHISTfrc2_f09_mg17_20191107 (1950-2014)</li>
+  <li>Ensemble member 1:
+    <ul>
+      <li>NFHISTfrc2_f09_mg17_20191107 (1975 - 2013)</li>
+    </ul>
+  </li>
 </ul>
 
-<p>The cmorized data can be accessed on NIRD @ sigma2 under: ::</p>
+<p>The cmorized data can be accessed on NIRD @ sigma2 under:</p>
 
-<p>/projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/amip/</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/amip/
+</code></pre></div></div>
 
 <h1 id="path-to-case-directory">Path to case directory</h1>
 
 <p>on Fram @ sigma2</p>
 
-<p>/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850_f09_tn14_20190604/</p>
+<ul>
+  <li>Fully coupled, ensemble member 1:
+    <ul>
+      <li>/cluster/projects/nn2345k/matsbn/NorESM/cases/NHISTfrc2_f09_tn14_20191001 (1850 - 1949)</li>
+      <li>/cluster/projects/nn2345k/matsbn/NorESM/cases/NHISTfrc2_f09_tn14_20191025 (1950-2014)</li>
+    </ul>
+  </li>
+  <li>Fully coupled, ensemble member 2:
+    <ul>
+      <li>/cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_02_f09_tn14_20200427 (1850 - 1949)</li>
+      <li>/cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_02_f09_tn14_20200519 (1950-2014)</li>
+    </ul>
+  </li>
+  <li>Fully coupled, ensemble member 3:
+    <ul>
+      <li>/cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949)</li>
+    </ul>
+  </li>
+  <li>AMIP:
+    <ul>
+      <li>/cluster/projects/nn2345k/matsbn/NorESM/cases/NFHISTfrc2_f09_mg17_20191107 (1975-2013)</li>
+    </ul>
+  </li>
+</ul>
 
 <h1 id="path-to-diagnostics">Path to diagnostics</h1>
 
-<p>http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850_f09_tn14_20190604/</p>
+<p>http://ns2345k.web.sigma2.no/noresm_diagnostics/NHISTfrc2_f09_tn14_20191025/</p>
+
+<h1 id="time-series-of-spinup">Time series of spinup</h1>
+
+<figure>
+  <img src="images/noresm2mm_hist1.png" alt="NorESM2-MM spinup simulations" style="width:120%" />
+  <figcaption><b>NorESM2-MM spinup simulation</b><br />
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="images/noresm2mm_hist_emis1.png" alt="NorESM2-MM spinup simulations" style="width:120%" />
+  <figcaption><b>NorESM2-MM spinup simulation</b><br />
+    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+  </figcaption>
+</figure>
 
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
