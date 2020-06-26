@@ -31,11 +31,11 @@
   url: /noresm2_deck/noresm2_mm_deck
   sections:
   - title: piControl
-    url: /noresm2_mm_spin/noresm2_mm_piC
+    url: /noresm2_deck/noresm2_mm_piC
   - title: abrupt-4xCO2
-    url: /noresm2_mm_spin/noresm2_mm_4xCO2
+    url: /noresm2_deck/noresm2_mm_4xCO2
   - title: 1ptcCO2
-    url: /noresm2_mm_spin/noresm2_mm_1pctCO2
+    url: /noresm2_deck/noresm2_mm_1pctCO2
   not_numbered: true
   expand_sections: false
   
@@ -44,11 +44,11 @@
   url: /noresm2_deck/noresm2_lm_deck
   sections:
   - title: piControl
-    url: /noresm2_lm_spin/noresm2_lm_piC
+    url: /noresm2_deck/noresm2_lm_piC
   - title: abrupt-4xCO2
-    url: /noresm2_lm_spin/noresm2_lm_4xCO2
+    url: /noresm2_deck/noresm2_lm_4xCO2
   - title: 1ptcCO2
-    url: /noresm2_lm_spin/noresm2_lm_1pctCO2
+    url: /noresm2_deck/noresm2_lm_1pctCO2
   not_numbered: true
   expand_sections: false
   
