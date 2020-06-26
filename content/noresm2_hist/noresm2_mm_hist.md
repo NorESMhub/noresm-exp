@@ -8,7 +8,7 @@ All raw data from NorESM2-MM historical simulations are stored on NIRD @ sigma2 
 
 ## Fully coupled simulations:
 
-Fully coupled historcal simulations start with NHIST_
+Fully coupled historical simulations start with NHIST_
 
 - Ensemble member 1: 
   - NHISTfrc2_f09_tn14_20191001 (1850 - 1949) 
@@ -28,19 +28,6 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/historical/
 ```
   
-## AMIP:
-
-Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with NFHIST_
-
-- Ensemble member 1: 
-  - NFHISTfrc2_f09_mg17_20191107 (1975 - 2013)
-
-The cmorized data can be accessed on NIRD @ sigma2 under: 
-
-```
- /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/amip/
-```
-
 # Path to case directory
 
 on Fram @ sigma2
@@ -56,8 +43,6 @@ on Fram @ sigma2
 - Fully coupled, ensemble member 3: 
   - /cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949) 
   
-- AMIP:
-  - /cluster/projects/nn2345k/matsbn/NorESM/cases/NFHISTfrc2_f09_mg17_20191107 (1975-2013)
 
 # Path to diagnostics
 
