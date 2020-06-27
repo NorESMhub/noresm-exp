@@ -15,7 +15,7 @@ The NorESM2-MM abrupt quadrupling of the atmsopheric CO2 consentration, abrupt-4
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 
 ```
- /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/
+ /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/abrupt-4xCO2/r1i1p1f1/
 ```
 
 # Simulation specifics

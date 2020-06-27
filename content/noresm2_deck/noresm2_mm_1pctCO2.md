@@ -15,7 +15,7 @@ The NorESM2-MM 1 percent per year increase in the atmospheric CO2 concentration,
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 
 ```
- /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/
+ /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/1pctCO2/r1i1p1f1/
 ```
 
 # Simulation specifics
