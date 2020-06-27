@@ -21,7 +21,7 @@ Please note that the years 121 - 140 are calculated twice, in both NCO2x4_f19_tn
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 
 ```
- /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/
+ /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/abrupt-4xCO2/r1i1p1f1/
 ```
 
 # Simulation specifics
