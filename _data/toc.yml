@@ -62,6 +62,11 @@
   url: /noresm2_hist/noresm2_lm_hist
   not_numbered: true
   
+  
+- title: NorESM2 scenarios
+  url: /NSSPs/noresm2_mm_nssp.md
+  not_numbered: true
+  
 # NorESM2-LM spin up experiments
 - title: NorESM2-LM spin up 
   url: /noresm2_lm_spin/noresm2_lm_spin_intro
