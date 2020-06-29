@@ -69,7 +69,7 @@
   
 # NorESM2-LM and NorESM2-MM scenario experiments
 - title: NorESM2 scenarios
-  url: /NSSPs/noresm2_mm_nssp.md
+  url: /NSSPs/noresm2_mm_nssp
   not_numbered: true
   
 # NorESM2-LM spin up experiments
