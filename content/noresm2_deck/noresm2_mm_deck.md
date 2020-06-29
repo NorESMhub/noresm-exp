@@ -42,7 +42,7 @@ for AMIP details, please see NorESM2-MM historical
 <figure>
   <img src="images/DECKmm.png" alt="NorESM2-MM DECK simulations<" style="width:100%">
   <figcaption><b>NorESM2-MM DECK simulations</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N. 
   </figcaption>
 </figure>
 
