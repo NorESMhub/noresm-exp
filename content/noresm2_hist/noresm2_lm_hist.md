@@ -6,7 +6,7 @@ All raw data from NorESM2-LM historical simulations are stored on NIRD @ sigma2 
 /projects/NS9560K/noresm/cases/
 ```
 
-## Fully coupled simulations:
+## Fully coupled simulations
 
 Fully coupled historical simulations start with **NHIST_**
 
@@ -145,7 +145,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder |/cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190813 |
 | Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_03_f19_tn14_20190813/ |
 
-# AMIP:
+# AMIP
 
 Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with **NFHIST_**
 
