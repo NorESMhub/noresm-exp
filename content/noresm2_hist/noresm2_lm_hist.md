@@ -234,20 +234,18 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 
 
-
-
-# Time series of spinup
+# Time series of NorESM2-LM historical experiments
 
 <figure>
-  <img src="images/noresm2lm_hist1.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
+  <img src="images/NHISTlm.png" alt="orESM2-LM historical simulations<" style="width:100%">
+  <figcaption><b>NorESM2-LM historical simulations</b><br>
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.
   </figcaption>
 </figure>
 
 <figure>
-  <img src="images/noresm2lm_hist_emis1.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
+  <img src="images/NHISTlm_emis.png" alt="orESM2-LM historical simulations<" style="width:100%">
+  <figcaption><b>NorESM2-LM historical simulations</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
   </figcaption>
 </figure>
