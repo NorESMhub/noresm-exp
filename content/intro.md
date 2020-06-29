@@ -14,14 +14,16 @@ Here we provide an overview of NorESM2-MM and NorESM2-LM key experiments:
 
 
 **NorESM2-MM CMIP6 historical simulations:**
+- Fully coupled and AMIP historical experiments (1850 - 2014)
 
 **NorESM2-LM CMIP6 historical simulations:**
+- Fully coupled and AMIP historical experiments (1850 - 2014)
 
 **NorESM2-MM CMIP6 scenario:**
 **NorESM2-LM CMIP6 scenario:** 
 
-**NorESM2-MM spinup tree**
-**NorESM2-LM spinup tree** 
+**NorESM2-MM spinup tree:**
+- Detailed information about the 18 experiments which make up the NorESM2-MM spinup (years: 1 - 1200)
 
-
-
+**NorESM2-LM spinup tree:** 
+- Detailed information about the 12 experiments which make up the NorESM2-LM spinup (years: 1 - 1600)
