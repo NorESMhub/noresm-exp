@@ -20,7 +20,7 @@ Fully coupled and AMIP historical experiments (1850 - 2014) for
 
 **NorESM2 CMIP6 scenario simulations :**
 
-Fully coupled future scenario simulations experiments (2015 - 2100) for
+Fully coupled future scenario experiments (2015 - 2100) for
 - NorESM2-LM
 - NorESM2-LM
 
