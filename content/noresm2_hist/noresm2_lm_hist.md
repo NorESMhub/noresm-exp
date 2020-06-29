@@ -1,7 +1,7 @@
 # Data storage
 All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/
 
-All raw data from NorESM2-MM historical simulations are stored on NIRD @ sigma2 under:
+All raw data from NorESM2-LM historical simulations are stored on NIRD @ sigma2 under:
 ```
 /projects/NS9560K/noresm/cases/
 ```
@@ -42,8 +42,110 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 ```
 /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/historical/
 ```
-  
-## AMIP:
+
+# Simulation specifics - ensemble member nr.1
+
+## NHIST_f19_tn14_20190625 (1850 - 1949)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f19_tn14_11062019 |
+| Run type  | hybrid |
+| Branch time from parent | 1600-01-01 |
+| Simulated years | 01-01-1850 - 31-12-1949 |   
+| Compset | HIST_CAM60%NORESM_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS|
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 6a0b992 |
+| Resolution | f19_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_f19_tn14_20190625|
+| Diagnostics | - |
+
+## NHIST_f19_tn14_20190710 (1950 - 2014)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | NHIST_f19_tn14_20190625 |
+| Run type  | branch |
+| Branch time from parent | 1950-01-01 |
+| Simulated years | 01-01-1950 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | e2c861c |
+| Resolution | f19_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/NHIST_f19_tn14_20190710|
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_f19_tn14_20190710/ |
+
+# Simulation specifics - ensemble member nr.2
+
+## NHIST_02_f19_tn14_20190801 (1850 - 1949)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f19_tn14_11062019 |
+| Run type  | hybrid |
+| Branch time from parent | 1631-01-01 |
+| Simulated years | 01-01-1850 - 31-12-1949 |   
+| Compset | HIST_CAM60%NORESM_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | e1fb360 |
+| Resolution | f19_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_02_f19_tn14_20190801 |
+| Diagnostics | - |
+
+## NHIST_02_f19_tn14_20190813 (1950 - 2014)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | NHIST_02_f19_tn14_20190801 |
+| Run type  | branch |
+| Branch time from parent | 1950-01-01 |
+| Simulated years | 01-01-1950 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 475a391 |
+| Resolution | f19_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_02_f19_tn14_20190813 |
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_02_f19_tn14_20190813/ |
+
+# Simulation specifics - ensemble member nr.3
+
+## NHIST_03_f19_tn14_20190801 (1850 - 1949)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f19_tn14_11062019 |
+| Run type  | hybrid |
+| Branch time from parent | 1661-01-01 |
+| Simulated years | 01-01-1850 - 31-12-1949 |   
+| Compset | HIST_CAM60%NORESM_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | e1fb360 |
+| Resolution | f19_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190801|
+| Diagnostics | - |
+
+## NHIST_03_f19_tn14_20190813 (1950 - 2014)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | NHIST_03_f19_tn14_20190801 |
+| Run type  | branch |
+| Branch time from parent | 1950-01-01 |
+| Simulated years | 01-01-1950 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 475a391 |
+| Resolution | f19_tn14 |
+| Machine  |  Fram  |
+| Case folder |/cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190813 |
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_03_f19_tn14_20190813/ |
+
+# AMIP:
 
 Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with **NFHIST_**
 
@@ -78,36 +180,60 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/amip/
 ```
 
-# Path to case directory
+# Simulation specifics
 
-on Fram @ sigma2
+## NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | NHIST_f19_tn14_20190710 |
+| Run type  | hybrid |
+| Branch time from parent | 1975-01-01 |
+| Simulated years | 01-01-1975 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM%NORPDDMSBC_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | ad14769 |
+| Resolution | f19_tn14 |
+| Machine  |  Vilje  |
+| Case folder |/home/ntnu/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20191025|
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NFHISTnorpddmsbc_f19_mg17_20191025/ |
 
-- Fully coupled, ensemble member 1: 
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_f19_tn14_20190625
-  - /cluster/projects/nn2345k/olivie/cases-cmip6/NHIST_f19_tn14_20190710
+## NFHISTnorbc_f19_20191107 (1850 - 2014)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f19_tn14_11062019 |
+| Run type  | hybrid |
+| Branch time from parent | 1600-01-01 |
+| Simulated years | 01-01-1850 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM%NORBC_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | ad14769 |
+| Resolution | f19_tn14 |
+| Machine  |  Vilje  |
+| Case folder | /home/ntnu/olivie/cases-cmip6/NFHISTnorbc_f19_20191107|
+| Diagnostics | - |
+
+## NFHISTnorbc_f19_20190730 (1850 - 2014)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f19_tn14_11062019 |
+| Run type  | hybrid |
+| Branch time from parent | 1600-01-01 |
+| Simulated years | 01-01-1850 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM%NORBC_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 476a546 |
+| Resolution | f19_tn14 |
+| Machine  |  Vilje  |
+| Case folder | /home/ntnu/olivie/cases-cmip6/NFHISTnorbc_f19_20190730|
+| Diagnostics | - |
 
 
-- Fully coupled, ensemble member 2: 
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_02_f19_tn14_20190801
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_02_f19_tn14_20190813
-  
-  
-- Fully coupled, ensemble member 3: 
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190801
-  - /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190813
-  
-  
-- AMIPs:
-  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20191025
-  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorbc_f19_20191107
-  - /cluster/projects/nn2345k/olivie/cases-cmip6/NFHISTnorbc_f19_20190730
-  
-# Path to diagnostics
 
-http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_f19_tn14_20190710/
-http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_02_f19_tn14_20190813/
-http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_03_f19_tn14_20190813/
-http://ns2345k.web.sigma2.no/noresm_diagnostics/NFHISTnorpddmsbc_f19_mg17_20191025/
+
+
 
 
 # Time series of spinup
