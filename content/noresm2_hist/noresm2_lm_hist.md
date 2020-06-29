@@ -6,7 +6,7 @@ All raw data from NorESM2-LM historical simulations are stored on NIRD @ sigma2 
 /projects/NS9560K/noresm/cases/
 ```
 
-## Fully coupled simulations:
+## Fully coupled simulations
 
 Fully coupled historical simulations start with **NHIST_**
 
@@ -145,7 +145,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder |/cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190813 |
 | Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NHIST_03_f19_tn14_20190813/ |
 
-# AMIP:
+# AMIP
 
 Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with **NFHIST_**
 
@@ -234,20 +234,18 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 
 
-
-
-# Time series of spinup
+# Time series of NorESM2-LM historical experiments
 
 <figure>
-  <img src="images/noresm2lm_hist1.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
+  <img src="images/NHISTlm.png" alt="orESM2-LM historical simulations<" style="width:100%">
+  <figcaption><b>NorESM2-LM historical simulations</b><br>
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.
   </figcaption>
 </figure>
 
 <figure>
-  <img src="images/noresm2lm_hist_emis1.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
+  <img src="images/NHISTlm_emis.png" alt="orESM2-LM historical simulations<" style="width:100%">
+  <figcaption><b>NorESM2-LM historical simulations</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
   </figcaption>
 </figure>
