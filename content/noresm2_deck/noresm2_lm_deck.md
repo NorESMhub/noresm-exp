@@ -36,3 +36,19 @@
 |NFHISTnorpddmsbc_f19_mg17_20191025|  -  | 1975 - 2014 |
 
 for AMIP details, please see NorESM2-LM historical
+
+# Time series of NorESM2-LM DECK experiments
+
+<figure>
+  <img src="images/DECKlm.png" alt="NorESM2-LM DECK simulations<" style="width:100%">
+  <figcaption><b>NorESM2-LM DECK simulations</b><br>
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="images/DECKlm_emis.png" alt="NorESM2-LM DECK simulations<" style="width:100%">
+  <figcaption><b>NorESM2-LM DECK simulations</b><br>
+    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+  </figcaption>
+</figure>
