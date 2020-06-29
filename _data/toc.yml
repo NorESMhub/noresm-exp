@@ -59,6 +59,7 @@
   
 # NorESM2-LM historical experiments
 - title: NorESM2 historical 
+  url: /noresm2_hist/noresm2_hist
   sections:
   - title: NorESM2-MM historical 
     url: /noresm2_hist/noresm2_mm_hist
