@@ -53,18 +53,18 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/N1PCT_f19_tn14_20190712 |
 | Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/N1PCT_f19_tn14_20190712/ |
 
-# Time series of NorESM2-MM 1% increase of atmospheric CO2 concentration experiments
+# Time series of NorESM2-LM 1% increase of atmospheric CO2 concentration experiments
 
 <figure>
-  <img src="images/1pctCO2mm.png" alt="NorESM2-MM 1pctCO2 simulations<" style="width:100%">
-  <figcaption><b>NorESM2-MM 1pctCO2 simulations</b><br>
+  <img src="images/1pctCO2lm.png" alt="NorESM2-LM 1pctCO2 simulations<" style="width:100%">
+  <figcaption><b>NorESM2-LM 1pctCO2 simulations</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N. The figure shows annual average (dots) and 5-year moving average (solid line). 
   </figcaption>
 </figure>
 
 <figure>
-  <img src="images/1pctCO2mm_emis.png" alt="NorESM2-MM 1pctCO2 simulations<" style="width:100%">
-  <figcaption><b>NorESM2-MM 1pctCO2 simulations</b><br>
+  <img src="images/1pctCO2lm_emis.png" alt="NorESM2-LM 1pctCO2 simulations<" style="width:100%">
+  <figcaption><b>NorESM2-LM 1pctCO2 simulations</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing. The figure shows annual average (dots) and 5-year moving average (solid line). 
   </figcaption>
 </figure>
