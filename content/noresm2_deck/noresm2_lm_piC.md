@@ -80,7 +80,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 </figure>
 
 <figure>
-  <img src="images/piClm_emis.png" alt="NorESM2-MM piControl simulations<" style="width:100%">
+  <img src="images/piClm_emis.png" alt="NorESM2-LM piControl simulations<" style="width:100%">
   <figcaption><b>NorESM2-LM piControl simulations</b><br>
     <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing. The figure shows annual average (dots) and 5-year moving average (solid line). 
   </figcaption>
