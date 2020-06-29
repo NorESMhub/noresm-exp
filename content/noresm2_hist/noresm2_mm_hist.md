@@ -28,7 +28,97 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/historical/
 ```
 
-## AMIP:
+# Simulation specifics - ensemble member nr.1
+
+## NHISTfrc2_f09_tn14_20191001 (1850 - 1949) 
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850_f09_tn14_20190913 |
+| Run type  | hybrid |
+| Branch time from parent | 1200-01-01 |
+| Simulated years | 01-01-1850 - 31-12-1949 |   
+| Compset | HIST_CAM60%NORESM%FRC2_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 47aa2a4 |
+| Resolution | f09_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/NHISTfrc2_f09_tn14_20191001 |
+| Diagnostics | - |
+
+## NHISTfrc2_f09_tn14_20191025 (1950-2014)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | NHISTfrc2_f09_tn14_20191001 |
+| Run type  | branch |
+| Branch time from parent | 1950-01-01 |
+| Simulated years | 01-01-1950 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM%FRC2_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | ad14769 |
+| Resolution | f09_tn14 |
+| Machine  |  Fram  |
+| Case folder |/cluster/projects/nn2345k/matsbn/NorESM/cases/NHISTfrc2_f09_tn14_20191025  |
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NHISTfrc2_f09_tn14_20191025/ |
+
+# Simulation specifics - ensemble member nr.2
+
+## NHISTfrc2_02_f09_tn14_20200427 (1850 - 1949) 
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850frc2_f09_tn14_20191001 |
+| Run type  | hybrid |
+| Branch time from parent | 1230-01-01 |
+| Simulated years | 01-01-1850 - 31-12-1949 |   
+| Compset | HIST_CAM60%NORESM%FRC2_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | ad14769 |
+| Resolution | f09_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_02_f09_tn14_20200427 |
+| Diagnostics | - |
+
+## NHISTfrc2_02_f09_tn14_20200519 (1950-2014)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | NHISTfrc2_02_f09_tn14_20200427 |
+| Run type  | branch |
+| Branch time from parent | 1950-01-01 |
+| Simulated years | 01-01-1950 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM%FRC2_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | ad14769 |
+| Resolution | f09_tn14 |
+| Machine  |  Fram  |
+| Case folder |/cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_02_f09_tn14_20200519 |
+| Diagnostics | - |
+
+# Simulation specifics - ensemble member nr.3
+
+## NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949) 
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | N1850frc2_f09_tn14_20191001 |
+| Run type  | hybrid |
+| Branch time from parent | 1260-01-01 |
+| Simulated years | 01-01-1850 - 31-12-1949 |   
+| Compset | HIST_CAM60%NORESM%FRC2_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | ad14769 |
+| Resolution | f09_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_03_f09_tn14_20200519 |
+| Diagnostics | - |
+
+## - (1950-2014)
+
+
+
+# AMIP:
 
 Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with NFHIST_
 
@@ -45,25 +135,6 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 ```
 
 
-# Path to case directory
-
-on Fram @ sigma2
-
-- Fully coupled, ensemble member 1: 
-  - /cluster/projects/nn2345k/matsbn/NorESM/cases/NHISTfrc2_f09_tn14_20191001 (1850 - 1949) 
-  - /cluster/projects/nn2345k/matsbn/NorESM/cases/NHISTfrc2_f09_tn14_20191025 (1950-2014)
-
-- Fully coupled, ensemble member 2: 
-  - /cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_02_f09_tn14_20200427 (1850 - 1949)
-  - /cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_02_f09_tn14_20200519 (1950-2014)
-  
-- Fully coupled, ensemble member 3: 
-  - /cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949) 
-  
-
-# Path to diagnostics
-
-http://ns2345k.web.sigma2.no/noresm_diagnostics/NHISTfrc2_f09_tn14_20191025/
 
 # Time series of spinup
 
