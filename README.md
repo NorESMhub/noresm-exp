@@ -11,3 +11,6 @@ The overview includes:
  - NorESM2-MM spinup tree
  - NorESM2-LM spinup tree
  
+
+
+[![NorESM Experiments CircleCI](https://circleci.com/gh/NorESMhub/noresm-exp.svg?style=svg)](https://circleci.com/gh/NorESMhub/noresm-exp)

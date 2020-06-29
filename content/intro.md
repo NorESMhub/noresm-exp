@@ -12,15 +12,18 @@ Here we provide an overview of NorESM2-MM and NorESM2-LM key experiments:
 - abrupt-4xCO2 (abrupt quadrupling of the atmospheric CO2 concentration)
 - 1pctCO2 (1 percent per year increase in the atmospheric CO2 concentration)
 
+**NorESM2 CMIP6 historical simulations:**
 
-**NorESM2-MM CMIP6 historical simulations:**
-- Fully coupled and AMIP historical experiments (1850 - 2014)
+Fully coupled and AMIP historical experiments (1850 - 2014) for
+- NorESM2-LM
+- NorESM2-LM
 
-**NorESM2-LM CMIP6 historical simulations:**
-- Fully coupled and AMIP historical experiments (1850 - 2014)
+**NorESM2 CMIP6 scenario simulations :**
 
-**NorESM2-MM CMIP6 scenario:**
-**NorESM2-LM CMIP6 scenario:** 
+Fully coupled future scenario simulations experiments (2015 - 2100) for
+- NorESM2-LM
+- NorESM2-LM
+
 
 **NorESM2-MM spinup tree:**
 - Detailed information about the 18 experiments which make up the NorESM2-MM spinup (years: 1 - 1200)
