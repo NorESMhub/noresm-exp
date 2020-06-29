@@ -24,7 +24,7 @@ The forcing used in CMIP6 for future projections are combinations of SSPs and RC
 
 For a brief description, also see https://www.carbonbrief.org/explainer-how-shared-socioeconomic-pathways-explore-future-climate-change
 
-## NorESM2-MM future scenario experiments
+# NorESM2-MM future scenario experiments
 
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
@@ -33,7 +33,9 @@ For a brief description, also see https://www.carbonbrief.org/explainer-how-shar
 |NSSP370frc2_f09_tn14_20191105 | 2015 - 2100  |
 |NSSP585frc2_f09_tn14_20191105 | 2015 - 2100  |
 
-## NorESM2-LM future scenario experiments
+--------------------------------------------------------
+
+# NorESM2-LM future scenario experiments
 
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
@@ -56,6 +58,7 @@ For a brief description, also see https://www.carbonbrief.org/explainer-how-shar
 | NSSP585frc2_f19_tn14_20191014| 2015 - 2060  |
 | NSSP585_f19_tn14_20191223esm| 2015 - 2060  |
 
+--------------------------------------------------------------
 
 # Time series of NorESM2-LM Scenario experiments
 
