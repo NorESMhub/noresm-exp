@@ -19,7 +19,7 @@ NorESM2 historical experiments: all-forcing simulation of the recent past; 1850 
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
 | NHISTfrc2_02_f09_tn14_20200427 | 1850 - 1949  |
-| NHISTfrc2_02_f09_tn14_20200519 | 1950-2014  |
+| NHISTfrc2_02_f09_tn14_20200519 | 1950 - 2014  |
 --------------------------------------------------
 
 ### Ensemble member 3
