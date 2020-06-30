@@ -126,7 +126,7 @@ The AMIP simulation which is part of DECK uses observed SSTs :
 
 - **NFHISTfrc2_f09_mg17_20191107 (1975 - 2012)**
 
-Please note,  this simulations does not have the NorESM2 derived DMS emissions, but uses Lana.
+Please note, this simulation does not have the NorESM2 derived DMS emissions, but uses Lana.
 
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 
