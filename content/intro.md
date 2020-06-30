@@ -15,13 +15,13 @@ Here we provide an overview of NorESM2-MM and NorESM2-LM key experiments:
 **NorESM2 CMIP6 historical simulations:**
 
 Fully coupled and AMIP historical experiments (1850 - 2014) for
-- NorESM2-LM
+- NorESM2-MM
 - NorESM2-LM
 
 **NorESM2 CMIP6 scenario simulations :**
 
 Fully coupled future scenario experiments (2015 - 2100) for
-- NorESM2-LM
+- NorESM2-MM
 - NorESM2-LM
 
 
