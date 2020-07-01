@@ -28,6 +28,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 ```
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/amip/
 ```
+and is from original output of NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014).
 
 # Simulation specifics
 
