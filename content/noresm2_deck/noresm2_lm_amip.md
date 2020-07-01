@@ -15,6 +15,12 @@ The AMIP simulation which is part of DECK uses observed SSTs, observed sea-ice a
 
 In addition, there exist atmosphere-only historical simulations (1850 - 2014) with NorESM-derived SSTs, sea-ice and DMS emissons. For more details, please see NorESM-LM historical
 
+The cmorized data can be accessed on NIRD @ sigma2 under: 
+
+```
+ /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/amip/
+```
+
 # Simulation specifics
 
 ## NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)
