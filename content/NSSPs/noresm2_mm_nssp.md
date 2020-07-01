@@ -1,6 +1,7 @@
 **Detailed information about the simulations can be found by clicking on case names in the table of contents or at the bottom of this page**
 
 # Future scenarios 
+### Shared Socioeconomic Pathways 
 SSPs: Shared Socioeconomic Pathways serve as basis for new emissions and socio-economic scenarios for future climate projections used in CMIP6:
 
 - SSP1:	Sustainability – Taking the Green Road (Low challenges to mitigation and adaptation)
@@ -12,6 +13,7 @@ SSPs: Shared Socioeconomic Pathways serve as basis for new emissions and socio-e
 See Riahi 2017 for a more detailed description (https://www.sciencedirect.com/science/article/pii/S0959378016300681)
 and BC O’Neill 2016 (https://gmd.copernicus.org/articles/9/3461/2016/gmd-9-3461-2016.pdf)
 
+### Representative Concentration Pathways
 RCPs: Representative Concentration Pathways are future projections of atmospheric greenhouse gas concentrations and subsequent radiative forcing. 
 The number after RCP represent the radiative forcing by year 2100.
 
