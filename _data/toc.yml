@@ -32,6 +32,8 @@
   sections:
   - title: NorESM2-MM piControl
     url: /noresm2_deck/noresm2_mm_piC
+  - title: NorESM2-MM AMIP
+    url: /noresm2_deck/noresm2_mm_amip
   - title: NorESM2-MM abrupt-4xCO2
     url: /noresm2_deck/noresm2_mm_4xCO2
   - title: NorESM2-MM 1ptcCO2
@@ -45,6 +47,8 @@
   sections:
   - title: NorESM2-LM piControl
     url: /noresm2_deck/noresm2_lm_piC
+  - title: NorESM2-LM AMIP
+    url: /noresm2_deck/noresm2_lm_amip
   - title: NorESM2-LM abrupt-4xCO2
     url: /noresm2_deck/noresm2_lm_4xCO2
   - title: NorESM2-LM 1ptcCO2
