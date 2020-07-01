@@ -28,7 +28,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 ```
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/amip/
 ```
-and is from original output of NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014).
+and is from original output of **NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014)**.
 
 # Simulation specifics
 
@@ -46,4 +46,20 @@ and is from original output of NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014).
 | Resolution | f19_tn14 |
 | Machine  |  Vilje  |
 | Case folder | /home/ntnu/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20191025|
-| Diagnostics | - |
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NFHISTnorpddmsbc_f19_mg17_20191025/ |
+
+## NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014)
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | NHIST_f19_tn14_20190710 |
+| Run type  | hybrid |
+| Branch time from parent | 1975-01-01 |
+| Simulated years | 01-01-1975 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM%NORPDDMSBC_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | f368b5b |
+| Resolution | f19_tn14 |
+| Machine  |  Vilje  |
+| Case folder | /home/ntnu/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20190807|
+| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NFHISTnorpddmsbc_f19_mg17_20190807/ |
