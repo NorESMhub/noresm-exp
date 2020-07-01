@@ -9,11 +9,11 @@ All raw data from NorESM2-LM historical simulations are stored on NIRD @ sigma2 
 
 Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with **NFHIST_**
 
-The AMIP simulation which is part of DECK uses observed SSTs, sea-ice and NorESM2 derived DMS emissions:
+The AMIP simulation which is part of DECK uses observed SSTs, observed sea-ice and NorESM2 derived DMS emissions:
 
 - **NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)**
 
-In addition, there exist atmosphere-only simulations with NorESM-derived SSTs, sea-ice and DMS emissons. For more details, please see NorESM-LM historical
+In addition, there exist atmosphere-only historical simulations (1850 - 2014) with NorESM-derived SSTs, sea-ice and DMS emissons. For more details, please see NorESM-LM historical
 
 # Simulation specifics
 
