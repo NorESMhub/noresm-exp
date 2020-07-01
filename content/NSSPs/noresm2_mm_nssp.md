@@ -27,6 +27,12 @@ For a brief description, also see https://www.carbonbrief.org/explainer-how-shar
 
 For an overview and description of the various CMIP6 experiments, please see: https://search.es-doc.org/
 
+### SSP-based RCP scenarios:
+- **SSP1-2.6:** SSP-based RCP scenario with low radiative forcing by the end of the century. Following approximately RCP2.6 global forcing pathway with SSP1 socioeconomic conditions. Radiative forcing reaches a level of 2.6 W/m2 in 2100. Concentration-driven. The scenario represents the low end of the range of plausible future pathways. The scenario depicts the "best case" future from the sustainability perspective.
+- **SSP2-4.5:** SSP-based RCP scenario with medium radiative forcing by the end of the century. Following approximately RCP4.5 global forcing pathway with SSP2 socioeconomic conditions. Radiative forcing reaches a level of 4.5 W/m2 in 2100. Concentration-driven. The scenario represents the medium part of the range of plausible future pathways.
+- **SSP3-7.0:** Baseline scenario with a medium to high radiative forcing by the end of century. Following approximately RCP7.0 global forcing pathway with SSP3 socioeconomic conditions. Radiative forcing reaches a level of 7.0 W/m2 in 2100. Concentration-driven. The scenario represents the medium to high end of plausible future pathways. SSP3-7.0 fills a gap in the CMIP5 forcing pathways that is particularly important because it represents a forcing level common to several (unmitigated) SSP baselines.
+- **SSP5-8.5:** SSP-based RCP scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway with SSP5 socioeconomic conditions. Concentration-driven. The scenario represents the high end of plausible future pathways. SSP5 is the only SSP with emissions high enough to produce the 8.5 W/m2 level of forcing in 2100.
+
 # NorESM2-MM future scenario experiments
 
 | Case name |   Simulation time (y) |   
