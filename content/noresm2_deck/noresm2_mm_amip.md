@@ -24,7 +24,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 # Simulation specifics
 
-## NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)
+## NFHISTfrc2_f09_mg17_20191107 (1975 - 2012)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -34,7 +34,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Simulated years | 01-01-1975 - 31-12-2012 |   
 | Compset | HIST_CAM60%NORESM%NORPDDMSBC_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV |
 | Git branch | featureCESM2.1.0-OsloDevelopment |
-| Git commit | ad14769 |
+| Git commit | |
 | Resolution | f09_tn14 |
 | Machine  |    |
 | Case folder | |
