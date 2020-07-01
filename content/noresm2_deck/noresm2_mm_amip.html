@@ -5,16 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>NorESM2-MM 1ptcCO2</title>
-  <meta name="description" content="        NorESM2-MM 1ptcCO2    Data storage All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from No...">
+  <title>Data storage</title>
+  <meta name="description" content="# Data storageAll data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from NorESM2-LM historical simulatio...">
 
-  <link rel="canonical" href="https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_mm_1pctCO2.html">
+  <link rel="canonical" href="https://noresmhub.github.io//noresm-exp/content/noresm2_deck/noresm2_mm_amip.html">
   <link rel="alternate" type="application/rss+xml" title="NorESM Experiments" href="https://noresmhub.github.io//noresm-exp/feed.xml">
 
-  <meta property="og:url"         content="https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_mm_1pctCO2.html" />
+  <meta property="og:url"         content="https://noresmhub.github.io//noresm-exp/content/noresm2_deck/noresm2_mm_amip.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="NorESM2-MM 1ptcCO2" />
-<meta property="og:description" content="        NorESM2-MM 1ptcCO2    Data storage All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from No..." />
+<meta property="og:title"       content="Data storage" />
+<meta property="og:description" content="# Data storageAll data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from NorESM2-LM historical simulatio..." />
 <meta property="og:image"       content="https://noresmhub.github.io//noresm-exp/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_mm_1pctCO2.html",
-  "headline": "NorESM2-MM 1ptcCO2",
+  "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_deck/noresm2_mm_amip.html",
+  "headline": "Data storage",
   "datePublished": "2020-07-01T12:01:43+00:00",
   "dateModified": "2020-07-01T12:01:43+00:00",
-  "description": "        NorESM2-MM 1ptcCO2    Data storage All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from No...",
+  "description": "# Data storageAll data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from NorESM2-LM historical simulatio...",
   "author": {
     "@type": "Person",
     "name": "Ada Gjermundsen"
@@ -1572,170 +1572,53 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-                  <main class="jupyter-page">
-    <div id="page-info"><div id="page-title">NorESM2-MM 1ptcCO2</div>
-</div>
-    <div class="jb_cell">
+              <h1 id="data-storage">Data storage</h1>
+<p>All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/</p>
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Data-storage">Data storage<a class="anchor-link" href="#Data-storage"> </a></h1><p>All data are CMOR-ized and public available here: <a href="https://esg-dn1.nsc.liu.se/search/cmip6-liu/">https://esg-dn1.nsc.liu.se/search/cmip6-liu/</a></p>
-<p>All raw data from NorESM2-MM DECK simulations are stored on NIRD @ sigma2 under:</p>
+<p>All raw data from NorESM2-LM historical simulations are stored on NIRD @ sigma2 under:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/projects/NS9560K/noresm/cases/
+</code></pre></div></div>
+<h1 id="amip">AMIP</h1>
 
-<pre><code>/projects/NS9560K/noresm/cases/</code></pre>
-<p>The NorESM2-MM 1 percent per year increase in the atmospheric CO2 concentration, 1pctCO2, simulations cover the years 1 - 150</p>
+<p>Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with <strong>NFHIST_</strong></p>
+
+<p>The AMIP simulation which is part of DECK uses observed SSTs and observed sea-ice:</p>
+
 <ul>
-<li>N1PCTfrc2_f09_tn14_20191008 (1 - 120)</li>
-<li>N1PCTfrc2_f09_tn14_20191028 (121 - 150, extra output)</li>
+  <li><strong>NFHISTfrc2_f09_mg17_20191107 (1975 - 2012)</strong></li>
 </ul>
+
+<p>Please note, this simulation does not have the NorESM2 derived DMS emissions, but uses Lana.</p>
+
 <p>The cmorized data can be accessed on NIRD @ sigma2 under:</p>
 
-<pre><code> /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/1pctCO2/r1i1p1f1/</code></pre>
-<h1 id="Simulation-specifics">Simulation specifics<a class="anchor-link" href="#Simulation-specifics"> </a></h1><h2 id="N1PCTfrc2_f09_tn14_20191008-(1---120)">N1PCTfrc2_f09_tn14_20191008 (1 - 120)<a class="anchor-link" href="#N1PCTfrc2_f09_tn14_20191008-(1---120)"> </a></h2><table>
-<thead><tr>
-<th></th>
-<th style="text-align:left"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CESM parent</td>
-<td style="text-align:left">CESM2.1.0</td>
-</tr>
-<tr>
-<td>Parent</td>
-<td style="text-align:left">N1850_f09_tn14_20190913</td>
-</tr>
-<tr>
-<td>Run type</td>
-<td style="text-align:left">hybrid</td>
-</tr>
-<tr>
-<td>Branch time from parent</td>
-<td style="text-align:left">1200-01-01</td>
-</tr>
-<tr>
-<td>Simulated years</td>
-<td style="text-align:left">01-01-0001 - 31-12-120</td>
-</tr>
-<tr>
-<td>Compset</td>
-<td style="text-align:left">1850_CAM60%NORESM%FRC2%1PCT_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS</td>
-</tr>
-<tr>
-<td>Git branch</td>
-<td style="text-align:left">featureCESM2.1.0-OsloDevelopment</td>
-</tr>
-<tr>
-<td>Git commit</td>
-<td style="text-align:left">8141ee9</td>
-</tr>
-<tr>
-<td>Resolution</td>
-<td style="text-align:left">f09_tn14</td>
-</tr>
-<tr>
-<td>Machine</td>
-<td style="text-align:left">Fram</td>
-</tr>
-<tr>
-<td>Case folder</td>
-<td style="text-align:left">/cluster/projects/nn2345k/matsbn/NorESM/cases/N1PCTfrc2_f09_tn14_20191008</td>
-</tr>
-<tr>
-<td>Diagnostics</td>
-<td style="text-align:left"><a href="http://ns2345k.web.sigma2.no/noresm_diagnostics/N1PCTfrc2_f09_tn14_20191008/">http://ns2345k.web.sigma2.no/noresm_diagnostics/N1PCTfrc2_f09_tn14_20191008/</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="N1PCTfrc2_f09_tn14_20191028-(121---150,-extra-output)">N1PCTfrc2_f09_tn14_20191028 (121 - 150, extra output)<a class="anchor-link" href="#N1PCTfrc2_f09_tn14_20191028-(121---150,-extra-output)"> </a></h2><table>
-<thead><tr>
-<th></th>
-<th style="text-align:left"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CESM parent</td>
-<td style="text-align:left">CESM2.1.0</td>
-</tr>
-<tr>
-<td>Parent</td>
-<td style="text-align:left">N1PCTfrc2_f09_tn14_20191008</td>
-</tr>
-<tr>
-<td>Run type</td>
-<td style="text-align:left">branch</td>
-</tr>
-<tr>
-<td>Branch time from parent</td>
-<td style="text-align:left">0121-01-01</td>
-</tr>
-<tr>
-<td>Simulated years</td>
-<td style="text-align:left">01-01-0121 - 31-12-150</td>
-</tr>
-<tr>
-<td>Compset</td>
-<td style="text-align:left">1850_CAM60%NORESM%FRC2%1PCT_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS</td>
-</tr>
-<tr>
-<td>Git branch</td>
-<td style="text-align:left">featureCESM2.1.0-OsloDevelopment</td>
-</tr>
-<tr>
-<td>Git commit</td>
-<td style="text-align:left">ad14769</td>
-</tr>
-<tr>
-<td>Resolution</td>
-<td style="text-align:left">f09_tn14</td>
-</tr>
-<tr>
-<td>Machine</td>
-<td style="text-align:left">Fram</td>
-</tr>
-<tr>
-<td>Case folder</td>
-<td style="text-align:left">/cluster/projects/nn2345k/matsbn/NorESM/cases/N1PCTfrc2_f09_tn14_20191028</td>
-</tr>
-<tr>
-<td>Diagnostics</td>
-<td style="text-align:left"><a href="http://ns2345k.web.sigma2.no/noresm_diagnostics/N1PCTfrc2_f09_tn14_20191028/">http://ns2345k.web.sigma2.no/noresm_diagnostics/N1PCTfrc2_f09_tn14_20191028/</a></td>
-</tr>
-</tbody>
-</table>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/amip/
+</code></pre></div></div>
 
-</div>
-</div>
-</div>
-</div>
+<h1 id="simulation-specifics">Simulation specifics</h1>
 
- 
+<h2 id="nfhistnorpddmsbc_f19_mg17_20191025-1975---2014">NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)</h2>
+<p>|  |  |<br />
+| — | :— | 
+| CESM parent| CESM2.1.0  | 
+| Parent |  |
+| Run type  | hybrid |
+| Branch time from parent | 1975-01-01 |
+| Simulated years | 01-01-1975 - 31-12-2012 | <br />
+| Compset | HIST_CAM60%NORESM%NORPDDMSBC_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | ad14769 |
+| Resolution | f09_tn14 |
+| Machine  |    |
+| Case folder | |
+| Diagnostics | - |</p>
 
-
-    </main>
-    
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
               
 <nav class="c-page__nav">
   
-    
-    
 
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/noresm-exp/noresm2_deck/noresm2_mm_4xCO2.html">
-      〈 <span class="u-margin-right-tiny"></span> NorESM2-MM abrupt-4xCO2
-    </a>
-  
-
-  
-    
-
-    
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/noresm-exp/noresm2_deck/noresm2_lm_deck.html">
-      NorESM2-LM DECK <span class="u-margin-right-tiny"></span> 〉
-    </a>
   
 </nav>
 
