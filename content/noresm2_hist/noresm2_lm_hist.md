@@ -151,7 +151,7 @@ Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which th
 
 The AMIP simulation which is part of DECK uses observed SSTs:
 
-- **NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)**
+- **NFHISTnorpddmsbc_f19_mg17_20191025 (1979 - 2014)**
 
 In addition, there exist atmosphere-only simulations with NorESM-derived SSTs(part of AerChemMIP and RFMIP). Please see https://noresm-docs.readthedocs.io/en/noresm2/configurations/amips.html#noresm2-derived-boundary-conditions-for-amip-style-simulations for a description of NorESM2 derived boundary conditions.   They all cover the whole period 1850-2014.  However, these simulations only exist for NorESM2-LM:
 
@@ -159,7 +159,7 @@ In addition, there exist atmosphere-only simulations with NorESM-derived SSTs(pa
 - NFHISTnorbc_piaer_f19_20191107 (like NFHISTnorbc_f19_20191107 but with pre-industrial aerosol emissions, 1850 - 2014)
 - NFHISTnorbc_pintcf_f19_20191107 (like NFHISTnorbc_f19_20191107 but with pre-industrial near-term climate forcers, 1850 - 2014)
 
-in addition to 60 or more perturbed simulations
+in addition to 60 or more perturbed simulations.
  
  Please note that there exist AMIP simulations using the standard CESM flux description between ocean and atmosphere
 (flux=0), instead of the COARE flux description (flux=1) which is used in the fully-coupled NorESM2 simulations:
@@ -168,7 +168,7 @@ in addition to 60 or more perturbed simulations
   - NFHISTnorbc_piaer_f19_20190730 (like NFHISTnorbc_f19_20190730 but with pre-industrial aerosol emissions, 1850 - 2014)
   - NFHISTnorbc_pintcf_f19_20190730 (like NFHISTnorbc_f19_20190730 but with pre-industrial near-term climate forcers, 1850 - 2014)
 
-these simulations were run with FLUX SCHEME=0. and d ALB COSZ AVG=.false. A comparison of AMIP simulations with and without these settings can be found here:
+these simulations were run with FLUX SCHEME=0. and ALB COSZ AVG=.false. A comparison of AMIP simulations with and without these settings can be found here:
  
  http://ns2345k.web.sigma2.no/people/olivie/cmip6/cpl-fsst/cplfsstdiff_impact.v1.0.pdf
  
