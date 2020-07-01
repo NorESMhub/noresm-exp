@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_lm_amip.html",
   "headline": "NorESM2-LM AMIP",
-  "datePublished": "2020-07-01T12:31:27+00:00",
-  "dateModified": "2020-07-01T12:31:27+00:00",
+  "datePublished": "2020-07-01T12:36:10+00:00",
+  "dateModified": "2020-07-01T12:36:10+00:00",
   "description": "        NorESM2-LM AMIP    Data storage All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from NorES...",
   "author": {
     "@type": "Person",
@@ -1586,13 +1586,19 @@ initFunction(initPrint)
 <h1 id="AMIP">AMIP<a class="anchor-link" href="#AMIP"> </a></h1><p>Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with <strong>NFHIST_</strong></p>
 <p>The AMIP simulation which is part of DECK uses observed SSTs, observed sea-ice and NorESM2 derived DMS emissions:</p>
 <ul>
-<li><strong>NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)</strong></li>
+<li><strong>NFHISTnorpddmsbc_f19_mg17_20191025 (1979 - 2014)</strong></li>
 </ul>
+<p>Please note that there exists an AMIP DECK simulation using the standard CESM flux description between ocean and atmosphere (flux=0), instead of the COARE flux description (flux=1) which is used in the fully-coupled NorESM2 simulations:</p>
+<ul>
+<li><strong>NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014)</strong></li>
+</ul>
+<p>the simulation was run with FLUX SCHEME=0. and ALB COSZ AVG=.false. A comparison of AMIP simulations with and without these settings can be found here:</p>
+<p><a href="http://ns2345k.web.sigma2.no/people/olivie/cmip6/cpl-fsst/cplfsstdiff_impact.v1.0.pdf">http://ns2345k.web.sigma2.no/people/olivie/cmip6/cpl-fsst/cplfsstdiff_impact.v1.0.pdf</a></p>
 <p>In addition, there exist atmosphere-only historical simulations (1850 - 2014) with NorESM-derived SSTs, sea-ice and DMS emissons. For more details, please see NorESM-LM historical</p>
 <p>The cmorized data can be accessed on NIRD @ sigma2 under:</p>
 
 <pre><code> /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/amip/</code></pre>
-<h1 id="Simulation-specifics">Simulation specifics<a class="anchor-link" href="#Simulation-specifics"> </a></h1><h2 id="NFHISTnorpddmsbc_f19_mg17_20191025-(1975---2014)">NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)<a class="anchor-link" href="#NFHISTnorpddmsbc_f19_mg17_20191025-(1975---2014)"> </a></h2><table>
+<h1 id="Simulation-specifics">Simulation specifics<a class="anchor-link" href="#Simulation-specifics"> </a></h1><h2 id="NFHISTnorpddmsbc_f19_mg17_20191025-(1979---2014)">NFHISTnorpddmsbc_f19_mg17_20191025 (1979 - 2014)<a class="anchor-link" href="#NFHISTnorpddmsbc_f19_mg17_20191025-(1979---2014)"> </a></h2><table>
 <thead><tr>
 <th></th>
 <th style="text-align:left"></th>

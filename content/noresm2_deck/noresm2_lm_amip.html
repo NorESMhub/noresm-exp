@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_deck/noresm2_lm_amip.html",
   "headline": "Data storage",
-  "datePublished": "2020-07-01T12:31:27+00:00",
-  "dateModified": "2020-07-01T12:31:27+00:00",
+  "datePublished": "2020-07-01T12:36:10+00:00",
+  "dateModified": "2020-07-01T12:36:10+00:00",
   "description": "# Data storageAll data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/All raw data from NorESM2-LM historical simulatio...",
   "author": {
     "@type": "Person",
@@ -1585,8 +1585,18 @@ initFunction(initPrint)
 <p>The AMIP simulation which is part of DECK uses observed SSTs, observed sea-ice and NorESM2 derived DMS emissions:</p>
 
 <ul>
-  <li><strong>NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)</strong></li>
+  <li><strong>NFHISTnorpddmsbc_f19_mg17_20191025 (1979 - 2014)</strong></li>
 </ul>
+
+<p>Please note that there exists an AMIP DECK simulation using the standard CESM flux description between ocean and atmosphere (flux=0), instead of the COARE flux description (flux=1) which is used in the fully-coupled NorESM2 simulations:</p>
+
+<ul>
+  <li><strong>NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014)</strong></li>
+</ul>
+
+<p>the simulation was run with FLUX SCHEME=0. and ALB COSZ AVG=.false. A comparison of AMIP simulations with and without these settings can be found here:</p>
+
+<p>http://ns2345k.web.sigma2.no/people/olivie/cmip6/cpl-fsst/cplfsstdiff_impact.v1.0.pdf</p>
 
 <p>In addition, there exist atmosphere-only historical simulations (1850 - 2014) with NorESM-derived SSTs, sea-ice and DMS emissons. For more details, please see NorESM-LM historical</p>
 
@@ -1597,7 +1607,7 @@ initFunction(initPrint)
 
 <h1 id="simulation-specifics">Simulation specifics</h1>
 
-<h2 id="nfhistnorpddmsbc_f19_mg17_20191025-1975---2014">NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)</h2>
+<h2 id="nfhistnorpddmsbc_f19_mg17_20191025-1979---2014">NFHISTnorpddmsbc_f19_mg17_20191025 (1979 - 2014)</h2>
 <p>|  |  |<br />
 | — | :— | 
 | CESM parent| CESM2.1.0  | 

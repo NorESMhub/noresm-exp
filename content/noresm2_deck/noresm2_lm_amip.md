@@ -11,7 +11,15 @@ Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which th
 
 The AMIP simulation which is part of DECK uses observed SSTs, observed sea-ice and NorESM2 derived DMS emissions:
 
-- **NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)**
+- **NFHISTnorpddmsbc_f19_mg17_20191025 (1979 - 2014)**
+
+Please note that there exists an AMIP DECK simulation using the standard CESM flux description between ocean and atmosphere (flux=0), instead of the COARE flux description (flux=1) which is used in the fully-coupled NorESM2 simulations:
+
+- **NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014)**
+
+the simulation was run with FLUX SCHEME=0. and ALB COSZ AVG=.false. A comparison of AMIP simulations with and without these settings can be found here:
+
+http://ns2345k.web.sigma2.no/people/olivie/cmip6/cpl-fsst/cplfsstdiff_impact.v1.0.pdf
 
 In addition, there exist atmosphere-only historical simulations (1850 - 2014) with NorESM-derived SSTs, sea-ice and DMS emissons. For more details, please see NorESM-LM historical
 
@@ -23,7 +31,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 # Simulation specifics
 
-## NFHISTnorpddmsbc_f19_mg17_20191025 (1975 - 2014)
+## NFHISTnorpddmsbc_f19_mg17_20191025 (1979 - 2014)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
