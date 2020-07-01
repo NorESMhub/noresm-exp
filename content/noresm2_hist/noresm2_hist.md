@@ -4,7 +4,7 @@
 
 NorESM2 historical experiments: all-forcing simulation of the recent past; 1850 - 2014
 
-## NorESM2-MM historical experiments
+## NorESM2-MM fully coupled historical experiments
 
 ### Ensemble member 1 
 
@@ -30,7 +30,14 @@ NorESM2 historical experiments: all-forcing simulation of the recent past; 1850 
 | NHISTfrc2_03_f09_tn14_20200619 | 1950 - 2014  |
 -------------------------------------------------------------
 
-## NorESM2-LM historical experiments
+## NorESM2-MM AMIP historical experiment 
+
+| Case name |   Simulation time (y) |   
+| :--- |   :---: | 
+|NFHISTfrc2_f09_mg17_20191107  (DECK)  | 1975 - 2012 |
+-------------------------------------------------------
+
+## NorESM2-LM fully coupled historical experiments
 
 ### Ensemble member 1 
 
@@ -55,6 +62,14 @@ NorESM2 historical experiments: all-forcing simulation of the recent past; 1850 
 | NHIST_03_f19_tn14_20190801 | 1850 - 1949  |
 | NHIST_03_f19_tn14_20190813 | 1950 - 2014  |
 -------------------------------------------------------------
+
+## NorESM2-LM AMIP historical experiments
+
+| Case name |   Simulation time (y) |   
+| :--- |   :---: | 
+| NFHISTnorpddmsbc_f19_mg17_20191025 (DECK)  | 1975 - 2014 |
+| NFHISTnorbc_f19_20191107 | 1850 - 2014 |
+| NFHISTnorbc_f19_20190730 | 1850 - 2014  |
 
 # Time series of NorESM2-MM historical experiments
 
