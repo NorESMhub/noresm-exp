@@ -161,7 +161,7 @@ In addition, there exist atmosphere-only simulations with NorESM-derived SSTs(pa
 
 in addition to 60 or more perturbed simulations
  
- Please note that there exsist AMIP simulations using the standard CESM flux description between ocean and atmosphere
+ Please note that there exist AMIP simulations using the standard CESM flux description between ocean and atmosphere
 (flux=0), instead of the COARE flux description (flux=1) which is used in the fully-coupled NorESM2 simulations:
 
   - **NFHISTnorbc_f19_20190730 (1850 - 2014)**  
