@@ -61,6 +61,7 @@ From CMIP6 es-doc: An extension of at least one of the hist-aer (histAER) simula
 |NSSP245frc2aeroxidonly_02_f19_tn14_20191015| 2015 - 2020 |
 |NSSP245frc2aeroxidonly_03_f19_tn14_20191015| 2015 - 2020 |
 --------------------------------------------------------------
+
 ## NorESM2-LM SSP2-4.5, natural-only 
 From CMIP6 es-doc: An extension of at least one of the hist-nat (histNAT) simulations to the year 2100 following SSP2-45 solar and volcanic forcing. The future solar forcing data recommended for CMIP6 has a downward trend (Matthes et al., 2016).
 
@@ -70,22 +71,32 @@ From CMIP6 es-doc: An extension of at least one of the hist-nat (histNAT) simula
 |NSSP245frc2natonly_02_f19_tn14_20191015| 2015 - 2020 |
 |NSSP245frc2natonly_03_f19_tn14_20191015| 2015 - 2020 |
 --------------------------------------------------------
-## NorESM2-LM SSP3-7.0, with low NTCF emissions
+
+## NorESM2-LM, scenario SSP3-7.0-lowNTCF both for GHGs and aerosol emissions. 
+lowNTCF = reduced Near Term Climate Forcer (NTCF) emissions.
+
 From CMIP6 es-doc: SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced Near Term Climate Forcer (NTCF) emissions. SSP3 socioeconomic conditions.
 
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
 |NSSP370LOWNTCFfrc2_f19_tn14_20191118| 2015 - 2100  |
+|NSSP370LOWNTCFfrc2_02_f19_tn14_20191118| 2015 - 2100  |
+|NSSP370LOWNTCFfrc2_03_f19_tn14_20191118| 2015 - 2100  |
 -----------------------------------------------------------------
 
-##  NorESM2-LM  SSP3-7.0,  with REFGHG(?) and low NTCF emissions
+##  NorESM2-LM  SSP3-7.0,  with SSP3-7.0 GHG and low NTCF emissions
+These scenarios have greenhouse gas concentrations from SSP3-7.0 (therefore REFGHG in name), but aerosol emissions from SSP3-7.0-lowNTCF (see description above).
+
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
 |NSSP370REFGHGLOWNTCFfrc2_f19_tn14_20191220| 2015 - 2059  |
 |NSSP370REFGHGLOWNTCFfrc2_02_f19_tn14_20191220| 2015 - 2059  |
 |NSSP370REFGHGLOWNTCFfrc2_03_f19_tn14_20191220| 2015 - 2059  |
 -------------------------------------------------------
+
 ##  NorESM2-LM SSP5-8.5, emission-driven 
+From CMIP6 es-doc: Emission driven future scenario (SSP-based RCP SSP5-8.5) up to 2100. Starting conditions taken from emissions-driven Historical simulation. For analysis of impact of carbon cycle feedbacks on climate projections over the 21st century, and for assessment of cumulative emissions compatible with climate targets.
+
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
 | NSSP585_f19_tn14_20191223esm| 2015 - 2100  |
