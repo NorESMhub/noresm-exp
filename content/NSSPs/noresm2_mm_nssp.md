@@ -49,7 +49,7 @@ For an overview and description of the various CMIP6 experiments, please see: ht
 |NSSP370frc2_f19_tn14_20191014 | 2015 - 2100  |
 |NSSP370frc2_02_f19_tn14_20191118 | 2015 - 2100  |
 |NSSP370frc2_03_f19_tn14_20191118 | 2015 - 2100  |
-|NSSP585frc2_f19_tn14_20191014| 2015 - 2060  |
+|NSSP585frc2_f19_tn14_20191014| 2015 - 2059  |
 --------------------------------------------------------------
 
 ##  NorESM2-LM SSP2-4.5,  aerosol and oxidants only 
@@ -57,18 +57,18 @@ From CMIP6 es-doc: An extension of at least one of the hist-aer (histAER) simula
 
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
-|NSSP245frc2aeroxidonly_f19_tn14_20191015| 2015 - 2021 |
-|NSSP245frc2aeroxidonly_02_f19_tn14_20191015| 2015 - 2021 |
-|NSSP245frc2aeroxidonly_03_f19_tn14_20191015| 2015 - 2021 |
+|NSSP245frc2aeroxidonly_f19_tn14_20191015| 2015 - 2020 |
+|NSSP245frc2aeroxidonly_02_f19_tn14_20191015| 2015 - 2020 |
+|NSSP245frc2aeroxidonly_03_f19_tn14_20191015| 2015 - 2020 |
 --------------------------------------------------------------
 ## NorESM2-LM SSP2-4.5, natural-only 
 From CMIP6 es-doc: An extension of at least one of the hist-nat (histNAT) simulations to the year 2100 following SSP2-45 solar and volcanic forcing. The future solar forcing data recommended for CMIP6 has a downward trend (Matthes et al., 2016).
 
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
-|NSSP245frc2natonly_f19_tn14_20191015| 2015 - 2021 |
-|NSSP245frc2natonly_02_f19_tn14_20191015| 2015 - 2021 |
-|NSSP245frc2natonly_03_f19_tn14_20191015| 2015 - 2021 |
+|NSSP245frc2natonly_f19_tn14_20191015| 2015 - 2020 |
+|NSSP245frc2natonly_02_f19_tn14_20191015| 2015 - 2020 |
+|NSSP245frc2natonly_03_f19_tn14_20191015| 2015 - 2020 |
 --------------------------------------------------------
 ## NorESM2-LM SSP3-7.0, with low NTCF emissions
 From CMIP6 es-doc: SSP-based RCP scenario following approximately RCP7.0 global forcing pathway but with reduced Near Term Climate Forcer (NTCF) emissions. SSP3 socioeconomic conditions.
@@ -81,13 +81,14 @@ From CMIP6 es-doc: SSP-based RCP scenario following approximately RCP7.0 global 
 ##  NorESM2-LM  SSP3-7.0,  with REFGHG(?) and low NTCF emissions
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
-|NSSP370REFGHGLOWNTCFfrc2_02_f19_tn14_20191220| 2015 - 2060  |
-|NSSP370REFGHGLOWNTCFfrc2_03_f19_tn14_20191220| 2015 - 2060  |
+|NSSP370REFGHGLOWNTCFfrc2_f19_tn14_20191220| 2015 - 2059  |
+|NSSP370REFGHGLOWNTCFfrc2_02_f19_tn14_20191220| 2015 - 2059  |
+|NSSP370REFGHGLOWNTCFfrc2_03_f19_tn14_20191220| 2015 - 2059  |
 -------------------------------------------------------
 ##  NorESM2-LM SSP5-8.5, emission-driven 
 | Case name |   Simulation time (y) |   
 | :--- |   :---: | 
-| NSSP585_f19_tn14_20191223esm| 2015 - 2060  |
+| NSSP585_f19_tn14_20191223esm| 2015 - 2100  |
 
 --------------------------------------------------------------
 
