@@ -3,3 +3,4 @@
 pandas
 numpy
 jupyter-book < 0.7
+nbconvert < 6.0
