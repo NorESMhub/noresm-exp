@@ -36,7 +36,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191001|
-| Diagnostics |http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850frc2_f09_tn14_20191001/ |
+| Diagnostics |http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850frc2_f09_tn14_20191001/ |
 
 ## N1850frc2_f09_tn14_20191012 (1300 - 1450)
 |  |  |  
@@ -52,7 +52,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191012|
-| Diagnostics |http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850frc2_f09_tn14_20191012/ |
+| Diagnostics |http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850frc2_f09_tn14_20191012/ |
 
 ## N1850frc2_f09_tn14_20191113 (1450 - 1699)
 |  |  |  
@@ -68,7 +68,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191113|
-| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/N1850frc2_f09_tn14_20191113/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850frc2_f09_tn14_20191113/ |
 
 
 # Time series of NorESM2-MM pre-industrial control experiments
