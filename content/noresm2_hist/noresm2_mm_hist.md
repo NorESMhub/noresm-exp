@@ -20,8 +20,7 @@ Fully coupled historical simulations start with NHIST_
   
 **Ensemble member 3:**
 - NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949) 
-- years 1950-2014 not completed,
-
+- NHISTfrc2_03_f09_tn14_20200619 (1950 - 2014)
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 
 ```
@@ -114,7 +113,21 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_03_f09_tn14_20200519 |
 | Diagnostics | - |
 
-## - (1950-2014)
+## NHISTfrc2_03_f09_tn14_20200619 - (1950-2014) 
+|  |  |  
+| --- | :--- | 
+| CESM parent| CESM2.1.0  | 
+| Parent | NHISTfrc2_03_f09_tn14_20200519 |
+| Run type  | branch |
+| Branch time from parent | 1950-01-01 |
+| Simulated years | 01-01-1950 - 31-12-2014 |   
+| Compset | HIST_CAM60%NORESM%FRC2_CLM50%BGC-CROP_CICE%NORESM-CMIP6_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS |
+| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Git commit | 26859d2 |
+| Resolution | f09_tn14 |
+| Machine  |  Fram  |
+| Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/NHISTfrc2_03_f09_tn14_20200619 |
+| Diagnostics | - |
 
 
 
