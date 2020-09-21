@@ -46,7 +46,7 @@ and is from original output of **NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014
 | Resolution | f19_tn14 |
 | Machine  |  Vilje  |
 | Case folder | /home/ntnu/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20191025|
-| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NFHISTnorpddmsbc_f19_mg17_20191025/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NFHISTnorpddmsbc_f19_mg17_20191025/ |
 
 ## NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014)
 |  |  |  
@@ -62,4 +62,4 @@ and is from original output of **NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014
 | Resolution | f19_tn14 |
 | Machine  |  Vilje  |
 | Case folder | /home/ntnu/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20190807|
-| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/NFHISTnorpddmsbc_f19_mg17_20190807/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NFHISTnorpddmsbc_f19_mg17_20190807/ |
