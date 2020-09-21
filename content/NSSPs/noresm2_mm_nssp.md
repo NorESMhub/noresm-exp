@@ -42,6 +42,8 @@ For an overview and description of the various CMIP6 experiments, please see: ht
 | :--- |   :---: | 
 |NSSP126frc2_f09_tn14_20191105 | 2015 - 2100  |
 |NSSP245frc2_f09_tn14_20191105 | 2015 - 2100  |
+|NSSP245frc2_02_f09_tn14_20200629|2015 - 2100  |
+|NSSP245frc2_03_f09_tn14_20200630 | 2015 - 2020 |
 |NSSP370frc2_f09_tn14_20191105 | 2015 - 2100  |
 |NSSP585frc2_f09_tn14_20191105 | 2015 - 2100  |
 
