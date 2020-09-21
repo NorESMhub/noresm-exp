@@ -34,7 +34,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1PCTfrc2_f09_tn14_20191008 |
-| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/N1PCTfrc2_f09_tn14_20191008/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1PCTfrc2_f09_tn14_20191008/ |
 
 ## N1PCTfrc2_f09_tn14_20191028 (121 - 150, extra output)
 |  |  |  
@@ -50,5 +50,5 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1PCTfrc2_f09_tn14_20191028 |
-| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/N1PCTfrc2_f09_tn14_20191028/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1PCTfrc2_f09_tn14_20191028/ |
 

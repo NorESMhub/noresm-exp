@@ -34,7 +34,8 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/N1PCT_f19_tn14_20190626|
-| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/N1PCT_f19_tn14_20190626/ |
+| Diagnostics |  http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1PCT_f19_tn14_20190626/  |
+               
 
 ## N1PCT_f19_tn14_20190712 (121 - 165, extra output)
 
@@ -51,7 +52,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/N1PCT_f19_tn14_20190712 |
-| Diagnostics | http://ns2345k.web.sigma2.no/noresm_diagnostics/N1PCT_f19_tn14_20190712/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1PCT_f19_tn14_20190712/ |
 
 # Time series of NorESM2-LM 1% increase of atmospheric CO2 concentration experiments
 
