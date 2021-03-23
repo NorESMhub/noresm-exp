@@ -11,7 +11,7 @@ on Vilje @ sigma2
 
 # Path to diagnostics
 
-http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850OCBDRDDMS_f19_tn14_Gibr_220319/
+http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f19_tn14_Gibr_220319/
 
 # Summary of simulation
 
