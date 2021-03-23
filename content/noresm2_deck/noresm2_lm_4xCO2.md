@@ -41,7 +41,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NCO2x4_f19_tn14_20190624|
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NCO2x4_f19_tn14_20190624/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4_f19_tn14_20190624/ |
 
 ## NCO2x4_f19_tn14_20190705 (121 - 150, extra output)
 
@@ -58,7 +58,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/NCO2x4_f19_tn14_20190705 |
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NCO2x4_f19_tn14_20190624/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4_f19_tn14_20190624/ |
 
 ## NCO2x4_f19_tn14_20190724 (151 - 500)
 
@@ -75,7 +75,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/NCO2x4_f19_tn14_20190724 |
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NCO2x4_f19_tn14_20190724/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4_f19_tn14_20190724/ |
 
 
 ## NCO2x4_f19_tn14_20191129 (501 - 620)
@@ -93,7 +93,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Nebula @ smhi |
 | Case folder |  /home/sm_adagj/noresm/cases-cmip6/NCO2x4_f19_tn14_20191129 |
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NCO2x4_f19_tn14_20191129/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4_f19_tn14_20191129/ |
 
 # Time series of NorESM2-LM abrupt quadrupling of atmospheric CO2 concentration experiments
 
