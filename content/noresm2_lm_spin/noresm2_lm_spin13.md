@@ -13,7 +13,7 @@ on Vilje @ sigma2: /home/ntnu/adagj/noresm/cases_2.1.0/N1850_f19_tn14_11062019_v
 
 # Path to diagnostics
 
-http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850_f19_tn14_11062019/
+http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f19_tn14_11062019/
 
 
 # Summary of simulation
