@@ -34,7 +34,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/NCO2x4frc2_f09_tn14_20191008 |
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NCO2x4frc2_f09_tn14_20191008/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4frc2_f09_tn14_20191008/ |
 
 ## NCO2x4frc2_f09_tn14_20191028 (121 - 150, extra output)
 |  |  |  
@@ -50,7 +50,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/NCO2x4frc2_f09_tn14_20191028 |
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NCO2x4frc2_f09_tn14_20191028/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4frc2_f09_tn14_20191028/ |
 
 # Time series of NorESM2-MM abrupt quadrupling of atmospheric CO2 concentration experiments
 
