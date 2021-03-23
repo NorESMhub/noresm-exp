@@ -75,7 +75,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/NHIST_f19_tn14_20190710|
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NHIST_f19_tn14_20190710/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NHIST_f19_tn14_20190710/ |
 
 # Simulation specifics - ensemble member nr.2
 
@@ -109,7 +109,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_02_f19_tn14_20190813 |
-| Diagnostics |http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NHIST_02_f19_tn14_20190813/ |
+| Diagnostics |http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NHIST_02_f19_tn14_20190813/ |
 
 # Simulation specifics - ensemble member nr.3
 
@@ -143,7 +143,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder |/cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NHIST_03_f19_tn14_20190813 |
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NHIST_03_f19_tn14_20190813/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NHIST_03_f19_tn14_20190813/ |
 
 # AMIP
 
@@ -196,7 +196,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Vilje  |
 | Case folder |/home/ntnu/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20191025|
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NFHISTnorpddmsbc_f19_mg17_20191025/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NFHISTnorpddmsbc_f19_mg17_20191025/ |
 
 ## NFHISTnorbc_f19_20191107 (1850 - 2014)
 |  |  |  
