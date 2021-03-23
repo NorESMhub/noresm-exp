@@ -13,7 +13,7 @@ on Fram @ sigma2
 
 # Path to diagnostics
 
-http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850_f09_tn14_20190622/
+http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f09_tn14_20190622/
 
 # Summary of simulation
 
