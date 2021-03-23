@@ -1,7 +1,7 @@
 # Data storage
 The data is stored on NIRD @ sigma2
 
-/projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019
+/projects/NS9560K/noresm/cases/N1850_f19_tn14_11062019
 
 /projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019_vilje
 
