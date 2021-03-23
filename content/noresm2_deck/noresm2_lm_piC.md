@@ -36,7 +36,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases6a0b992/N1850_f19_tn14_20190621|
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850_f19_tn14_20190621/|
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f19_tn14_20190621/|
 
 ## N1850_f19_tn14_20190722 (1801 - 1900)
 |  |  |  
@@ -52,7 +52,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/N1850_f19_tn14_20190722 |
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850_f19_tn14_20190722/|
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f19_tn14_20190722/|
 
 ## N1850_f19_tn14_20190802 (1901 - 1999)
 |  |  |  
@@ -68,7 +68,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f19_tn14 |
 | Machine  |  Fram  |
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/N1850_f19_tn14_20190802 |
-| Diagnostics |http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850_f19_tn14_20190802/ |
+| Diagnostics |http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f19_tn14_20190802/ |
 
 # Time series of NorESM2-LM pre-industrial control experiments
 
