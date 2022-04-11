@@ -1,6 +1,0 @@
-# Requirements for the demo notebooks
-# Useful for MyBinder configuration
-pandas
-numpy
-jupyter-book < 0.7
-nbconvert < 6.0

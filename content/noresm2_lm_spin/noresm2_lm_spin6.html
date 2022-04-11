@@ -1,1844 +1,1006 @@
+
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,minimum-scale=1">
-
-  <title>Data storage</title>
-  <meta name="description" content="# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_15042019# Path to case directory/home/sm_adagj/noresm...">
-
-  <link rel="canonical" href="https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin/noresm2_lm_spin6.html">
-  <link rel="alternate" type="application/rss+xml" title="NorESM Experiments" href="https://noresmhub.github.io//noresm-exp/feed.xml">
-
-  <meta property="og:url"         content="https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin/noresm2_lm_spin6.html" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="Data storage" />
-<meta property="og:description" content="# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_15042019# Path to case directory/home/sm_adagj/noresm..." />
-<meta property="og:image"       content="https://noresmhub.github.io//noresm-exp/images/logo/logo.png" />
-
-<meta name="twitter:card" content="summary">
-
-
-  <script type="application/ld+json">
-  {
-  "@context": "http://schema.org",
-  "@type": "NewsArticle",
-  "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/content/noresm2_lm_spin/noresm2_lm_spin6.html",
-  "headline": "Data storage",
-  "datePublished": "2020-09-21T10:53:47+00:00",
-  "dateModified": "2020-09-21T10:53:47+00:00",
-  "description": "# Data storageThe data is stored on NIRD @ sigma2/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_15042019# Path to case directory/home/sm_adagj/noresm...",
-  "author": {
-    "@type": "Person",
-    "name": "Ada Gjermundsen"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Data 100 at UC Berkeley",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://noresmhub.github.io//noresm-exp",
-      "width": 60,
-      "height": 60
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://noresmhub.github.io//noresm-exp",
-    "height": 60,
-    "width": 60
-  }
-}
-
-  </script>
-  <link rel="stylesheet" href="/noresm-exp/assets/css/styles.css">
-
-  <!-- <link rel="manifest" href="/manifest.json"> -->
-  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-  <meta name="theme-color" content="#233947">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/noresm-exp/images/logo/favicon.ico">
-
-  <!-- MathJax Config -->
-  <!-- Allow inline math using $ and automatically break long math lines -->
-<!-- (mostly) copied from nbconvert configuration -->
-<!-- https://github.com/jupyter/nbconvert/blob/master/nbconvert/templates/html/mathjax.tpl -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true,
-        processEnvironments: true
-    },
-    // Center justify equations in code and markdown cells. Elsewhere
-    // we use CSS to left justify single line equations in code cells.
-    displayAlign: 'center',
-    "HTML-CSS": {
-        styles: {'.MathJax_Display': {"margin": 0}},
-        linebreaks: { automatic: true },
-    },
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N1850OCBDRDDMS_f19_tn14_15042019 &#8212; NorESM Experiments</title>
     
-});
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML' async></script>
-
-
-  <!-- DOM updating function -->
-  <script src="/noresm-exp/assets/js/page/dom-update.js"></script>
-
-  <!-- Selectors for elements on the page -->
-  <script src="/noresm-exp/assets/js/page/documentSelectors.js"></script>
-
-  <!-- Define some javascript variables that will be useful in other javascript -->
-  <script>
-    const site_basename = '/noresm-exp';
-  </script>
-
-  <!-- Add AnchorJS to let headers be linked -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
-  <script src="/noresm-exp/assets/js/page/anchors.js" async></script>
-
-  <!-- Include Turbolinks to make page loads fast -->
-  <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" async></script>
-  <meta name="turbolinks-cache-control" content="no-cache">
-
-  <!-- Load nbinteract for widgets -->
-  
-
-  <!-- Load Thebelab for interactive widgets -->
-  <!-- Include Thebelab for interactive code if it's enabled -->
-
-
-<!-- Display Thebelab button in each code cell -->
-<script>
-/**
- * Set up thebelab button for code blocks
- */
-
-const thebelabCellButton = id =>
-  `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
-    <img src="/noresm-exp/assets/images/edit-button.svg" alt="Start thebelab interactive mode">
-  </a>`
-
-
-const addThebelabButtonToCodeCells =  () => {
-
-  const codeCells = document.querySelectorAll('div.input_area > div.highlight:not(.output) pre')
-  codeCells.forEach((codeCell, index) => {
-    const id = codeCellId(index)
-    codeCell.setAttribute('id', id)
-    if (document.getElementById("thebelab-cell-button-" + id) == null) {
-      codeCell.insertAdjacentHTML('afterend', thebelabCellButton(id));
-    }
-  })
-}
-
-initFunction(addThebelabButtonToCodeCells);
-</script>
-
-
-<script src="https://unpkg.com/thebelab@latest/lib/index.js" async></script>
-<script>
-    /**
-     * Add attributes to Thebelab blocks
-     */
-
-    const initThebelab = () => {
-        const addThebelabToCodeCells = () => {
-            console.log("Adding thebelab to code cells...");
-            // If Thebelab hasn't loaded, wait a bit and try again. This
-            // happens because we load ClipboardJS asynchronously.
-            if (window.thebelab === undefined) {
-                setTimeout(addThebelabToCodeCells, 250)
-            return
-            }
-
-            // If we already detect a Thebelab cell, don't re-run
-            if (document.querySelectorAll('div.thebelab-cell').length > 0) {
-                return;
-            }
-
-            // Find all code cells, replace with Thebelab interactive code cells
-            const codeCells = document.querySelectorAll('.input_area pre')
-            codeCells.forEach((codeCell, index) => {
-                const id = codeCellId(index)
-
-                // Clean up the language to make it work w/ CodeMirror and add it to the cell
-                dataLanguage = ""
-                dataLanguage = detectLanguage(dataLanguage);
-                codeCell.setAttribute('data-language', dataLanguage)
-                codeCell.setAttribute('data-executable', 'true')
-
-                // If the code cell is hidden, show it
-                var inputCheckbox = document.querySelector(`input#hidebtn${codeCell.id}`);
-                if (inputCheckbox !== null) {
-                    setCodeCellVisibility(inputCheckbox, 'visible');
-                }
-            });
-
-            // Remove the event listener from the page so keyboard press doesn't
-            // Change page
-            document.removeEventListener('keydown', initPageNav)
-            keyboardListener = false;
-
-            // Init thebelab
-            thebelab.bootstrap();
-
-            // Remove copy buttons since they won't work anymore
-            const copyAndThebeButtons = document.querySelectorAll('.copybtn, .thebebtn')
-            copyAndThebeButtons.forEach((button, index) => {
-                button.remove();
-            });
-
-            // Remove outputs since they'll be stale
-            const outputs = document.querySelectorAll('.output *, .output')
-            outputs.forEach((output, index) => {
-                output.remove();
-            });
-
-            // Find any cells with an initialization tag and ask ThebeLab to run them when ready
-            var thebeInitCells = document.querySelectorAll('div.tag_thebelab-init');
-            thebeInitCells.forEach((cell) => {
-                console.log("Initializing ThebeLab with cell: " + cell.id);
-                cell.querySelector('.thebelab-run-button').click();
-            });
-        }
-
-        // Add event listener for the function to modify code cells
-        const thebelabButtons = document.querySelectorAll('[id^=thebelab], [id$=thebelab]')
-        thebelabButtons.forEach((thebelabButton,index) => {
-            if (thebelabButton === null) {
-                setTimeout(initThebelab, 250)
-                return
-            };
-            thebelabButton.addEventListener('click', addThebelabToCodeCells);
-        });
-    }
-
-    // Initialize Thebelab
-    initFunction(initThebelab);
-
-// Helper function to munge the language name
-var detectLanguage = (language) => {
-    if (language.indexOf('python') > -1) {
-        language = "python";
-    }
-    return language;
-}
-</script>
-
-
-
-  <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.8.1/tocbot.min.js" async></script>
-  <script src="/noresm-exp/assets/js/page/tocbot.js"></script>
-
-  <!-- Google analytics -->
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '');
-</script>
-
-
-
-  <!-- Clipboard copy button -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script>
-
-  <!-- Load custom website scripts -->
-  <script src="/noresm-exp/assets/js/scripts.js" async></script>
-
-  <!-- Load custom user CSS and JS  -->
-  <script src="/noresm-exp/assets/custom/custom.js" async></script>
-  <link rel="stylesheet" href="/noresm-exp/assets/custom/custom.css">
-
-  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
-  
-
-  <!-- Lunr search code - will only be executed on the /search page -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js" async></script>
-  <script>var initQuery = function() {
-  // See if we have a search box
-  var searchInput = document.querySelector('input#lunr_search');
-  if (searchInput === null) {
-    return;
-  }
-
-  // Function to parse our lunr cache
-  var idx = lunr(function () {
-    this.field('title')
-    this.field('excerpt')
-    this.field('categories')
-    this.field('tags')
-    this.ref('id')
-
-    this.pipeline.remove(lunr.trimmer)
-
-    for (var item in store) {
-      this.add({
-        title: store[item].title,
-        excerpt: store[item].excerpt,
-        categories: store[item].categories,
-        tags: store[item].tags,
-        id: item
-      })
-    }
-  });
-
-  // Run search upon keyup
-  searchInput.addEventListener('keyup', function () {
-    var resultdiv = document.querySelector('#results');
-    var query = document.querySelector("input#lunr_search").value.toLowerCase();
-    var result =
-      idx.query(function (q) {
-        query.split(lunr.tokenizer.separator).forEach(function (term) {
-          q.term(term, { boost: 100 })
-          if(query.lastIndexOf(" ") != query.length-1){
-            q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
-          }
-          if (term != ""){
-            q.term(term, {  usePipeline: false, editDistance: 1, boost: 1 })
-          }
-        })
-      });
-
-      // Empty the results div
-      while (resultdiv.firstChild) {
-        resultdiv.removeChild(resultdiv.firstChild);
-      }
-
-    resultdiv.insertAdjacentHTML('afterbegin', '<p class="results__found">'+result.length+' Result(s) found</p>');
-    for (var item in result) {
-      var ref = result[item].ref;
-      if(store[ref].teaser){
-        var searchitem =
-          '<div class="list__item">'+
-            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
-              '<h2 class="archive__item-title" itemprop="headline">'+
-                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
-              '</h2>'+
-              '<div class="archive__item-teaser">'+
-                '<img src="'+store[ref].teaser+'" alt="">'+
-              '</div>'+
-              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
-            '</article>'+
-          '</div>';
-      }
-      else{
-    	  var searchitem =
-          '<div class="list__item">'+
-            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
-              '<h2 class="archive__item-title" itemprop="headline">'+
-                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
-              '</h2>'+
-              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
-            '</article>'+
-          '</div>';
-      }
-      resultdiv.insertAdjacentHTML('beforeend', searchitem);
-    }
-  });
-};
-
-initFunction(initQuery);
-</script>
-
-  <!-- Load JS that depends on site variables -->
-  <script src="/noresm-exp/assets/js/page/copy-button.js" async></script>
-
-  <!-- Hide cell code -->
-  <script src="/noresm-exp/assets/js/page/hide-cell.js" async></script>
-
-  <!-- Printing the screen -->
-  <!-- Include nbinteract for interactive widgets -->
-<script src="https://printjs-4de6.kxcdn.com/print.min.js" async></script>
-<script>
-printContent = () => {
-    // MathJax displays a second version of any math for assistive devices etc.
-    // This prevents double-rendering in the PDF output.
-    var ignoreAssistList = [];
-    assistives = document.querySelectorAll('.MathJax_Display span.MJX_Assistive_MathML').forEach((element, index) => {
-        var thisId = 'MathJax-assistive-' + index.toString();
-        element.setAttribute('id', thisId);
-        ignoreAssistList.push(thisId)
-    });
-
-    // Print the actual content object
-    printJS({
-        printable: 'textbook_content',
-        type: 'html',
-        css: "/noresm-exp/assets/css/styles.css",
-        style: "#textbook_content {padding-top: 40px};",
-        scanStyles: false,
-        targetStyles: ["*"],
-        ignoreElements: ignoreAssistList,
-        documentTitle: "Made with Jupyter Book"
-    })
-};
-
-initPrint = () => {
-    document.querySelector('#interact-button-print').addEventListener('click', printContent)
-}
-
-initFunction(initPrint)
-</script>
-
-</head>
-
-  <body>
-    <!-- Include the ThebeLab config so it gets reloaded on each page -->
-    <script type="text/x-thebe-config">{
-    requestKernel: true,
-    binderOptions: {
-    repo: "YOUR-ORG/YOUR-REPO",
-    ref: "gh-pages",
-    },
-    codeMirrorConfig: {
-    theme: "abcdef",
-    mode: "python"
-    },
-    kernelOptions: {
-    kernelName: "python3",
-    path: ""
-    }
-}
-</script>
-
-    <!-- .js-show-sidebar shows sidebar by default -->
-    <div id="js-textbook" class="c-textbook js-show-sidebar">
-      
-
-
-
-<nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://jupyterbook.org/"><img src="/noresm-exp/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
-  <h2 class="c-sidebar__title">NorESM Experiments</h2>
-  <ul class="c-sidebar__chapters">
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="N1850OCBDRDDMS_f19_tn14_25042019" href="noresm2_lm_spin7.html" />
+    <link rel="prev" title="N1850OCBDRDDMS_f19_tn14_12042019" href="noresm2_lm_spin5.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
     
-      
-      
 
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/intro">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/intro.html"
-        >
-          
-          Home
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-
-      
+    <!-- Google Analytics -->
     
-      
-      
-
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_deck/noresm2_mm_deck">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_deck/noresm2_mm_deck.html"
-        >
-          
-          NorESM2-MM DECK
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-        
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_mm_piC">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_mm_piC.html"
-              >
-                
-                NorESM2-MM piControl
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_mm_amip">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_mm_amip.html"
-              >
-                
-                NorESM2-MM AMIP
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_mm_4xCO2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_mm_4xCO2.html"
-              >
-                
-                NorESM2-MM abrupt-4xCO2
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_mm_1pctCO2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_mm_1pctCO2.html"
-              >
-                
-                NorESM2-MM 1ptcCO2
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
-      
-      
+    <div class="container-fluid" id="banner"></div>
 
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_deck/noresm2_lm_deck">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_deck/noresm2_lm_deck.html"
-        >
-          
-          NorESM2-LM DECK
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-        
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_lm_piC">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_lm_piC.html"
-              >
-                
-                NorESM2-LM piControl
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_lm_amip">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_lm_amip.html"
-              >
-                
-                NorESM2-LM AMIP
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_lm_4xCO2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_lm_4xCO2.html"
-              >
-                
-                NorESM2-LM abrupt-4xCO2
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_lm_1pctCO2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_lm_1pctCO2.html"
-              >
-                
-                NorESM2-LM 1ptcCO2
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
     
-      
-      
 
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_hist/noresm2_hist">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_hist/noresm2_hist.html"
-        >
+    <div class="container-xl">
+      <div class="row">
           
-          NorESM2 historical
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-        
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_hist/noresm2_mm_hist">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_hist/noresm2_mm_hist.html"
-              >
-                
-                NorESM2-MM historical
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_hist/noresm2_lm_hist">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_hist/noresm2_lm_hist.html"
-              >
-                
-                NorESM2-LM historical
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
       
-      
-
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/NSSPs/noresm2_mm_nssp">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/NSSPs/noresm2_mm_nssp.html"
-        >
-          
-          NorESM2 SSPs
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_lm_spin/noresm2_lm_spin_intro">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin_intro.html"
-        >
-          
-          NorESM2-LM spin up
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin1">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin1.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_201218
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin2.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_250119
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin3">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin3.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_Gibr_220319
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin4">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin4.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_03042019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin5">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin5.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_12042019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin6">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin6.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_15042019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin7">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin7.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_25042019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin8">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin8.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_07052019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin9">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin9.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_08052019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin10">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin10.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_10052019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin11">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin11.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_13052019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin12">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin12.html"
-              >
-                
-                N1850_f19_tn14_06062019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin13">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin13.html"
-              >
-                
-                N1850_f19_tn14_11062019
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
-    
       
       
-
+      <img src="../../_static/logo.png" class="logo" alt="logo">
       
       
+      <h1 class="site-logo" id="site-title">NorESM Experiments</h1>
       
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_mm_spin/noresm2_mm_spin_intro">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin_intro.html"
-        >
-          
-          NorESM2-MM spin up
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-        
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin1">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin1.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin2.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin3">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin3.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin4">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin4.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin5">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin5.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190411
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin6">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin6.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190417
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin7">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin7.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190425
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin8">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin8.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190506
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin9">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin9.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190512
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin10">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin10.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190515
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin11">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin11.html"
-              >
-                
-                N1850_f09_tn14_20190604
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin12">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin12.html"
-              >
-                
-                N1850_f09_tn14_20190610
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin13">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin13.html"
-              >
-                
-                N1850_f09_tn14_20190615
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin14">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin14.html"
-              >
-                
-                N1850_f09_tn14_20190622
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin15">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin15.html"
-              >
-                
-                N1850_f09_tn14_20190701
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin16">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin16.html"
-              >
-                
-                N1850_f09_tn14_20190726
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin17">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin17.html"
-              >
-                
-                N1850_f09_tn14_20190812
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin18">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin18.html"
-              >
-                
-                N1850_f09_tn14_20190913
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
-    
-      
-      
-
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="https://github.com/NorESMhub/noresm-exp">
-        <a class="c-sidebar__entry"
-          href="https://github.com/NorESMhub/noresm-exp"
-        >
-          
-          Github repository
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="">
-        <a class="c-sidebar__entry"
-          href=".html"
-        >
-          
-            1.
-          
-          Github repository
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-        <li class="c-sidebar__divider"></li>
-        
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   NorESM2 Key Experiments
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../noresm2_deck/noresm2_mm_deck.html">
+   NorESM2-MM DECK
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_deck/noresm2_mm_piC.html">
+     NorESM2-MM piControl
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_deck/noresm2_mm_amip.html">
+     NorESM2-MM AMIP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_deck/noresm2_mm_4xCO2.html">
+     NorESM2-MM abrupt-4xCO2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_deck/noresm2_mm_1pctCO2.html">
+     NorESM2-MM 1ptcCO2
+    </a>
+   </li>
   </ul>
-  <p class="sidebar_footer">Powered by <a href="https://jupyterbook.org">Jupyter Book</a></p>
-</nav>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../noresm2_deck/noresm2_lm_deck.html">
+   NorESM2-LM DECK
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_deck/noresm2_lm_piC.html">
+     NorESM2-LM piControl
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_deck/noresm2_lm_amip.html">
+     NorESM2-LM AMIP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_deck/noresm2_lm_4xCO2.html">
+     NorESM2-LM abrupt-4xCO2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_deck/noresm2_lm_1pctCO2.html">
+     NorESM2-LM 1ptcCO2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../noresm2_hist/noresm2_hist.html">
+   NorESM2 historical
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_hist/noresm2_mm_hist.html">
+     NorESM2-MM historical
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_hist/noresm2_lm_hist.html">
+     NorESM2-LM historical
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../NSSPs/noresm2_mm_nssp.html">
+   NorESM2 SSPs
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="noresm2_lm_spin_intro.html">
+   NorESM2-LM spin up
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin1.html">
+     N1850OCBDRDDMS_f19_tn14_201218
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin2.html">
+     N1850OCBDRDDMS_f19_tn14_250119
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin3.html">
+     N1850OCBDRDDMS_f19_tn14_Gibr_220319
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin4.html">
+     N1850OCBDRDDMS_f19_tn14_03042019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin5.html">
+     N1850OCBDRDDMS_f19_tn14_12042019
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     N1850OCBDRDDMS_f19_tn14_15042019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin7.html">
+     N1850OCBDRDDMS_f19_tn14_25042019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin8.html">
+     N1850OCBDRDDMS_f19_tn14_07052019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin9.html">
+     N1850OCBDRDDMS_f19_tn14_08052019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin10.html">
+     N1850OCBDRDDMS_f19_tn14_10052019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin11.html">
+     N1850OCBDRDDMS_f19_tn14_13052019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin12.html">
+     N1850_f19_tn14_06062019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="noresm2_lm_spin13.html">
+     N1850_f19_tn14_11062019
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin_intro.html">
+   NorESM2-MM spin up
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin1.html">
+     N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin2.html">
+     N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin3.html">
+     N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin4.html">
+     N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin5.html">
+     N1850OCBDRDDMS_f09_tn14_20190411
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin6.html">
+     N1850OCBDRDDMS_f09_tn14_20190417
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin7.html">
+     N1850OCBDRDDMS_f09_tn14_20190425
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin8.html">
+     N1850OCBDRDDMS_f09_tn14_20190506
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin9.html">
+     N1850OCBDRDDMS_f09_tn14_20190512
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin10.html">
+     N1850OCBDRDDMS_f09_tn14_20190515
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin11.html">
+     N1850_f09_tn14_20190604
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin12.html">
+     N1850_f09_tn14_20190610
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin13.html">
+     N1850_f09_tn14_20190615
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin14.html">
+     N1850_f09_tn14_20190622
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin15.html">
+     N1850_f09_tn14_20190701
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin16.html">
+     N1850_f09_tn14_20190726
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin17.html">
+     N1850_f09_tn14_20190812
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_mm_spin/noresm2_mm_spin18.html">
+     N1850_f09_tn14_20190913
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/NorESMhub/noresm-exp">
+   Github repository
+  </a>
+ </li>
+</ul>
 
-      
-      <div class="c-topbar" id="top-navbar">
-  <!-- We show the sidebar by default so we use .is-active -->
-  <div class="c-topbar__buttons">
-    <button
-      id="js-sidebar-toggle"
-      class="hamburger hamburger--arrowalt is-active"
-    >
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <div class="buttons">
-<div class="download-buttons-dropdown">
-    <button id="dropdown-button-trigger" class="interact-button"><img src="/noresm-exp/assets/images/download-solid.svg" alt="Download" /></button>
-    <div class="download-buttons">
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
         
-        <a id="interact-button-print"><button id="interact-button-download" class="interact-button">.pdf</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/noresm2_lm_spin/noresm2_lm_spin6.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
+            <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/NorESMhub/noresm-exp/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/NorESMhub/noresm-exp//issues/new?title=Issue%20on%20page%20%2Fcontent/noresm2_lm_spin/noresm2_lm_spin6.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
 </div>
 
-  </div>
-  <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
-  <aside class="sidebar__right">
-    <header><h4 class="nav__title"><img src="/noresm-exp/assets/images/list-solid.svg" alt="Search" />   On this page</h4></header>
-    <nav class="onthispage">
-    </nav>
-  </aside>
-  <a href="/noresm-exp/search.html" class="topbar-right-button" id="search-button">
-    <img src="/noresm-exp/assets/images/search-solid.svg" alt="Search" />
-  </a>
-</div>
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-      <main class="c-textbook__page" tabindex="-1">
-            <div class="c-textbook__content" id="textbook_content">
-              <h1 id="data-storage">Data storage</h1>
-<p>The data is stored on NIRD @ sigma2
-/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_15042019</p>
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-<h1 id="path-to-case-directory">Path to case directory</h1>
-
-<p>/home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_15042019/</p>
-
-<p>copy on Vilje @ sigma2</p>
-
-<p>/home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_15042019/</p>
-
-<h1 id="path-to-diagnostics">Path to diagnostics</h1>
-
-<p>http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/N1850OCBDRDDMS_f19_tn14_15042019/</p>
-
-<h1 id="summary-of-simulation">Summary of simulation</h1>
-
-<p>New in this simulation:</p>
-<ul>
-  <li>Removed the 10% increase in the sea-salt emissions</li>
-</ul>
-
-<p>Continued to use</p>
-<ul>
-  <li>CESM2.1</li>
-  <li>the long wave aerosol optical depth (AOD) bug fixer</li>
-  <li>the increase in DMS emissions @ high latitudes in order to reduce the net radiation imbalance @TOM (top of model)</li>
-  <li>Nebula @ nsc.liu</li>
-  <li>the increased width of Strait of Gibraltar</li>
-  <li>the increased (x2) error tolerance in energy conservation test in CICE</li>
-  <li>the modifications to the parameters <em>bkopal, rcalc and ropal</em> in iHAMOCC  included as SourceMod</li>
-  <li>the modifications to the convection code included as SourceMod</li>
-  <li>the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5</li>
-</ul>
-
-<p>For all user name list specifics, see bottom of this page</p>
-
-<h1 id="simulation-specifics">Simulation specifics</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th> </th>
-      <th style="text-align: left"> </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>CESM parent</td>
-      <td style="text-align: left">CESM2.1.0</td>
-    </tr>
-    <tr>
-      <td>Parent</td>
-      <td style="text-align: left">N1850OCBDRDDMS_f19_tn14_12042019</td>
-    </tr>
-    <tr>
-      <td>Run type</td>
-      <td style="text-align: left">branch</td>
-    </tr>
-    <tr>
-      <td>Branch time from parent</td>
-      <td style="text-align: left">0626-01-01</td>
-    </tr>
-    <tr>
-      <td>Simulated years</td>
-      <td style="text-align: left">01-01-0626 - 31-12-0799</td>
-    </tr>
-    <tr>
-      <td>Compset</td>
-      <td style="text-align: left">1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS</td>
-    </tr>
-    <tr>
-      <td>Git branch</td>
-      <td style="text-align: left">featureCESM2.1.0-OsloDevelopment</td>
-    </tr>
-    <tr>
-      <td>Git commit</td>
-      <td style="text-align: left">717e6b9</td>
-    </tr>
-    <tr>
-      <td>Resolution</td>
-      <td style="text-align: left">f19_tn14</td>
-    </tr>
-    <tr>
-      <td>Machine</td>
-      <td style="text-align: left">Nebula</td>
-    </tr>
-  </tbody>
-</table>
-
-<h1 id="node-allocation">Node allocation</h1>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
- &lt;entry id="NTASKS"&gt;
-      &lt;type&gt;integer&lt;/type&gt;
-      &lt;values&gt;
-        &lt;value compclass="ATM"&gt;768&lt;/value&gt;
-        &lt;value compclass="CPL"&gt;768&lt;/value&gt;
-        &lt;value compclass="OCN"&gt;186&lt;/value&gt;
-        &lt;value compclass="WAV"&gt;300&lt;/value&gt;
-        &lt;value compclass="GLC"&gt;768&lt;/value&gt;
-        &lt;value compclass="ICE"&gt;504&lt;/value&gt;
-        &lt;value compclass="ROF"&gt;8&lt;/value&gt;
-        &lt;value compclass="LND"&gt;256&lt;/value&gt;
-        &lt;value compclass="ESP"&gt;1&lt;/value&gt;
-      &lt;/values&gt;
-      &lt;desc&gt;number of tasks for each component&lt;/desc&gt;
-    &lt;/entry&gt;
-
-
-</code></pre></div></div>
-
-<h1 id="code-modifications-sourcemods">Code modifications (SourceMods)</h1>
-
-<h2 id="increase-in-dms-emissions--high-latitudes">Increase in DMS emissions @ high latitudes</h2>
-
-<p>In components/micom/hamocc/beleg_bgc.F90</p>
-
-<p>Line 175 changed from</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>epsher = 0.9         !dimensionless fraction -fraction of grazing egested
-
-</code></pre></div></div>
-
-<p>to</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>epsher = 0.85         !dimensionless fraction -fraction of grazing egested
-
-</code></pre></div></div>
-
-<p>and Line 287</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmspar(5)=1.25*0.109784522E-01  !2*0.02   production with delsil 
-
-</code></pre></div></div>
-<p>to</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al., 06 Table 1, but increased by a factor of 2
-      
-</code></pre></div></div>
-
-<h2 id="moist-convection-in-cam">Moist convection in CAM</h2>
-<p>Moist convection modifications (“zmst” modifications) in</p>
-
-<p>components/cam/src/NorESM/zm_convF90:</p>
-
-<h2 id="increased-error-tolerance-in-energy-conservation-test-in-cice">Increased error tolerance in energy conservation test in CICE</h2>
-<p>ferr = energy conservation error (W m-2)</p>
-
-<p>Line 2390 in /components/cice/src/source/ice_therm_vertical.F90</p>
-
-<p>changed from</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (ferr &gt; ferrmax) then
-
-</code></pre></div></div>
-
-<p>to</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (ferr &gt; 2*ferrmax) then
-
-</code></pre></div></div>
-<h2 id="long-wave-aod-fix">Long wave AOD fix</h2>
-
-<p>Long wave aerosol optical depth (AOD) bug fixer: optinterpol.F90</p>
-
-<p><strong>Information about the bug:</strong> The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.</p>
-
-<h1 id="minor-code-changes">Minor code changes</h1>
-<p>which were included but didn’t impact the model results</p>
-
-<h2 id="time-variable-in-micom-output">Time variable in MICOM output</h2>
-<p>Modifications added to components/micom/phy/rdlim.F</p>
-
-<h2 id="problems-with-fill-values-on-nebula">Problems with fill values on Nebula</h2>
-
-<p>components/mosart/src/riverroute/RtmRestFile.F90</p>
-
-<p>Line 428 from</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>long_name=trim(lname), units=trim(uname), fill_value=spval)
-
-</code></pre></div></div>
-
-<p>to</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>long_name=trim(lname), units=trim(uname))
-
-</code></pre></div></div>
-
-<h1 id="user-name-lists">User name lists</h1>
-
-<h2 id="user_nl_cam">user_nl_cam</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;dyn_fv_inparm
- fv_am_correction= .true.
- fv_am_diag      = .true.
- fv_am_fix_lbl   = .true.
- fv_am_fixer     = .true.
-
-&amp;phys_ctl_nl
- dme_energy_adjust = .true.
-
-
-&amp;zmconv_nl
- zmconv_c0_lnd          =  0.0200D0
- zmconv_c0_ocn          =  0.0200D0
- zmconv_ke              =  8.0E-6
-
-&amp;micro_mg_nl
- micro_mg_dcs             = 5.0e-4
-
-&amp;clubb_params_nl
- clubb_gamma_coef = 0.258
-
-&amp;gw_drag_nl
- tau_0_ubc                = .true.
-
-&amp;cldfrc_nl
- cldfrc_iceopt          =  4
-
-&amp;phys_ctl_nl
-aerotab_table_dir =
-'/nobackup/forsk/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
-
-</code></pre></div></div>
-
-<h2 id="user_nl_clm">user_nl_clm</h2>
-<p>Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>finidat = '/nobackup/forsk/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
-use_init_interp = .true.
-reset_snow = .true.
-
-</code></pre></div></div>
-<h2 id="user_nl_micom">user_nl_micom</h2>
-
-<p>Increased width of Strait of Gibraltar from 15 km to 30 km</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set CWMWTH = "      30.e3,      30.e3"
-
-</code></pre></div></div>
-
-<h1 id="time-series-of-spinup">Time series of spinup</h1>
-
-<figure>
-  <img src="images/spinup6.png" alt="NorESM2-LM spinup simulations" style="width:120%" />
-  <figcaption><b>NorESM2-LM spinup simulations</b><br />
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. <b>Right column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
-  </figcaption>
-</figure>
-
-            </div>
-            <div class="c-textbook__footer" id="textbook_footer">
-              
-<nav class="c-page__nav">
-  
-
-  
-</nav>
-
-              <footer>
-  <p class="footer">This page was created by <a href="https://github.com/ExecutableBookProject/jupyter-book/graphs/contributors">The Jupyter Book Community</a></p>
-</footer>
-
-            </div>
+            <!-- Launch buttons -->
 
         </div>
-      </main>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-storage">
+   Data storage
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#path-to-case-directory">
+   Path to case directory
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#path-to-diagnostics">
+   Path to diagnostics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-simulation">
+   Summary of simulation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#simulation-specifics">
+   Simulation specifics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#node-allocation">
+   Node allocation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-modifications-sourcemods">
+   Code modifications (SourceMods)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#increase-in-dms-emissions-high-latitudes">
+     Increase in DMS emissions @ high latitudes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#moist-convection-in-cam">
+     Moist convection in CAM
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#increased-error-tolerance-in-energy-conservation-test-in-cice">
+     Increased error tolerance in energy conservation test in CICE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#long-wave-aod-fix">
+     Long wave AOD fix
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#minor-code-changes">
+   Minor code changes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#time-variable-in-micom-output">
+     Time variable in MICOM output
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problems-with-fill-values-on-nebula">
+     Problems with fill values on Nebula
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#user-name-lists">
+   User name lists
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-cam">
+     user_nl_cam
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-clm">
+     user_nl_clm
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-micom">
+     user_nl_micom
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#time-series-of-spinup">
+   Time series of spinup
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
     </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>N1850OCBDRDDMS_f19_tn14_15042019</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-storage">
+   Data storage
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#path-to-case-directory">
+   Path to case directory
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#path-to-diagnostics">
+   Path to diagnostics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-simulation">
+   Summary of simulation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#simulation-specifics">
+   Simulation specifics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#node-allocation">
+   Node allocation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-modifications-sourcemods">
+   Code modifications (SourceMods)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#increase-in-dms-emissions-high-latitudes">
+     Increase in DMS emissions @ high latitudes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#moist-convection-in-cam">
+     Moist convection in CAM
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#increased-error-tolerance-in-energy-conservation-test-in-cice">
+     Increased error tolerance in energy conservation test in CICE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#long-wave-aod-fix">
+     Long wave AOD fix
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#minor-code-changes">
+   Minor code changes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#time-variable-in-micom-output">
+     Time variable in MICOM output
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problems-with-fill-values-on-nebula">
+     Problems with fill values on Nebula
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#user-name-lists">
+   User name lists
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-cam">
+     user_nl_cam
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-clm">
+     user_nl_clm
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-micom">
+     user_nl_micom
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#time-series-of-spinup">
+   Time series of spinup
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="n1850ocbdrddms-f19-tn14-15042019">
+<h1>N1850OCBDRDDMS_f19_tn14_15042019<a class="headerlink" href="#n1850ocbdrddms-f19-tn14-15042019" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="data-storage">
+<h2>Data storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h2>
+<p>The data is stored on NIRD &#64; sigma2
+/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_15042019</p>
+</div>
+<div class="section" id="path-to-case-directory">
+<h2>Path to case directory<a class="headerlink" href="#path-to-case-directory" title="Permalink to this headline">¶</a></h2>
+<p>/home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_15042019/</p>
+<p>copy on Vilje &#64; sigma2</p>
+<p>/home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_15042019/</p>
+</div>
+<div class="section" id="path-to-diagnostics">
+<h2>Path to diagnostics<a class="headerlink" href="#path-to-diagnostics" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f19_tn14_15042019/">http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f19_tn14_15042019/</a></p>
+</div>
+<div class="section" id="summary-of-simulation">
+<h2>Summary of simulation<a class="headerlink" href="#summary-of-simulation" title="Permalink to this headline">¶</a></h2>
+<p>New in this simulation:</p>
+<ul class="simple">
+<li><p>Removed the 10% increase in the sea-salt emissions</p></li>
+</ul>
+<p>Continued to use</p>
+<ul class="simple">
+<li><p>CESM2.1</p></li>
+<li><p>the long wave aerosol optical depth (AOD) bug fixer</p></li>
+<li><p>the increase in DMS emissions &#64; high latitudes in order to reduce the net radiation imbalance &#64;TOM (top of model)</p></li>
+<li><p>Nebula &#64; nsc.liu</p></li>
+<li><p>the increased width of Strait of Gibraltar</p></li>
+<li><p>the increased (x2) error tolerance in energy conservation test in CICE</p></li>
+<li><p>the modifications to the parameters <em>bkopal, rcalc and ropal</em> in iHAMOCC  included as SourceMod</p></li>
+<li><p>the modifications to the convection code included as SourceMod</p></li>
+<li><p>the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5</p></li>
+</ul>
+<p>For all user name list specifics, see bottom of this page</p>
+</div>
+<div class="section" id="simulation-specifics">
+<h2>Simulation specifics<a class="headerlink" href="#simulation-specifics" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CESM parent</p></td>
+<td class="text-align:left"><p>CESM2.1.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Parent</p></td>
+<td class="text-align:left"><p>N1850OCBDRDDMS_f19_tn14_12042019</p></td>
+</tr>
+<tr class="row-even"><td><p>Run type</p></td>
+<td class="text-align:left"><p>branch</p></td>
+</tr>
+<tr class="row-odd"><td><p>Branch time from parent</p></td>
+<td class="text-align:left"><p>0626-01-01</p></td>
+</tr>
+<tr class="row-even"><td><p>Simulated years</p></td>
+<td class="text-align:left"><p>01-01-0626 - 31-12-0799</p></td>
+</tr>
+<tr class="row-odd"><td><p>Compset</p></td>
+<td class="text-align:left"><p>1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS</p></td>
+</tr>
+<tr class="row-even"><td><p>Git branch</p></td>
+<td class="text-align:left"><p>featureCESM2.1.0-OsloDevelopment</p></td>
+</tr>
+<tr class="row-odd"><td><p>Git commit</p></td>
+<td class="text-align:left"><p>717e6b9</p></td>
+</tr>
+<tr class="row-even"><td><p>Resolution</p></td>
+<td class="text-align:left"><p>f19_tn14</p></td>
+</tr>
+<tr class="row-odd"><td><p>Machine</p></td>
+<td class="text-align:left"><p>Nebula</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="node-allocation">
+<h2>Node allocation<a class="headerlink" href="#node-allocation" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+ <span class="o">&lt;</span><span class="n">entry</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;NTASKS&quot;</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span><span class="n">integer</span><span class="o">&lt;/</span><span class="nb">type</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">values</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;ATM&quot;</span><span class="o">&gt;</span><span class="mi">768</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;CPL&quot;</span><span class="o">&gt;</span><span class="mi">768</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;OCN&quot;</span><span class="o">&gt;</span><span class="mi">186</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;WAV&quot;</span><span class="o">&gt;</span><span class="mi">300</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;GLC&quot;</span><span class="o">&gt;</span><span class="mi">768</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;ICE&quot;</span><span class="o">&gt;</span><span class="mi">504</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;ROF&quot;</span><span class="o">&gt;</span><span class="mi">8</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;LND&quot;</span><span class="o">&gt;</span><span class="mi">256</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;ESP&quot;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+      <span class="o">&lt;/</span><span class="n">values</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">desc</span><span class="o">&gt;</span><span class="n">number</span> <span class="n">of</span> <span class="n">tasks</span> <span class="k">for</span> <span class="n">each</span> <span class="n">component</span><span class="o">&lt;/</span><span class="n">desc</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">entry</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="code-modifications-sourcemods">
+<h2>Code modifications (SourceMods)<a class="headerlink" href="#code-modifications-sourcemods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="increase-in-dms-emissions-high-latitudes">
+<h3>Increase in DMS emissions &#64; high latitudes<a class="headerlink" href="#increase-in-dms-emissions-high-latitudes" title="Permalink to this headline">¶</a></h3>
+<p>In components/micom/hamocc/beleg_bgc.F90</p>
+<p>Line 175 changed from</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>epsher = 0.9         !dimensionless fraction -fraction of grazing egested
+
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>epsher = 0.85         !dimensionless fraction -fraction of grazing egested
+
+</pre></div>
+</div>
+<p>and Line 287</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>dmspar(5)=1.25*0.109784522E-01  !2*0.02   production with delsil 
+
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al., 06 Table 1, but increased by a factor of 2
+      
+</pre></div>
+</div>
+</div>
+<div class="section" id="moist-convection-in-cam">
+<h3>Moist convection in CAM<a class="headerlink" href="#moist-convection-in-cam" title="Permalink to this headline">¶</a></h3>
+<p>Moist convection modifications (“zmst” modifications) in</p>
+<p>components/cam/src/NorESM/zm_convF90:</p>
+</div>
+<div class="section" id="increased-error-tolerance-in-energy-conservation-test-in-cice">
+<h3>Increased error tolerance in energy conservation test in CICE<a class="headerlink" href="#increased-error-tolerance-in-energy-conservation-test-in-cice" title="Permalink to this headline">¶</a></h3>
+<p>ferr = energy conservation error (W m-2)</p>
+<p>Line 2390 in /components/cice/src/source/ice_therm_vertical.F90</p>
+<p>changed from</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">ferr</span> <span class="o">&gt;</span> <span class="n">ferrmax</span><span class="p">)</span> <span class="n">then</span>
+
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">ferr</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="o">*</span><span class="n">ferrmax</span><span class="p">)</span> <span class="n">then</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="long-wave-aod-fix">
+<h3>Long wave AOD fix<a class="headerlink" href="#long-wave-aod-fix" title="Permalink to this headline">¶</a></h3>
+<p>Long wave aerosol optical depth (AOD) bug fixer: optinterpol.F90</p>
+<p><strong>Information about the bug:</strong> The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.</p>
+</div>
+</div>
+<div class="section" id="minor-code-changes">
+<h2>Minor code changes<a class="headerlink" href="#minor-code-changes" title="Permalink to this headline">¶</a></h2>
+<p>which were included but didn’t impact the model results</p>
+<div class="section" id="time-variable-in-micom-output">
+<h3>Time variable in MICOM output<a class="headerlink" href="#time-variable-in-micom-output" title="Permalink to this headline">¶</a></h3>
+<p>Modifications added to components/micom/phy/rdlim.F</p>
+</div>
+<div class="section" id="problems-with-fill-values-on-nebula">
+<h3>Problems with fill values on Nebula<a class="headerlink" href="#problems-with-fill-values-on-nebula" title="Permalink to this headline">¶</a></h3>
+<p>components/mosart/src/riverroute/RtmRestFile.F90</p>
+<p>Line 428 from</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">long_name</span><span class="o">=</span><span class="n">trim</span><span class="p">(</span><span class="n">lname</span><span class="p">),</span> <span class="n">units</span><span class="o">=</span><span class="n">trim</span><span class="p">(</span><span class="n">uname</span><span class="p">),</span> <span class="n">fill_value</span><span class="o">=</span><span class="n">spval</span><span class="p">)</span>
+
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">long_name</span><span class="o">=</span><span class="n">trim</span><span class="p">(</span><span class="n">lname</span><span class="p">),</span> <span class="n">units</span><span class="o">=</span><span class="n">trim</span><span class="p">(</span><span class="n">uname</span><span class="p">))</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="user-name-lists">
+<h2>User name lists<a class="headerlink" href="#user-name-lists" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="user-nl-cam">
+<h3>user_nl_cam<a class="headerlink" href="#user-nl-cam" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">dyn_fv_inparm</span>
+ <span class="n">fv_am_correction</span><span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+ <span class="n">fv_am_diag</span>      <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+ <span class="n">fv_am_fix_lbl</span>   <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+ <span class="n">fv_am_fixer</span>     <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+
+<span class="o">&amp;</span><span class="n">phys_ctl_nl</span>
+ <span class="n">dme_energy_adjust</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+
+
+<span class="o">&amp;</span><span class="n">zmconv_nl</span>
+ <span class="n">zmconv_c0_lnd</span>          <span class="o">=</span>  <span class="mf">0.0200</span><span class="n">D0</span>
+ <span class="n">zmconv_c0_ocn</span>          <span class="o">=</span>  <span class="mf">0.0200</span><span class="n">D0</span>
+ <span class="n">zmconv_ke</span>              <span class="o">=</span>  <span class="mf">8.0E-6</span>
+
+<span class="o">&amp;</span><span class="n">micro_mg_nl</span>
+ <span class="n">micro_mg_dcs</span>             <span class="o">=</span> <span class="mf">5.0e-4</span>
+
+<span class="o">&amp;</span><span class="n">clubb_params_nl</span>
+ <span class="n">clubb_gamma_coef</span> <span class="o">=</span> <span class="mf">0.258</span>
+
+<span class="o">&amp;</span><span class="n">gw_drag_nl</span>
+ <span class="n">tau_0_ubc</span>                <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+
+<span class="o">&amp;</span><span class="n">cldfrc_nl</span>
+ <span class="n">cldfrc_iceopt</span>          <span class="o">=</span>  <span class="mi">4</span>
+
+<span class="o">&amp;</span><span class="n">phys_ctl_nl</span>
+<span class="n">aerotab_table_dir</span> <span class="o">=</span>
+<span class="s1">&#39;/nobackup/forsk/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17&#39;</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="user-nl-clm">
+<h3>user_nl_clm<a class="headerlink" href="#user-nl-clm" title="Permalink to this headline">¶</a></h3>
+<p>Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">finidat</span> <span class="o">=</span> <span class="s1">&#39;/nobackup/forsk/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc&#39;</span>
+<span class="n">use_init_interp</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+<span class="n">reset_snow</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="user-nl-micom">
+<h3>user_nl_micom<a class="headerlink" href="#user-nl-micom" title="Permalink to this headline">¶</a></h3>
+<p>Increased width of Strait of Gibraltar from 15 km to 30 km</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">CWMWTH</span> <span class="o">=</span> <span class="s2">&quot;      30.e3,      30.e3&quot;</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="time-series-of-spinup">
+<h2>Time series of spinup<a class="headerlink" href="#time-series-of-spinup" title="Permalink to this headline">¶</a></h2>
+<p><img alt="LMspinup6" src="../../_images/spinup6.png" />
+<strong>NorESM2-LM spinup simulations</strong><br />
+<strong>Left column (from top to bottom):</strong> Globally and annually averaged Net radiation &#64; top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) &#64; 26.5N.<br />
+<strong>Right column (from top to bottom):</strong> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.</p>
+<!--
+:::{figure-md}  spinup6
+<img src="images/spinup6.png" alt="NorESM2-LM spinup simulations" style="width:120%">
+
+**NorESM2-LM spinup simulations**  
+**Left column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. **Right column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
+:::
+-->
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/noresm2_lm_spin"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="noresm2_lm_spin5.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">N1850OCBDRDDMS_f19_tn14_12042019</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="noresm2_lm_spin7.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">N1850OCBDRDDMS_f19_tn14_25042019</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Ada Gjermundsen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
   </body>
 </html>

@@ -1,1939 +1,522 @@
+
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,minimum-scale=1">
-
-  <title>Search the site</title>
-  <meta name="description" content="        ">
-
-  <link rel="canonical" href="https://noresmhub.github.io//noresm-exp/search">
-  <link rel="alternate" type="application/rss+xml" title="NorESM Experiments" href="https://noresmhub.github.io//noresm-exp/feed.xml">
-
-  <meta property="og:url"         content="https://noresmhub.github.io//noresm-exp/search" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="Search the site" />
-<meta property="og:description" content="        " />
-<meta property="og:image"       content="https://noresmhub.github.io//noresm-exp/images/logo/logo.png" />
-
-<meta name="twitter:card" content="summary">
-
-
-  <script type="application/ld+json">
-  {
-  "@context": "http://schema.org",
-  "@type": "NewsArticle",
-  "mainEntityOfPage": "https://noresmhub.github.io//noresm-exp/search",
-  "headline": "Search the site",
-  "datePublished": "2020-09-21T10:53:47+00:00",
-  "dateModified": "2020-09-21T10:53:47+00:00",
-  "description": "        ",
-  "author": {
-    "@type": "Person",
-    "name": "Ada Gjermundsen"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Data 100 at UC Berkeley",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://noresmhub.github.io//noresm-exp",
-      "width": 60,
-      "height": 60
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://noresmhub.github.io//noresm-exp",
-    "height": 60,
-    "width": 60
-  }
-}
-
-  </script>
-  <link rel="stylesheet" href="/noresm-exp/assets/css/styles.css">
-
-  <!-- <link rel="manifest" href="/manifest.json"> -->
-  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-  <meta name="theme-color" content="#233947">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/noresm-exp/images/logo/favicon.ico">
-
-  <!-- MathJax Config -->
-  <!-- Allow inline math using $ and automatically break long math lines -->
-<!-- (mostly) copied from nbconvert configuration -->
-<!-- https://github.com/jupyter/nbconvert/blob/master/nbconvert/templates/html/mathjax.tpl -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true,
-        processEnvironments: true
-    },
-    // Center justify equations in code and markdown cells. Elsewhere
-    // we use CSS to left justify single line equations in code cells.
-    displayAlign: 'center',
-    "HTML-CSS": {
-        styles: {'.MathJax_Display': {"margin": 0}},
-        linebreaks: { automatic: true },
-    },
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search &#8212; NorESM Experiments</title>
     
-});
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML' async></script>
-
-
-  <!-- DOM updating function -->
-  <script src="/noresm-exp/assets/js/page/dom-update.js"></script>
-
-  <!-- Selectors for elements on the page -->
-  <script src="/noresm-exp/assets/js/page/documentSelectors.js"></script>
-
-  <!-- Define some javascript variables that will be useful in other javascript -->
-  <script>
-    const site_basename = '/noresm-exp';
-  </script>
-
-  <!-- Add AnchorJS to let headers be linked -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
-  <script src="/noresm-exp/assets/js/page/anchors.js" async></script>
-
-  <!-- Include Turbolinks to make page loads fast -->
-  <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" async></script>
-  <meta name="turbolinks-cache-control" content="no-cache">
-
-  <!-- Load nbinteract for widgets -->
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="#" />
+  <script src="searchindex.js" defer></script>
   
-
-  <!-- Load Thebelab for interactive widgets -->
-  <!-- Include Thebelab for interactive code if it's enabled -->
-
-
-<!-- Display Thebelab button in each code cell -->
-<script>
-/**
- * Set up thebelab button for code blocks
- */
-
-const thebelabCellButton = id =>
-  `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
-    <img src="/noresm-exp/assets/images/edit-button.svg" alt="Start thebelab interactive mode">
-  </a>`
-
-
-const addThebelabButtonToCodeCells =  () => {
-
-  const codeCells = document.querySelectorAll('div.input_area > div.highlight:not(.output) pre')
-  codeCells.forEach((codeCell, index) => {
-    const id = codeCellId(index)
-    codeCell.setAttribute('id', id)
-    if (document.getElementById("thebelab-cell-button-" + id) == null) {
-      codeCell.insertAdjacentHTML('afterend', thebelabCellButton(id));
-    }
-  })
-}
-
-initFunction(addThebelabButtonToCodeCells);
-</script>
-
-
-<script src="https://unpkg.com/thebelab@latest/lib/index.js" async></script>
-<script>
-    /**
-     * Add attributes to Thebelab blocks
-     */
-
-    const initThebelab = () => {
-        const addThebelabToCodeCells = () => {
-            console.log("Adding thebelab to code cells...");
-            // If Thebelab hasn't loaded, wait a bit and try again. This
-            // happens because we load ClipboardJS asynchronously.
-            if (window.thebelab === undefined) {
-                setTimeout(addThebelabToCodeCells, 250)
-            return
-            }
-
-            // If we already detect a Thebelab cell, don't re-run
-            if (document.querySelectorAll('div.thebelab-cell').length > 0) {
-                return;
-            }
-
-            // Find all code cells, replace with Thebelab interactive code cells
-            const codeCells = document.querySelectorAll('.input_area pre')
-            codeCells.forEach((codeCell, index) => {
-                const id = codeCellId(index)
-
-                // Clean up the language to make it work w/ CodeMirror and add it to the cell
-                dataLanguage = ""
-                dataLanguage = detectLanguage(dataLanguage);
-                codeCell.setAttribute('data-language', dataLanguage)
-                codeCell.setAttribute('data-executable', 'true')
-
-                // If the code cell is hidden, show it
-                var inputCheckbox = document.querySelector(`input#hidebtn${codeCell.id}`);
-                if (inputCheckbox !== null) {
-                    setCodeCellVisibility(inputCheckbox, 'visible');
-                }
-            });
-
-            // Remove the event listener from the page so keyboard press doesn't
-            // Change page
-            document.removeEventListener('keydown', initPageNav)
-            keyboardListener = false;
-
-            // Init thebelab
-            thebelab.bootstrap();
-
-            // Remove copy buttons since they won't work anymore
-            const copyAndThebeButtons = document.querySelectorAll('.copybtn, .thebebtn')
-            copyAndThebeButtons.forEach((button, index) => {
-                button.remove();
-            });
-
-            // Remove outputs since they'll be stale
-            const outputs = document.querySelectorAll('.output *, .output')
-            outputs.forEach((output, index) => {
-                output.remove();
-            });
-
-            // Find any cells with an initialization tag and ask ThebeLab to run them when ready
-            var thebeInitCells = document.querySelectorAll('div.tag_thebelab-init');
-            thebeInitCells.forEach((cell) => {
-                console.log("Initializing ThebeLab with cell: " + cell.id);
-                cell.querySelector('.thebelab-run-button').click();
-            });
-        }
-
-        // Add event listener for the function to modify code cells
-        const thebelabButtons = document.querySelectorAll('[id^=thebelab], [id$=thebelab]')
-        thebelabButtons.forEach((thebelabButton,index) => {
-            if (thebelabButton === null) {
-                setTimeout(initThebelab, 250)
-                return
-            };
-            thebelabButton.addEventListener('click', addThebelabToCodeCells);
-        });
-    }
-
-    // Initialize Thebelab
-    initFunction(initThebelab);
-
-// Helper function to munge the language name
-var detectLanguage = (language) => {
-    if (language.indexOf('python') > -1) {
-        language = "python";
-    }
-    return language;
-}
-</script>
-
-
-
-  <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.8.1/tocbot.min.js" async></script>
-  <script src="/noresm-exp/assets/js/page/tocbot.js"></script>
-
-  <!-- Google analytics -->
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '');
-</script>
-
-
-
-  <!-- Clipboard copy button -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script>
-
-  <!-- Load custom website scripts -->
-  <script src="/noresm-exp/assets/js/scripts.js" async></script>
-
-  <!-- Load custom user CSS and JS  -->
-  <script src="/noresm-exp/assets/custom/custom.js" async></script>
-  <link rel="stylesheet" href="/noresm-exp/assets/custom/custom.css">
-
-  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
-  
-
-  <!-- Lunr search code - will only be executed on the /search page -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js" async></script>
-  <script>var initQuery = function() {
-  // See if we have a search box
-  var searchInput = document.querySelector('input#lunr_search');
-  if (searchInput === null) {
-    return;
-  }
-
-  // Function to parse our lunr cache
-  var idx = lunr(function () {
-    this.field('title')
-    this.field('excerpt')
-    this.field('categories')
-    this.field('tags')
-    this.ref('id')
-
-    this.pipeline.remove(lunr.trimmer)
-
-    for (var item in store) {
-      this.add({
-        title: store[item].title,
-        excerpt: store[item].excerpt,
-        categories: store[item].categories,
-        tags: store[item].tags,
-        id: item
-      })
-    }
-  });
-
-  // Run search upon keyup
-  searchInput.addEventListener('keyup', function () {
-    var resultdiv = document.querySelector('#results');
-    var query = document.querySelector("input#lunr_search").value.toLowerCase();
-    var result =
-      idx.query(function (q) {
-        query.split(lunr.tokenizer.separator).forEach(function (term) {
-          q.term(term, { boost: 100 })
-          if(query.lastIndexOf(" ") != query.length-1){
-            q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
-          }
-          if (term != ""){
-            q.term(term, {  usePipeline: false, editDistance: 1, boost: 1 })
-          }
-        })
-      });
-
-      // Empty the results div
-      while (resultdiv.firstChild) {
-        resultdiv.removeChild(resultdiv.firstChild);
-      }
-
-    resultdiv.insertAdjacentHTML('afterbegin', '<p class="results__found">'+result.length+' Result(s) found</p>');
-    for (var item in result) {
-      var ref = result[item].ref;
-      if(store[ref].teaser){
-        var searchitem =
-          '<div class="list__item">'+
-            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
-              '<h2 class="archive__item-title" itemprop="headline">'+
-                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
-              '</h2>'+
-              '<div class="archive__item-teaser">'+
-                '<img src="'+store[ref].teaser+'" alt="">'+
-              '</div>'+
-              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
-            '</article>'+
-          '</div>';
-      }
-      else{
-    	  var searchitem =
-          '<div class="list__item">'+
-            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
-              '<h2 class="archive__item-title" itemprop="headline">'+
-                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
-              '</h2>'+
-              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
-            '</article>'+
-          '</div>';
-      }
-      resultdiv.insertAdjacentHTML('beforeend', searchitem);
-    }
-  });
-};
-
-initFunction(initQuery);
-</script>
-
-  <!-- Load JS that depends on site variables -->
-  <script src="/noresm-exp/assets/js/page/copy-button.js" async></script>
-
-  <!-- Hide cell code -->
-  <script src="/noresm-exp/assets/js/page/hide-cell.js" async></script>
-
-  <!-- Printing the screen -->
-  <!-- Include nbinteract for interactive widgets -->
-<script src="https://printjs-4de6.kxcdn.com/print.min.js" async></script>
-<script>
-printContent = () => {
-    // MathJax displays a second version of any math for assistive devices etc.
-    // This prevents double-rendering in the PDF output.
-    var ignoreAssistList = [];
-    assistives = document.querySelectorAll('.MathJax_Display span.MJX_Assistive_MathML').forEach((element, index) => {
-        var thisId = 'MathJax-assistive-' + index.toString();
-        element.setAttribute('id', thisId);
-        ignoreAssistList.push(thisId)
-    });
-
-    // Print the actual content object
-    printJS({
-        printable: 'textbook_content',
-        type: 'html',
-        css: "/noresm-exp/assets/css/styles.css",
-        style: "#textbook_content {padding-top: 40px};",
-        scanStyles: false,
-        targetStyles: ["*"],
-        ignoreElements: ignoreAssistList,
-        documentTitle: "Made with Jupyter Book"
-    })
-};
-
-initPrint = () => {
-    document.querySelector('#interact-button-print').addEventListener('click', printContent)
-}
-
-initFunction(initPrint)
-</script>
-
-</head>
-
-  <body>
-    <!-- Include the ThebeLab config so it gets reloaded on each page -->
-    <script type="text/x-thebe-config">{
-    requestKernel: true,
-    binderOptions: {
-    repo: "YOUR-ORG/YOUR-REPO",
-    ref: "gh-pages",
-    },
-    codeMirrorConfig: {
-    theme: "abcdef",
-    mode: "python"
-    },
-    kernelOptions: {
-    kernelName: "python3",
-    path: ""
-    }
-}
-</script>
-
-    <!-- .js-show-sidebar shows sidebar by default -->
-    <div id="js-textbook" class="c-textbook js-show-sidebar">
-      
-
-
-
-<nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://jupyterbook.org/"><img src="/noresm-exp/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
-  <h2 class="c-sidebar__title">NorESM Experiments</h2>
-  <ul class="c-sidebar__chapters">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
     
-      
-      
 
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/intro">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/intro.html"
-        >
-          
-          Home
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-
-      
+    <!-- Google Analytics -->
     
-      
-      
 
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_deck/noresm2_mm_deck">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_deck/noresm2_mm_deck.html"
-        >
-          
-          NorESM2-MM DECK
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-        
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_mm_piC">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_mm_piC.html"
-              >
-                
-                NorESM2-MM piControl
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_mm_amip">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_mm_amip.html"
-              >
-                
-                NorESM2-MM AMIP
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_mm_4xCO2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_mm_4xCO2.html"
-              >
-                
-                NorESM2-MM abrupt-4xCO2
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_mm_1pctCO2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_mm_1pctCO2.html"
-              >
-                
-                NorESM2-MM 1ptcCO2
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
-      
-      
+    <div class="container-fluid" id="banner"></div>
 
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_deck/noresm2_lm_deck">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_deck/noresm2_lm_deck.html"
-        >
-          
-          NorESM2-LM DECK
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-        
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_lm_piC">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_lm_piC.html"
-              >
-                
-                NorESM2-LM piControl
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_lm_amip">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_lm_amip.html"
-              >
-                
-                NorESM2-LM AMIP
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_lm_4xCO2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_lm_4xCO2.html"
-              >
-                
-                NorESM2-LM abrupt-4xCO2
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_deck/noresm2_lm_1pctCO2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_deck/noresm2_lm_1pctCO2.html"
-              >
-                
-                NorESM2-LM 1ptcCO2
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
     
-      
-      
 
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_hist/noresm2_hist">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_hist/noresm2_hist.html"
-        >
+    <div class="container-xl">
+      <div class="row">
           
-          NorESM2 historical
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-        
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_hist/noresm2_mm_hist">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_hist/noresm2_mm_hist.html"
-              >
-                
-                NorESM2-MM historical
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_hist/noresm2_lm_hist">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_hist/noresm2_lm_hist.html"
-              >
-                
-                NorESM2-LM historical
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
       
-      
-
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/NSSPs/noresm2_mm_nssp">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/NSSPs/noresm2_mm_nssp.html"
-        >
-          
-          NorESM2 SSPs
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_lm_spin/noresm2_lm_spin_intro">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin_intro.html"
-        >
-          
-          NorESM2-LM spin up
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin1">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin1.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_201218
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin2.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_250119
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin3">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin3.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_Gibr_220319
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin4">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin4.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_03042019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin5">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin5.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_12042019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin6">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin6.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_15042019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin7">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin7.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_25042019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin8">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin8.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_07052019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin9">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin9.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_08052019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin10">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin10.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_10052019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin11">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin11.html"
-              >
-                
-                N1850OCBDRDDMS_f19_tn14_13052019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin12">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin12.html"
-              >
-                
-                N1850_f19_tn14_06062019
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_lm_spin/noresm2_lm_spin13">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_lm_spin/noresm2_lm_spin13.html"
-              >
-                
-                N1850_f19_tn14_11062019
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
-    
       
       
-
+      <img src="_static/logo.png" class="logo" alt="logo">
       
       
+      <h1 class="site-logo" id="site-title">NorESM Experiments</h1>
       
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="/noresm2_mm_spin/noresm2_mm_spin_intro">
-        <a class="c-sidebar__entry"
-          href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin_intro.html"
-        >
-          
-          NorESM2-MM spin up
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-        
-
-        
-
-        <ul class="c-sidebar__sections u-hidden-visually">
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin1">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin1.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin2">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin2.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin3">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin3.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin4">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin4.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin5">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin5.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190411
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin6">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin6.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190417
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin7">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin7.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190425
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin8">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin8.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190506
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin9">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin9.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190512
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin10">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin10.html"
-              >
-                
-                N1850OCBDRDDMS_f09_tn14_20190515
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin11">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin11.html"
-              >
-                
-                N1850_f09_tn14_20190604
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin12">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin12.html"
-              >
-                
-                N1850_f09_tn14_20190610
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin13">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin13.html"
-              >
-                
-                N1850_f09_tn14_20190615
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin14">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin14.html"
-              >
-                
-                N1850_f09_tn14_20190622
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin15">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin15.html"
-              >
-                
-                N1850_f09_tn14_20190701
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin16">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin16.html"
-              >
-                
-                N1850_f09_tn14_20190726
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin17">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin17.html"
-              >
-                
-                N1850_f09_tn14_20190812
-              </a>
-            </li>
-            
-            
-          
-            
-            
-
-            
-            
-            
-            
-
-            <li class="c-sidebar__section" data-url="/noresm2_mm_spin/noresm2_mm_spin18">
-              <a class="c-sidebar__entry"
-                href="/noresm-exp/noresm2_mm_spin/noresm2_mm_spin18.html"
-              >
-                
-                N1850_f09_tn14_20190913
-              </a>
-            </li>
-            
-            
-          
-        </ul>
-      
-
-      
-    
-      
-      
-
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="https://github.com/NorESMhub/noresm-exp">
-        <a class="c-sidebar__entry"
-          href="https://github.com/NorESMhub/noresm-exp"
-        >
-          
-          Github repository
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-
-      
-      
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter" data-url="">
-        <a class="c-sidebar__entry"
-          href=".html"
-        >
-          
-            1.
-          
-          Github repository
-        </a>
-      </li>
-
-      
-      
-
-      
-
-      
-      
-
-      
-
-      
-    
-      
-      
-        <li class="c-sidebar__divider"></li>
-        
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="#" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   NorESM2 Key Experiments
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="content/noresm2_deck/noresm2_mm_deck.html">
+   NorESM2-MM DECK
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_deck/noresm2_mm_piC.html">
+     NorESM2-MM piControl
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_deck/noresm2_mm_amip.html">
+     NorESM2-MM AMIP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_deck/noresm2_mm_4xCO2.html">
+     NorESM2-MM abrupt-4xCO2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_deck/noresm2_mm_1pctCO2.html">
+     NorESM2-MM 1ptcCO2
+    </a>
+   </li>
   </ul>
-  <p class="sidebar_footer">Powered by <a href="https://jupyterbook.org">Jupyter Book</a></p>
-</nav>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="content/noresm2_deck/noresm2_lm_deck.html">
+   NorESM2-LM DECK
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_deck/noresm2_lm_piC.html">
+     NorESM2-LM piControl
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_deck/noresm2_lm_amip.html">
+     NorESM2-LM AMIP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_deck/noresm2_lm_4xCO2.html">
+     NorESM2-LM abrupt-4xCO2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_deck/noresm2_lm_1pctCO2.html">
+     NorESM2-LM 1ptcCO2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="content/noresm2_hist/noresm2_hist.html">
+   NorESM2 historical
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_hist/noresm2_mm_hist.html">
+     NorESM2-MM historical
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_hist/noresm2_lm_hist.html">
+     NorESM2-LM historical
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/NSSPs/noresm2_mm_nssp.html">
+   NorESM2 SSPs
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin_intro.html">
+   NorESM2-LM spin up
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin1.html">
+     N1850OCBDRDDMS_f19_tn14_201218
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin2.html">
+     N1850OCBDRDDMS_f19_tn14_250119
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin3.html">
+     N1850OCBDRDDMS_f19_tn14_Gibr_220319
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin4.html">
+     N1850OCBDRDDMS_f19_tn14_03042019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin5.html">
+     N1850OCBDRDDMS_f19_tn14_12042019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin6.html">
+     N1850OCBDRDDMS_f19_tn14_15042019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin7.html">
+     N1850OCBDRDDMS_f19_tn14_25042019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin8.html">
+     N1850OCBDRDDMS_f19_tn14_07052019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin9.html">
+     N1850OCBDRDDMS_f19_tn14_08052019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin10.html">
+     N1850OCBDRDDMS_f19_tn14_10052019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin11.html">
+     N1850OCBDRDDMS_f19_tn14_13052019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin12.html">
+     N1850_f19_tn14_06062019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_lm_spin/noresm2_lm_spin13.html">
+     N1850_f19_tn14_11062019
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin_intro.html">
+   NorESM2-MM spin up
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin1.html">
+     N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin2.html">
+     N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin3.html">
+     N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin4.html">
+     N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin5.html">
+     N1850OCBDRDDMS_f09_tn14_20190411
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin6.html">
+     N1850OCBDRDDMS_f09_tn14_20190417
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin7.html">
+     N1850OCBDRDDMS_f09_tn14_20190425
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin8.html">
+     N1850OCBDRDDMS_f09_tn14_20190506
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin9.html">
+     N1850OCBDRDDMS_f09_tn14_20190512
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin10.html">
+     N1850OCBDRDDMS_f09_tn14_20190515
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin11.html">
+     N1850_f09_tn14_20190604
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin12.html">
+     N1850_f09_tn14_20190610
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin13.html">
+     N1850_f09_tn14_20190615
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin14.html">
+     N1850_f09_tn14_20190622
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin15.html">
+     N1850_f09_tn14_20190701
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin16.html">
+     N1850_f09_tn14_20190726
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin17.html">
+     N1850_f09_tn14_20190812
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="content/noresm2_mm_spin/noresm2_mm_spin18.html">
+     N1850_f09_tn14_20190913
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/NorESMhub/noresm-exp">
+   Github repository
+  </a>
+ </li>
+</ul>
 
-      
-      <div class="c-topbar" id="top-navbar">
-  <!-- We show the sidebar by default so we use .is-active -->
-  <div class="c-topbar__buttons">
-    <button
-      id="js-sidebar-toggle"
-      class="hamburger hamburger--arrowalt is-active"
-    >
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <div class="buttons">
-<div class="download-buttons-dropdown">
-    <button id="dropdown-button-trigger" class="interact-button"><img src="/noresm-exp/assets/images/download-solid.svg" alt="Download" /></button>
-    <div class="download-buttons">
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/NorESMhub/noresm-exp/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/NorESMhub/noresm-exp//issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
-        <a id="interact-button-print"><button id="interact-button-download" class="interact-button">.pdf</button></a>
     </div>
 </div>
 
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-</div>
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-  </div>
-  <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
-  <aside class="sidebar__right">
-    <header><h4 class="nav__title"><img src="/noresm-exp/assets/images/list-solid.svg" alt="Search" />   On this page</h4></header>
-    <nav class="onthispage">
-    </nav>
-  </aside>
-  <a href="/noresm-exp/search.html" class="topbar-right-button" id="search-button">
-    <img src="/noresm-exp/assets/images/search-solid.svg" alt="Search" />
-  </a>
-</div>
-
-      <main class="c-textbook__page" tabindex="-1">
-            <div class="c-textbook__content" id="textbook_content">
-              <div class="search-content__inner-wrap">
-    <input type="text" id="lunr_search" class="search-input" tabindex="-1" placeholder="'Enter your search term...''" />
-    <div id="results" class="results"></div>
-</div>
-
-<script>
-    // Add the lunr store since we will now search it
-    var store = [{
-        "title": "NorESM2 SSPs",
-        
-        "excerpt": "ssp forcing rcp scenario future nsspfrcftn emissions radiative lm pathways noresm case cmip year m socioeconomic high w name simulation simulations challenges approximately end following driven y climate low concentration based global conditions aerosol figure bottom mitigation adaptation medium es doc century pathway level represents top globally annually surface scenarios projections road description reaches experiments plausible only column b averaged average shared org concentrations after carbon nsspfrcaeroxidonlyftn nsspfrcnatonlyftn lowntcf ntcf nssplowntcffrcftn nssprefghglowntcffrcftn temperature detailed ssps used sustainability taking www gmd representative rcps greenhouse gas stabilises overview range extension least hist organic solar reduced near term forcer emission img src images",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/NSSPs/noresm2_mm_nssp.html",
-        "teaser":null},{
-        "title": "Home",
-        
-        "excerpt": "noresm experiments mm lm cmip abrupt atmospheric co concentration historical spinup amip key deck picontrol pre industrial control xco quadrupling pctco percent per year increase simulations fully coupled scenario tree detailed information years here provide overview future",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/intro.html",
-        "teaser":null},{
-        "title": "NorESM2-LM 1ptcCO2",
-        
-        "excerpt": "npctftn lm noresm simulations pctco parent figure branch top globally annually surface data cmip sigma projects nsk cesm git diagnostics column bottom b averaged average cases year years temperature emissions liu nird under increase atmospheric co concentration extra output run type simulated compset camnoresmpctclmbgc cropcicenoresm cmipmicomecomosartsglcswavbgcbdrddms featurecesm oslodevelopment commit resolution ftn machine fram case folder cluster nnk web noresmdiagnostics common img src images png alt style width figcaptionbnoresm bbr bleft sea bright shows annual dots moving solid line figcaption cloud forcing storage cmor ized public available here esg dn nsc se search raw deck stored percent per cover cmorized accessed",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_lm_1pctCO2.html",
-        "teaser":null},{
-        "title": "NorESM2-LM abrupt-4xCO2",
-        
-        "excerpt": "ncoxftn parent branch noresm lm abrupt cesm git diagnostics cmip sigma nsk xco years figure simulations projects cases run top globally annually surface data type simulated compset camnoresmxcoclmbgc cropcicenoresm cmipmicomecomosartsglcswavbgcbdrddms featurecesm oslodevelopment commit resolution ftn machine case folder web noresmdiagnostics common column bottom b averaged average fram cluster nnk temperature emissions liu nird under quadrupling co extra output nebula smhi ecc olivie img src images png alt style width figcaptionbnoresm bbr bleft sea bright shows annual dots year moving solid line figcaption cloud forcing storage cmor ized public available here esg dn nsc se search raw deck stored atmsopheric consentration",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_lm_4xCO2.html",
-        "teaser":null},{
-        "title": "NorESM2-LM AMIP",
-        
-        "excerpt": "nfhistnorpddmsbcfmg noresm amip cmip parent simulations sigma nsk cesm flux data historical sea simulation branch git diagnostics lm cases atmosphere ice run web olivie here liu nird under projects runs deck observed ssts derived dms please description nhistftn type hybrid simulated years compset histcamnoresmnorpddmsbcclmbgc cropcicepresdocndommosartsglcswav featurecesm oslodevelopment commit resolution ftn machine vilje case folder home ntnu noresmdiagnostics common storage cmor ized public available esg dn nsc se search raw stored atmospheric model intercomparison project style land components active while values surface temperatures prescribed read file start nfhist part uses emissions note exists using standard between ocean instead coare used fully",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_lm_amip.html",
-        "teaser":null},{
-        "title": "NorESM2-LM DECK",
-        
-        "excerpt": "y lm figure simulations case bottom m deck top globally annually surface name branch d simulation ncoxftn noresm column b averaged average nftn temperature emissions npctftn amip img src images png alt style width figcaptionbnoresm bbr bleft sea bright shows annual dots year moving solid line figcaption cloud forcing detailed information found clicking names table contents page quick overview picontrol abrupt xco pctco nfhistnorpddmsbcfmg details please historical series experiments decklm air global volume ocean sst net radiation model atlantic meridional overturning circulation amoc n decklmemis sum salt dms dimethylsulfide pom primary organic matter shortwave longwave",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_lm_deck.html",
-        "teaser":null},{
-        "title": "NorESM2-LM piControl",
-        
-        "excerpt": "nftn parent branch lm noresm picontrol cesm git diagnostics figure cmip simulations sigma projects nsk top globally annually surface data years column bottom b averaged average cases run type simulated compset camnoresmclmbgc cropcicenoresm cmipmicomecomosartsglcswavbgcbdrddms featurecesm oslodevelopment commit resolution ftn machine fram case folder cluster nnk web noresmdiagnostics common temperature emissions liu nird under pre ecc olivie img src images png alt style width figcaptionbnoresm bbr bleft sea bright shows annual dots year moving solid line figcaption cloud forcing storage cmor ized public available here esg dn nsc se search raw deck stored industial experiment covers cmorized accessed ncc ripf simulation",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_lm_piC.html",
-        "teaser":null},{
-        "title": "NorESM2-MM 1ptcCO2",
-        
-        "excerpt": "npctfrcftn noresm parent branch data sigma projects nsk cesm git diagnostics cmip mm cases years liu simulations nird under pctco extra output run type simulated compset camnoresmfrcpctclmbgc cropcicenoresm cmipmicomecomosartsglcswavbgcbdrddms featurecesm oslodevelopment commit resolution ftn machine fram case folder cluster nnk matsbn web noresmdiagnostics common storage cmor ized public available here esg dn nsc se search raw deck stored percent per year increase atmospheric co concentration cover cmorized accessed ncc ripf simulation specifics nftn hybrid ee ad",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_mm_1pctCO2.html",
-        "teaser":null},{
-        "title": "NorESM2-MM abrupt-4xCO2",
-        
-        "excerpt": "noresm ncoxfrcftn mm abrupt xco parent figure simulations branch top globally annually surface data sigma projects nsk cesm git diagnostics column bottom b averaged average cmip cases years temperature emissions liu nird under quadrupling co extra output run type simulated compset camnoresmfrcxcoclmbgc cropcicenoresm cmipmicomecomosartsglcswavbgcbdrddms featurecesm oslodevelopment commit resolution ftn machine fram case folder cluster nnk matsbn web noresmdiagnostics common img src images png alt style width figcaptionbnoresm bbr bleft sea bright shows annual dots year moving solid line figcaption cloud forcing storage cmor ized public available here esg dn nsc se search raw deck stored atmsopheric consentration covers cmorized accessed",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_mm_4xCO2.html",
-        "teaser":null},{
-        "title": "NorESM2-MM AMIP",
-        
-        "excerpt": "amip data noresm cmip sea simulation parent liu historical simulations nird sigma under projects nsk runs ice uses observed nfhistfrcfmg cesm branch git storage cmor ized public available here esg dn nsc se search raw lm stored cases atmospheric model intercomparison project style atmosphere land components active while values surface temperatures prescribed read file start nfhist part deck ssts please note does not derived dms emissions lana cmorized accessed ncc mm specifics run type hybrid simulated years compset histcamnoresmnorpddmsbcclmbgc cropcicepresdocndommosartsglcswav featurecesm oslodevelopment commit resolution ftn machine case folder diagnostics",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_mm_amip.html",
-        "teaser":null},{
-        "title": "NorESM2-MM DECK",
-        
-        "excerpt": "y mm figure simulations case bottom m nfrcftn deck top globally annually surface name branch d simulation noresm column b averaged average year temperature emissions please ncoxfrcftn npctfrcftn amip img src images png alt style width figcaptionbnoresm bbr bleft sea bright shows annual dots moving solid line figcaption cloud forcing detailed information found clicking names table contents page quick overview picontrol note calculated twice both abrupt xco pctco nfhistfrcfmg details historical series experiments deckmm air global volume ocean sst net radiation model atlantic meridional overturning circulation amoc n deckmmemis sum salt dms dimethylsulfide pom primary organic matter shortwave longwave",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_mm_deck.html",
-        "teaser":null},{
-        "title": "NorESM2-MM piControl",
-        
-        "excerpt": "nfrcftn noresm parent mm branch picontrol cesm git diagnostics figure simulations sigma projects nsk top globally annually surface data cases years column bottom b averaged average cmip year run type simulated compset camnoresmfrcclmbgc cropcicenoresm cmipmicomecomosartsglcswavbgcbdrddms featurecesm oslodevelopment commit resolution ftn machine fram case folder cluster nnk matsbn web noresmdiagnostics common temperature emissions liu nird under pre img src images png alt style width figcaptionbnoresm bbr bleft sea bright shows annual dots moving solid line figcaption cloud forcing storage cmor ized public available here esg dn nsc se search raw deck stored industial experiment covers please note calculated twice both cmorized",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_deck/noresm2_mm_piC.html",
-        "teaser":null},{
-        "title": "NorESM2 historical",
-        
-        "excerpt": "historical case simulation noresm name y ensemble member nhistfrcftn nhistftn figure simulations bottom experiments top globally annually surface column b averaged average forcing mm temperature emissions fully coupled amip deck lm nfhistnorbcf img src images png alt style width figcaptionbnoresm bbr bleft sea bright shows annual dots year moving solid line figcaption cloud detailed information found clicking names table contents page quick overview recent past experiment nfhistfrcfmg nfhistnorpddmsbcfmg series nhist m air global volume ocean sst net radiation model atlantic meridional overturning circulation amoc n nhistemis sum salt dms dimethylsulfide pom primary organic matter shortwave longwave",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_hist/noresm2_hist.html",
-        "teaser":null},{
-        "title": "NorESM2-LM historical",
-        
-        "excerpt": "parent nhistftn branch cesm simulations git noresm diagnostics run cmip cases nfhistnorbcf lm historical projects ensemble member type simulated years compset featurecesm oslodevelopment commit resolution ftn machine case folder sigma nsk amip pre industrial emissions hybrid histcamnoresmclmbgc cropcicenoresm cmipmicomecomosartsglcswavbgcbdrddms fram cluster nnk surface figure data simulation nftn oyvinds noresmcmip olivie web flux top globally annually specifics noresmdiagnostics common style sea nfhistnorpddmsbcfmg column bottom b averaged average nird under fully coupled addition aerosol near term climate forcers nhistpiaerftn nhistpintcfftn nr atmosphere exist derived description cropcicepresdocndommosartsglcswav vilje home ntnu temperature here liu start cmorized accessed ncc efb model runs part ssts only",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_hist/noresm2_lm_hist.html",
-        "teaser":null},{
-        "title": "NorESM2-MM historical",
-        
-        "excerpt": "nhistfrcftn parent branch noresm cesm git cmip historical mm simulations projects diagnostics cases ensemble member run type simulated years compset histcamnoresmfrcclmbgc cropcicenoresm cmipmicomecomosartsglcswavbgcbdrddms featurecesm oslodevelopment commit resolution ftn machine fram case folder surface figure data sigma nsk simulation cluster nnk amip top globally annually ad sea emissions column bottom b averaged average nird under specifics nr hybrid adagj style temperature liu fully coupled start cmorized accessed ncc web noresmdiagnostics common nfrcftn model runs uses dms img src images png alt width figcaptionbnoresm bbr bleft bright shows annual dots year moving solid line figcaption cloud forcing storage cmor ized public available",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_hist/noresm2_mm_hist.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_201218",
-        
-        "excerpt": "value true compclass d b simulation spinup surface noresm nocbdrddmsftn aerosol forcing e temperature sigma lm parent m top globally annually averaged cloud data nsk path vilje diagnostics sourcemods included namelist changes compared repository zmconvclnd zmconvcocn tauubc cldfrciceopt clubbgammacoef clm resetsnow cesm type branch git entry values wave information bug shortwave longwave not w fg picontrol figure column bottom sea emissions storage stored nird projects cases case directory home metno oyvinds noresmold noresmdevcases web noresmdiagnostics common summary fist cam nor false specifics run startup simulated years compset camptaeroclmbgc cropcicemicomecomosartsglcswavbgcbdrddms featurecam oslodevelopmenttrunk commit aab resolution ftn machine node allocation id ntasks",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin1.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_10052019",
-        
-        "excerpt": "noresm cam atm nobackup forsk inputdata nc x chem emis cmipemissionsversion version value e compclass j true modifications aerosol f line production b nocbdrddmsftn code micom components sopr surface simulation wave emissions top increased included ocetra kmle isco fdt volij fraction dmspar forcing omni temperature spinup sigma ihamocc cesm not aod bug dms reduce nebula width rcalc convection src values parent branch ocean alkalinity carbonate m bcax bcn globally annually averaged cloud data nsk path home diagnostics new removal inconsistency treatment riverine carbon inputs mid month crashes optical depth fixer increase high latitudes net radiation model strait gibraltar cice changes",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin10.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_13052019",
-        
-        "excerpt": "noresm cam atm nobackup forsk inputdata nc x chem emis cmipemissionsversion version value e modifications compclass j true nocbdrddmsftn code aerosol f line production b increased included micom components sopr surface simulation wave emissions top ocetra kmle isco fdt volij fraction dmspar forcing omni temperature spinup sigma cesm ihamocc not aod bug dms reduce nebula width rcalc convection src values parent branch ocean alkalinity carbonate m bcax bcn globally annually averaged cloud data nsk path home diagnostics new user name compared removal inconsistency treatment riverine carbon inputs mid month crashes optical depth fixer increase high latitudes net radiation model strait",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin11.html",
-        "teaser":null},{
-        "title": "N1850_f19_tn14_06062019",
-        
-        "excerpt": "noresm cam atm nobackup forsk inputdata nc x chem emis cmipemissionsversion version value compclass true code b modifications sopr surface nftn included top e omni temperature spinup sigma simulation featurecesm oslodevelopment sourcemods needed increased width micom cesm emissions parent branch bcax bcn globally annually averaged cloud data nsk path home diagnostics new merged longer strait gibraltar km user name ihamocc mid month crashes dms net radiation model nebula cice changes sourcemod clm type git ac entry values physctlnl d fg picontrol figure lm simulations column bottom sea forcing storage stored nird projects cases case directory smadagj spinupcase copy vilje ntnu",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin12.html",
-        "teaser":null},{
-        "title": "N1850_f19_tn14_11062019",
-        
-        "excerpt": "value compclass sigma noresm code b simulation surface cases nftn top included modifications temperature spinup projects nsk fram vilje cesm emissions parent branch user globally annually averaged cloud data nftnvilje path cluster adagj diagnostics new nebula nsc liu ihamocc mid month crashes not any dms net radiation model increased width cice changes main sourcemod clm type git featurecesm oslodevelopment ac entry values sourcemods needed list settings usernlclm e fg picontrol true figure lm simulations column bottom sea forcing storage stored nird case directory nnk home ntnu web noresmdiagnostics common summary spin moved identical continued gamma removal inconsistency treatment riverine carbon",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin13.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_250119",
-        
-        "excerpt": "value noresm e compclass cam ncol true sst r m n b nocbdrddmsftn modifications surface top emissions error shared inputdata atm components line organic phosphorous production ratio src aerosol forcing temperature spinup sigma nsk simulation sea increased energy conservation cice convection namelist compared repository micom only camoslo bkopal rcalc ropal bottom parent branch f ferr w globally annually averaged cloud data path vilje diagnostics net radiation model salt x tolerance test code included changes nor clm aerotabtabledir cluster aerotabjun user name specifics cesm type git entry values mmol si elif defined wlin calcium carbonate opal moist ferrmax wave information bug",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin2.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_Gibr_220319",
-        
-        "excerpt": "value e compclass ncol true sst r noresm simulation modifications n b included cam m surface increased km emissions top not organic phosphorous production ratio aerosol forcing temperature spinup sigma nsk nocbdrddmsftngibr width sea bkopal rcalc ropal convection error bottom parent branch components line src globally annually averaged cloud data path vilje diagnostics strait gibraltar salt net radiation model ihamocc sourcemod code micom clm x tolerance energy conservation test cice user name specifics cesm nocbdrddmsftn type git entry values atm f mmol si elif defined wlin calcium carbonate opal moist wave information bug shortwave longwave w physctlnl d work shared",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin3.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_03042019",
-        
-        "excerpt": "value compclass noresm ncol true sst r n e b nocbdrddmsftn modifications cam surface simulation cesm increased emissions top error src m aerosol forcing temperature spinup sigma width sea energy conservation cice included convection bottom parent components ferr w globally annually averaged cloud data nsk path home diagnostics nebula strait gibraltar salt net radiation model x tolerance test sourcemod code clm user name specifics type branch git entry values atm line f moist ferrmax wave information bug shortwave longwave not physctlnl d nobackup forsk inputdata fg picontrol km figure lm simulations column storage stored nird projects cases case directory smadagj",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin4.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_12042019",
-        
-        "excerpt": "value compclass noresm ncol true e sst r emissions aerosol modifications components f n b nocbdrddmsftn top increased cam line src surface simulation model wave included micom fraction m forcing trim temperature spinup sigma increase dms net radiation aod bug cesm nebula width sea error energy conservation cice convection code bottom parent branch values ferr w globally annually averaged cloud data nsk path home diagnostics high latitudes order reduce imbalance tom optical depth fixer strait gibraltar salt x tolerance test sourcemod changes clm user name specifics type git entry atm changed epsher dimensionless grazing egested dmspar production delsil et al",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin5.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_15042019",
-        
-        "excerpt": "value compclass noresm true e aerosol modifications b nocbdrddmsftn emissions increased components f surface simulation wave top included cam micom line fraction src m forcing trim temperature spinup sigma increase sea cesm aod bug dms model nebula width error energy conservation cice convection code bottom parent branch values ferr w globally annually averaged cloud data nsk path home diagnostics salt optical depth fixer high latitudes net radiation strait gibraltar tolerance test sourcemod changes clm user name specifics type git entry atm changed epsher dimensionless grazing egested dmspar production delsil moist ferrmax information shortwave longwave not longname lname units uname physctlnl",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin6.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_25042019",
-        
-        "excerpt": "noresm cam atm nobackup forsk inputdata nc x chem emis cmipemissionsversion version value compclass e true aerosol modifications line production b nocbdrddmsftn included increased components f sopr surface simulation dms wave emissions top micom fraction dmspar src m forcing trim omni temperature spinup sigma high latitudes not cesm aod bug model nebula width error energy conservation cice rcalc convection code parent branch values changed ferr w bcax bcn globally annually averaged cloud data nsk path home diagnostics new reduced compared mid month crashes optical depth fixer increase net radiation strait gibraltar tolerance test sourcemod changes clm type git entry epsher",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin7.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_07052019",
-        
-        "excerpt": "noresm cam atm nobackup forsk inputdata nc x chem emis cmipemissionsversion version value compclass e true aerosol modifications production b nocbdrddmsftn simulation spinup increased f sopr surface not wave emissions top code included micom components line fraction dmspar forcing omni temperature used lm cesm aod bug dms nebula width rcalc convection src values parent branch m bcax bcn globally annually averaged cloud data sigma path home gamma set new mid month crashes optical depth fixer increase high latitudes net radiation model strait gibraltar cice changes sourcemod clm fixed featurecesm oslodevelopment sourcemods type git entry changed epsher dimensionless grazing egested calcium",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin8.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f19_tn14_08052019",
-        
-        "excerpt": "noresm cam atm nobackup forsk inputdata nc x chem emis cmipemissionsversion version value compclass e true aerosol modifications b increased f sopr surface nocbdrddmsftn simulation wave emissions top code included micom components fraction dmspar production forcing omni temperature spinup cesm not aod bug dms nebula width convection src values parent branch line m bcax bcn globally annually averaged cloud data sigma path home new mid month crashes optical depth fixer increase high latitudes net radiation model strait gibraltar cice changes sourcemod clm fixed featurecesm oslodevelopment sourcemods type git entry epsher dimensionless grazing egested delsil delcar following kloster et al table",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin9.html",
-        "teaser":null},{
-        "title": "NorESM2-LM spin up",
-        
-        "excerpt": "nocbdrddmsftn spinup surface simulations bottom top globally annually averaged temperature cloud case y m nftn figure lm column b sea emissions forcing detailed information found clicking names table contents page quick overview name branch d simulation nocbdrddmsftngibr series img src images png alt noresm style width figcaptionbnoresm bbr bleft net radiation model air sst global volume ocean atlantic meridional overturning circulation amoc n bright sum salt dms dimethylsulfide vertically integrated total cover shortwave longwave figcaption",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_lm_spin/noresm2_lm_spin_intro.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220",
-        
-        "excerpt": "value true compclass b simulation d cloud noresm mm e forcing spinup top globally annually surface ice aerosol iceopt figure column bottom averaged sigma namelist changes false cesm parent wave used m gamma fraction temperature emissions data projects nsk cases nocbdrddmsftnicegam path fram cluster diagnostics sourcemods included compared repository cldfrciceopt clubbgammacoef tauubc micromgdcs zmconvclnd zmconvcocn clm resetsnow type branch git entry values includes information bug shortwave longwave not w user scheme low parameterisation dependence fg picontrol img src images png alt simulations style width figcaptionbnoresm bbr bleft sea bright figcaption storage stored nird case directory nnk matsbn nocbdrddmsftn web noresmdiagnostics",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin1.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_20190515",
-        
-        "excerpt": "j k noresm cam r cluster shared inputdata atm nc value e x chem emis cmipemissionsversion version ddus d end f ice line compclass true ddu dpn dpns cloud kg production b modifications fraction simulation aerosol files top tpr components m nocbdrddmsftn bug wave emissions bottom src organic forcing spinup globally annually surface correction ihamocc included emission parameterisation iceopt omp parallel private kfirst klast jsg jlast im dpo u uc ddpu tht max ocetra kmle isco fdt volij real parameter qistmin stratus iwc constraint dmspar phosphorous ratio sopr figure mm column averaged sigma new order increased error energy conservation cice",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin10.html",
-        "teaser":null},{
-        "title": "N1850_f09_tn14_20190604",
-        
-        "excerpt": "value f r ice compclass noresm cloud kg e true d included cam top modifications simulation cesm parameter bottom spinup globally annually surface name usernlcam gamma emissions width km parameterisation iceopt longer real qistmin stratus iwc constraint figure mm column b averaged sigma nftn cluster branch featurecesm oslodevelopment bug changes ihamocc sourcemod increase atm sourcemods needed default user parent aist src line forcing fraction false temperature data projects nsk cases path fram diagnostics new updated moist zmconv list cldfrcmrhmini micromgdcs compset n correction order cdcore moriverinpt cice wave optinterpol emission files nor frc dms net radiation model strait gibraltar clouds",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin11.html",
-        "teaser":null},{
-        "title": "N1850_f09_tn14_20190610",
-        
-        "excerpt": "value r f ice compclass cloud kg modifications e noresm nftn included top simulation qistmin cam parameter bottom spinup globally annually surface cesm branch emissions width km parameterisation iceopt longer real stratus iwc constraint figure mm column b averaged sigma cldfrcm featurecesm oslodevelopment ihamocc sourcemod increase changes sourcemods needed usernlcam default user parent src line gamma forcing fraction temperature data projects nsk cases path fram cluster diagnostics new same clubbgammacoef correction bug order cdcore moriverinpt cice wave optinterpol emission files nor frc dms net radiation model strait gibraltar clouds code zmconv atm namelist listed name specifics type git entry values",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin12.html",
-        "teaser":null},{
-        "title": "N1850_f09_tn14_20190615",
-        
-        "excerpt": "value f r ice compclass cloud kg modifications noresm included top simulation cam parameter bottom e spinup globally annually surface nftn cesm branch emissions width km parameterisation iceopt longer real qistmin stratus iwc constraint figure mm column b averaged sigma cldfrcm featurecesm oslodevelopment ihamocc sourcemod increase sourcemods needed usernlcam default user parent src line gamma forcing fraction temperature data projects nsk cases path fram cluster diagnostics new clubbgammacoef correction bug order cdcore moriverinpt cice wave optinterpol emission files nor frc dms net radiation model strait gibraltar clouds code zmconv atm listed name specifics type git entry values changes minimum qistmax",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin13.html",
-        "teaser":null},{
-        "title": "N1850_f09_tn14_20190622",
-        
-        "excerpt": "value f r ice compclass cloud kg modifications noresm included top simulation cam parameter bottom e spinup globally annually surface nftn cesm branch emissions width km parameterisation iceopt longer real qistmin stratus iwc constraint figure mm column b averaged sigma cldfrcm featurecesm oslodevelopment ihamocc sourcemod increase sourcemods needed usernlcam default user parent src line gamma forcing fraction temperature data projects nsk cases path fram cluster diagnostics new clubbgammacoef correction bug order cdcore moriverinpt cice wave optinterpol emission files nor frc dms net radiation model strait gibraltar clouds code zmconv atm listed name specifics type git entry values changes minimum qistmax",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin14.html",
-        "teaser":null},{
-        "title": "N1850_f09_tn14_20190701",
-        
-        "excerpt": "value f r ice compclass cloud kg modifications noresm included top simulation cam parameter bottom e spinup globally annually surface nftn cesm branch emissions width km parameterisation iceopt longer real qistmin stratus iwc constraint figure mm column b averaged sigma cldfrcm featurecesm oslodevelopment ihamocc sourcemod increase sourcemods needed usernlcam default user parent src line gamma forcing fraction temperature data projects nsk cases path fram cluster diagnostics new clubbgammacoef correction bug order cdcore moriverinpt cice wave optinterpol emission files nor frc dms net radiation model strait gibraltar clouds code zmconv atm listed name specifics type git entry values changes minimum qistmax",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin15.html",
-        "teaser":null},{
-        "title": "N1850_f09_tn14_20190726",
-        
-        "excerpt": "value f r ice compclass cloud kg modifications true noresm included top simulation cam parameter bottom e spinup globally annually surface nftn cesm branch emissions width km parameterisation iceopt longer real qistmin stratus iwc constraint figure mm column b averaged sigma cldfrcm featurecesm oslodevelopment ihamocc sourcemod increase sourcemods needed usernlcam default user parent src line gamma forcing fraction histauxaxhr temperature data projects nsk cases path fram cluster diagnostics new cplhist output usernlcpl clubbgammacoef correction bug order cdcore moriverinpt cice wave optinterpol emission files nor frc dms net radiation model strait gibraltar clouds code zmconv atm listed name specifics type git",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin16.html",
-        "teaser":null},{
-        "title": "N1850_f09_tn14_20190812",
-        
-        "excerpt": "value f r ice compclass cloud kg included modifications true noresm cam top simulation parameter bottom e spinup globally annually surface nftn sourcemods src usernlcam cesm branch emissions width km parameterisation iceopt longer real qistmin stratus iwc constraint figure mm column b averaged sigma used output changes cldfrcm featurecesm oslodevelopment ihamocc sourcemod increase needed default user parent line gamma forcing fraction histauxaxhr temperature data projects nsk cases path fram cluster new removed cplhist settings usernlclm usernlcpl clubbgammacoef correction bug order cdcore moriverinpt cice wave optinterpol emission files nor frc dms net radiation model strait gibraltar clouds code zmconv atm listed",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin17.html",
-        "teaser":null},{
-        "title": "N1850_f09_tn14_20190913",
-        
-        "excerpt": "value f r ice compclass cloud kg noresm modifications included top simulation cam parameter bottom e spinup globally annually surface nftn usernlcam cesm branch emissions width km parameterisation iceopt longer real qistmin stratus iwc constraint figure mm column b averaged data sigma cluster new used clm changes usernlclm cldfrcm featurecesm oslodevelopment ihamocc sourcemod increase sourcemods needed default user parent src line gamma forcing fraction temperature projects nsk cases path fram diagnostics file settings output clubbgammacoef correction bug order cdcore moriverinpt cice wave optinterpol emission files nor frc dms net radiation model strait gibraltar clouds code zmconv shared inputdata atm listed",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin18.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314",
-        
-        "excerpt": "value r ice e cloud noresm compclass true kg b iceopt simulation modifications parameterisation included changes f mm cam d bottom line m organic forcing spinup top globally annually surface cluster namelist used gamma real parameter qistmin stratus iwc constraint phosphorous production ratio aerosol figure column averaged sigma nocbdrddmsftnqmnmxrhmin cldfrcm aist sourcemods bkopal rcalc ropal shared inputdata atm user cesm parent branch src wave fraction false temperature emissions data projects nsk cases path fram diagnostics clouds setting environmental clubb compared repository cldfrcmrhmini clubbgammacoef ihamocc sourcemod code aerotabtabledir only camoslo aerotabjun clm name specifics type git entry values components minimum qistmax",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin2.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314",
-        
-        "excerpt": "e value r ice noresm compclass true cloud kg b simulation modifications bottom line m organic forcing spinup top globally annually surface cluster parameterisation iceopt f cam real parameter qistmin stratus iwc constraint phosphorous production ratio aerosol figure mm column averaged sigma nocbdrddmsftnsgqmnmxrhmin width bkopal rcalc ropal included shared inputdata atm cesm parent branch src wave used gamma fraction false d temperature emissions data projects nsk cases path fram diagnostics km usernlmicom cwmwth clouds cldfrcm ihamocc sourcemod code aerotabtabledir only camoslo aerotabjun changes nocbdrddmsftnqmnmxrhmin sourcemods user name specifics type git entry values components minimum qistmax maximum aist max min mmol",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin3.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314",
-        
-        "excerpt": "value e r ice noresm compclass true cloud kg b simulation aerosol f modifications wave bottom line m organic forcing spinup top globally annually surface cluster parameterisation iceopt cam real parameter qistmin stratus iwc constraint phosphorous production ratio figure mm column averaged sigma nocbdrddmsftnalwfixsgqmnmx aod bug width bkopal rcalc ropal included shared inputdata atm cesm parent branch src used gamma fraction false d temperature emissions data projects nsk cases path fram diagnostics optical depth fixer pmxsub km clouds cldfrcm ihamocc sourcemod code aerotabtabledir only camoslo aerotabjun changes sourcemods user name specifics type git entry values components minimum qistmax maximum aist",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin4.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_20190411",
-        
-        "excerpt": "noresm cam cluster shared inputdata atm nc value r chem emis cmipemissionsversion x version e f ice compclass true line cloud kg b fraction simulation included src top files aerosol modifications real parameter production emissions wave bottom m organic forcing spinup globally annually surface emission parameterisation iceopt components qistmin stratus iwc constraint phosphorous ratio sopr figure mm column averaged sigma nocbdrddmsftn new parameters sourcemod increase dms model sourcemods micom belegbgc usernlcam aod bug width bkopal rcalc ropal user cesm parent branch used gamma false d omni picontrol temperature data projects nsk cases path fram diagnostics modification fall speed droplets micromgutils",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin5.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_20190417",
-        
-        "excerpt": "cam noresm cluster shared inputdata atm nc value r chem emis cmipemissionsversion x version e f ice compclass true line cloud kg b src fraction nocbdrddmsftn simulation aerosol files top modifications real parameter production wave emissions bottom components m organic forcing spinup globally annually surface aod parameters emission parameterisation iceopt included sourcemod qistmin stratus iwc constraint phosphorous ratio sopr figure mm column averaged sigma new bug modification fall speed droplets increase dms model width bkopal rcalc ropal camoslo changes user cesm parent branch physics used gamma false d omni picontrol temperature data projects nsk cases path fram diagnostics optical depth",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin6.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_20190425",
-        
-        "excerpt": "noresm cam cluster shared inputdata atm nc value x e chem emis cmipemissionsversion version r ice compclass true f line cloud kg production b fraction simulation aerosol files top modifications m nocbdrddmsftn dmspar included wave emissions bottom components src organic forcing spinup globally annually surface rcalc sourcemod emission parameterisation iceopt real parameter qistmin stratus iwc constraint phosphorous ratio sopr figure mm column averaged sigma new increased error energy conservation cice ihamocc aod bug increase dms model width bkopal ropal camoslo changes user cesm parent branch ferr w used gamma false d omni picontrol temperature data projects nsk cases path fram",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin7.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_20190506",
-        
-        "excerpt": "cam noresm f cluster shared inputdata atm nc value x e chem emis cmipemissionsversion version r ice compclass true modifications line cloud kg production b src fraction simulation included aerosol files top m false wave emissions bottom components organic forcing spinup globally annually surface nocbdrddmsftn new sourcemods emission parameterisation iceopt real parameter qistmin stratus iwc constraint dmspar phosphorous ratio sopr figure mm column averaged sigma geometry modification name list usernlcam increased error energy conservation cice aod bug sourcemod nor increase dms model width bkopal rcalc ropal camoslo user cesm parent branch ferr w used gamma d omni picontrol temperature data",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin8.html",
-        "teaser":null},{
-        "title": "N1850OCBDRDDMS_f09_tn14_20190512",
-        
-        "excerpt": "noresm cam cluster shared inputdata atm nc f value e x chem emis cmipemissionsversion version r modifications ice line compclass true j cloud kg production b fraction simulation aerosol files top src components m nocbdrddmsftn wave included emissions bottom organic forcing spinup globally annually surface new ihamocc emission parameterisation iceopt false ocetra kmle isco fdt volij real parameter qistmin stratus iwc constraint dmspar phosphorous ratio sopr figure mm column averaged sigma increased error energy conservation cice aod bug sourcemod increase dms reduce model width bkopal rcalc ropal code only camoslo changes sourcemods name list usernlcam user cesm parent branch ocean",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin9.html",
-        "teaser":null},{
-        "title": "NorESM2-MM spin up",
-        
-        "excerpt": "nftn nocbdrddmsftn surface simulations bottom spinup top globally annually averaged temperature cloud case y m figure mm column b sea emissions forcing detailed information found clicking names table contents page quick overview name branch d simulation nocbdrddmsftnicegam nocbdrddmsftnqmnmxrhmin nocbdrddmsftnsgqmnmxrhmin nocbdrddmsftnalwfixsgqmnmx series img src images spinupmm png alt noresm style width figcaptionbnoresm bbr bleft net radiation model air sst global volume ocean atlantic meridional overturning circulation amoc n bright sum salt dms dimethylsulfide vertically integrated total cover shortwave longwave figcaption",
-        "categories": [],
-        "tags": [],
-        "url": "https://noresmhub.github.io//noresm-exp/noresm2_mm_spin/noresm2_mm_spin_intro.html",
-        "teaser":null},]
-</script>
-            </div>
-            <div class="c-textbook__footer" id="textbook_footer">
-              
-<nav class="c-page__nav">
-  
-
-  
-</nav>
-
-              <footer>
-  <p class="footer">This page was created by <a href="https://github.com/ExecutableBookProject/jupyter-book/graphs/contributors">The Jupyter Book Community</a></p>
-</footer>
-
-            </div>
+            <!-- Launch buttons -->
 
         </div>
-      </main>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
     </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1></h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <h1 id="search-documentation">Search</h1>
+  
+  <noscript>
+  <div class="admonition warning">
+  <p>
+    Please activate JavaScript to enable the search
+    functionality.
+  </p>
+  </div>
+  </noscript>
+  
+  
+  <p>
+    Searching for multiple words only shows matches that contain
+    all words.
+  </p>
+  
+  
+  <form action="" method="get">
+    <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+    <input type="submit" value="search" />
+    <span id="search-progress" style="padding-left: 10px"></span>
+  </form>
+  
+  
+  
+  <div id="search-results">
+  
+  </div>
+  
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Ada Gjermundsen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
   </body>
 </html>
