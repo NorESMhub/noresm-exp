@@ -17,10 +17,10 @@ The overview includes:
 
 ### Automatic deployment
 
-the GitHub actions workflow (`noresm-exp/.github/workflows/deploy.yml`) automatically renders the content,pushes the rendered output to the `gh-pages` branch of the repo and hosts it on GitHub Pages when a push or pull request is made to the main branch
+the GitHub actions workflow (`noresm-exp/.github/workflows/deploy.yml`) automatically renders the content, pushes the rendered output to the `gh-pages` branch of the repo and hosts it on GitHub Pages when a push or pull request is made to the main branch
 
 
-### Building the book
+### Local build
 
 If you'd like to develop and/or build the NorESM Experiments content, you should:
 
