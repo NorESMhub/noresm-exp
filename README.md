@@ -15,20 +15,27 @@ The overview includes:
 
 ## Usage
 
-### Automatic deployment
+### Editing the content
 
-the GitHub actions workflow (`noresm-exp/.github/workflows/deploy.yml`) automatically renders the content, pushes the rendered output to the `gh-pages` branch of the repo and hosts it on GitHub Pages when a push or pull request is made to the main branch
-
-
-### Local build
-
-If you'd like to develop and/or build the NorESM Experiments content, you should:
+To develop and/or build the NorESM Experiments content, you should:
 
 1. Clone this repository
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-3. (Optional) Edit the source files located in the `noresm_exp_book/content` directory
-4. Run `jupyter-book clean noresm_exp_book/` to remove any existing builds
-5. Run `jupyter-book build noresm_exp_book/`
+3. Edit the source files located in the `noresm_exp_book/content` directory
+4. Push the changes to git (branch `main`) if you want to trigger the automatic build/deploy workflow
+
+
+### Automatic deployment
+
+The GitHub actions workflow (`noresm-exp/.github/workflows/deploy.yml`) automatically renders the content, pushes the rendered output to the `gh-pages` branch of the repo and hosts it on GitHub Pages (at [https://noresmhub.github.io/noresm-exp/intro](https://noresmhub.github.io/noresm-exp/intro)) when a push or pull request is made to the main branch.
+
+
+## Local build
+
+To build locally: 
+
+1. Run `jupyter-book clean noresm_exp_book/` to remove any existing builds
+2. Run `jupyter-book build noresm_exp_book/`
 
 A fully-rendered HTML version of the book will be built in `noresm_exp_book/_build/html/`.
 
