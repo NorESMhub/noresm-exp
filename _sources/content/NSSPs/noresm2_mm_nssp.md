@@ -48,6 +48,9 @@ For an overview and description of the various CMIP6 experiments, please see: ht
 |NSSP245frc2_03_f09_tn14_20200630 | 2015 - 2020 |
 |NSSP370frc2_f09_tn14_20191105 | 2015 - 2100  |
 |NSSP585frc2_f09_tn14_20191105 | 2015 - 2100  |
+|NSSP585frc2_f09_tn14_20200919 | 2015 - 2100  |
+
+Please note that the two SSP585 cases are bit-identical but with different output. These should not be treated as 2 ensemble members.
 
 --------------------------------------------------------
 
@@ -63,6 +66,7 @@ For an overview and description of the various CMIP6 experiments, please see: ht
 |NSSP370frc2_02_f19_tn14_20191118 | 2015 - 2100  |
 |NSSP370frc2_03_f19_tn14_20191118 | 2015 - 2100  |
 |NSSP585frc2_f19_tn14_20191014| 2015 - 2059  |
+
 --------------------------------------------------------------
 
 ####  NorESM2-LM SSP2-4.5,  aerosol and oxidants only 
