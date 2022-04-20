@@ -1,0 +1,118 @@
+format: jb-book
+root: intro
+options:
+  numbered: false
+  expand_sections: true
+chapters:
+# NorESM2-MM DECK experiments
+- file: content/noresm2_deck/noresm2_mm_deck
+  title: NorESM2-MM DECK
+  sections:
+  - file: content/noresm2_deck/noresm2_mm_piC
+    title: NorESM2-MM piControl
+  - file: content/noresm2_deck/noresm2_mm_amip
+    title: NorESM2-MM AMIP
+  - file: content/noresm2_deck/noresm2_mm_4xCO2
+    title: NorESM2-MM abrupt-4xCO2
+  - file: content/noresm2_deck/noresm2_mm_1pctCO2
+    title: NorESM2-MM 1ptcCO2
+# NorESM2-LM DESCK experiments
+- file: content/noresm2_deck/noresm2_lm_deck
+#  title: NorESM2-LM DECK
+  sections:
+  - file: content/noresm2_deck/noresm2_lm_piC
+    title: NorESM2-LM piControl
+  - file: content/noresm2_deck/noresm2_lm_amip
+    title: NorESM2-LM AMIP
+  - file: content/noresm2_deck/noresm2_lm_4xCO2
+    title: NorESM2-LM abrupt-4xCO2
+  - file: content/noresm2_deck/noresm2_lm_1pctCO2
+    title: NorESM2-LM 1ptcCO2
+# NorESM2-LM historical experiments
+- file: content/noresm2_hist/noresm2_hist
+  title: NorESM2 historical 
+  sections:
+  - file: content/noresm2_hist/noresm2_mm_hist
+    title: NorESM2-MM historical  
+  - file: content/noresm2_hist/noresm2_lm_hist
+    title: NorESM2-LM historical
+# NorESM2-LM and NorESM2-MM scenario experiments
+- file: content/NSSPs/noresm2_mm_nssp
+  title: NorESM2 SSPs
+# NorESM2-LM spin up experiments
+- file: content/noresm2_lm_spin/noresm2_lm_spin_intro
+  title: NorESM2-LM spin up 
+  sections:
+  - file: content/noresm2_lm_spin/noresm2_lm_spin1
+    title: N1850OCBDRDDMS_f19_tn14_201218
+  - file: content/noresm2_lm_spin/noresm2_lm_spin2
+    title: N1850OCBDRDDMS_f19_tn14_250119
+  - file: content/noresm2_lm_spin/noresm2_lm_spin3
+    title: N1850OCBDRDDMS_f19_tn14_Gibr_220319
+  - file: content/noresm2_lm_spin/noresm2_lm_spin4
+    title: N1850OCBDRDDMS_f19_tn14_03042019
+  - file: content/noresm2_lm_spin/noresm2_lm_spin5
+    title: N1850OCBDRDDMS_f19_tn14_12042019
+  - file: content/noresm2_lm_spin/noresm2_lm_spin6
+    title: N1850OCBDRDDMS_f19_tn14_15042019
+  - file: content/noresm2_lm_spin/noresm2_lm_spin7
+    title: N1850OCBDRDDMS_f19_tn14_25042019
+  - file: content/noresm2_lm_spin/noresm2_lm_spin8
+    title: N1850OCBDRDDMS_f19_tn14_07052019
+  - file: content/noresm2_lm_spin/noresm2_lm_spin9
+    title: N1850OCBDRDDMS_f19_tn14_08052019
+  - file: content/noresm2_lm_spin/noresm2_lm_spin10
+    title: N1850OCBDRDDMS_f19_tn14_10052019
+  - file: content/noresm2_lm_spin/noresm2_lm_spin11
+    title: N1850OCBDRDDMS_f19_tn14_13052019
+  - file: content/noresm2_lm_spin/noresm2_lm_spin12
+    title: N1850_f19_tn14_06062019
+  - file: content/noresm2_lm_spin/noresm2_lm_spin13
+    title: N1850_f19_tn14_11062019
+# NorESM2-MM spin up experiments
+- file: content/noresm2_mm_spin/noresm2_mm_spin_intro
+  title: NorESM2-MM spin up 
+  sections:
+  - file: content/noresm2_mm_spin/noresm2_mm_spin1
+    title: N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
+  - file: content/noresm2_mm_spin/noresm2_mm_spin2
+    title: N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314
+  - file: content/noresm2_mm_spin/noresm2_mm_spin3
+    title: N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314
+  - file: content/noresm2_mm_spin/noresm2_mm_spin4
+    title: N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314
+  - file: content/noresm2_mm_spin/noresm2_mm_spin5
+    title: N1850OCBDRDDMS_f09_tn14_20190411
+  - file: content/noresm2_mm_spin/noresm2_mm_spin6
+    title: N1850OCBDRDDMS_f09_tn14_20190417
+  - file: content/noresm2_mm_spin/noresm2_mm_spin7
+    title: N1850OCBDRDDMS_f09_tn14_20190425
+  - file: content/noresm2_mm_spin/noresm2_mm_spin8
+    title: N1850OCBDRDDMS_f09_tn14_20190506
+  - file: content/noresm2_mm_spin/noresm2_mm_spin9
+    title: N1850OCBDRDDMS_f09_tn14_20190512
+  - file: content/noresm2_mm_spin/noresm2_mm_spin10
+    title: N1850OCBDRDDMS_f09_tn14_20190515   
+  - file: content/noresm2_mm_spin/noresm2_mm_spin11
+    title: N1850_f09_tn14_20190604
+  - file: content/noresm2_mm_spin/noresm2_mm_spin12
+    title: N1850_f09_tn14_20190610
+  - file: content/noresm2_mm_spin/noresm2_mm_spin13
+    title: N1850_f09_tn14_20190615
+  - file: content/noresm2_mm_spin/noresm2_mm_spin14
+    title: N1850_f09_tn14_20190622
+  - file: content/noresm2_mm_spin/noresm2_mm_spin15
+    title: N1850_f09_tn14_20190701
+  - file: content/noresm2_mm_spin/noresm2_mm_spin16
+    title: N1850_f09_tn14_20190726
+  - file: content/noresm2_mm_spin/noresm2_mm_spin17
+    title: N1850_f09_tn14_20190812
+  - file: content/noresm2_mm_spin/noresm2_mm_spin18
+    title: N1850_f09_tn14_20190913
+# External link
+- title: Github repository
+  url: https://github.com/NorESMhub/noresm-exp
+#  external: true
+
+
+

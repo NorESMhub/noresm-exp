@@ -1,4 +1,50 @@
-# noresm-exp
-Information about NorESM experiments
+# NorESM Experiments
 
-[![NorESM Experiments CircleCI](https://circleci.com/gh/NorESMhub/noresm-exp.svg?style=svg)](https://circleci.com/gh/NorESMhub/noresm-exp)
+An overview of NorESM2 experiments including upgrades, code modifications and parameter settings.
+
+The overview includes:
+
+    NorESM2-MM CMIP6 DECK simulations
+    NorESM2-LM CMIP6 DECK simulations
+    NorESM2-MM CMIP6 historical simulations
+    NorESM2-LM CMIP6 historical simulations
+    NorESM2-MM CMIP6 scenario simulations
+    NorESM2-LM CMIP6 scenario simulations
+    NorESM2-MM spinup tree
+    NorESM2-LM spinup tree
+
+## Usage
+
+### Editing the content
+
+To develop and/or build the NorESM Experiments content, you should:
+
+1. Clone this repository
+2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
+3. Edit the source files located in the `noresm_exp_book/content` directory
+4. Push the changes to git (branch `main`) if you want to trigger the automatic build/deploy workflow
+
+
+### Automatic deployment
+
+The GitHub actions workflow (`noresm-exp/.github/workflows/deploy.yml`) automatically renders the content, pushes the rendered output to the `gh-pages` branch of the repo and hosts it on GitHub Pages (at [https://noresmhub.github.io/noresm-exp/intro](https://noresmhub.github.io/noresm-exp/intro)) when a push or pull request is made to the main branch.
+
+
+## Local build
+
+To build locally: 
+
+1. Run `jupyter-book clean noresm_exp_book/` to remove any existing builds
+2. Run `jupyter-book build noresm_exp_book/`
+
+A fully-rendered HTML version of the book will be built in `noresm_exp_book/_build/html/`.
+
+## Credits and licence
+
+This project is created using the open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).  
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+[![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
