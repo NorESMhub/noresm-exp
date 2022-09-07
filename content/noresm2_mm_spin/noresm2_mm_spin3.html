@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314 &#8212; NorESM Experiments</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -39,12 +37,13 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -63,7 +62,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -72,9 +85,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -92,14 +106,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../intro.html">
-   NorESM2 Key Experiments
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    NorESM2 Key Experiments
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../noresm2_deck/noresm2_mm_deck.html">
    NorESM2-MM DECK
@@ -378,90 +393,180 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/content/noresm2_mm_spin/noresm2_mm_spin3.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/NorESMhub/noresm-exp/"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/NorESMhub/noresm-exp//issues/new?title=Issue%20on%20page%20%2Fcontent/noresm2_mm_spin/noresm2_mm_spin3.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/NorESMhub/noresm-exp/"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/NorESMhub/noresm-exp//issues/new?title=Issue%20on%20page%20%2Fcontent/noresm2_mm_spin/noresm2_mm_spin3.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/content/noresm2_mm_spin/noresm2_mm_spin3.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-storage">
    Data storage
@@ -553,12 +658,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314</h1>
@@ -666,27 +770,28 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="n1850ocbdrddms-f09-tn14-sg30-qmnmxrhmin-20190314">
-<h1>N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314<a class="headerlink" href="#n1850ocbdrddms-f09-tn14-sg30-qmnmxrhmin-20190314" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="data-storage">
-<h2>Data storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="n1850ocbdrddms-f09-tn14-sg30-qmnmxrhmin-20190314">
+<h1>N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314<a class="headerlink" href="#n1850ocbdrddms-f09-tn14-sg30-qmnmxrhmin-20190314" title="Permalink to this headline">#</a></h1>
+<section id="data-storage">
+<h2>Data storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">#</a></h2>
 <p>The data is stored on NIRD &#64; sigma2</p>
 <p>/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314</p>
-</div>
-<div class="section" id="path-to-case-directory">
-<h2>Path to case directory<a class="headerlink" href="#path-to-case-directory" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="path-to-case-directory">
+<h2>Path to case directory<a class="headerlink" href="#path-to-case-directory" title="Permalink to this headline">#</a></h2>
 <p>on Fram &#64; sigma2</p>
 <p>/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314/</p>
-</div>
-<div class="section" id="path-to-diagnostics">
-<h2>Path to diagnostics<a class="headerlink" href="#path-to-diagnostics" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="path-to-diagnostics">
+<h2>Path to diagnostics<a class="headerlink" href="#path-to-diagnostics" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314/">http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f09_tn14_sg30_qmnmxrhmin_20190314/</a></p>
-</div>
-<div class="section" id="summary-of-simulation">
-<h2>Summary of simulation<a class="headerlink" href="#summary-of-simulation" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="summary-of-simulation">
+<h2>Summary of simulation<a class="headerlink" href="#summary-of-simulation" title="Permalink to this headline">#</a></h2>
 <p>New in this simulation:</p>
 <ul class="simple">
 <li><p>Increased width of Strait of Gibraltar from 15 km to 30 km (in user_nl_micom: CWMWTH = 15.e3, 15.e3, -&gt; 30.e3, 30.e3,)</p></li>
@@ -700,9 +805,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>the namelist changes compared to repository as in N1850OCBDRDDMS_f09_tn14_qmnmxrhmin_20190314</p></li>
 </ul>
 <p>For all SourceMods and user name list specifics, see bottom of this page</p>
-</div>
-<div class="section" id="simulation-specifics">
-<h2>Simulation specifics<a class="headerlink" href="#simulation-specifics" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="simulation-specifics">
+<h2>Simulation specifics<a class="headerlink" href="#simulation-specifics" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -742,9 +847,9 @@ const thebe_selector_output = ".output, .cell_output"
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="node-allocation">
-<h2>Node allocation<a class="headerlink" href="#node-allocation" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="node-allocation">
+<h2>Node allocation<a class="headerlink" href="#node-allocation" title="Permalink to this headline">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="o">&lt;</span><span class="n">entry</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;NTASKS&quot;</span><span class="o">&gt;</span>
       <span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span><span class="n">integer</span><span class="o">&lt;/</span><span class="nb">type</span><span class="o">&gt;</span>
       <span class="o">&lt;</span><span class="n">values</span><span class="o">&gt;</span>
@@ -764,11 +869,11 @@ const thebe_selector_output = ".output, .cell_output"
 
 </pre></div>
 </div>
-</div>
-<div class="section" id="code-modifications-sourcemods">
-<h2>Code modifications (SourceMods)<a class="headerlink" href="#code-modifications-sourcemods" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="ice-cloud-parameterisation-changes">
-<h3>ice cloud parameterisation changes<a class="headerlink" href="#ice-cloud-parameterisation-changes" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="code-modifications-sourcemods">
+<h2>Code modifications (SourceMods)<a class="headerlink" href="#code-modifications-sourcemods" title="Permalink to this headline">#</a></h2>
+<section id="ice-cloud-parameterisation-changes">
+<h3>ice cloud parameterisation changes<a class="headerlink" href="#ice-cloud-parameterisation-changes" title="Permalink to this headline">#</a></h3>
 <p>in components/cam/src/physics/cam/cldfrc2m.F90</p>
 <p>Line 47 and 48 from</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>real(r8),  parameter :: qist_min     = 1.e-7_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ]
@@ -788,9 +893,9 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aist</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mf">0.</span><span class="n">_r8</span><span class="p">,</span><span class="nb">min</span><span class="p">(</span><span class="mf">1.</span><span class="n">_r8</span><span class="p">,</span><span class="n">sqrt</span><span class="p">(</span><span class="n">aist</span><span class="o">*</span><span class="n">qi</span><span class="o">/</span><span class="n">qist_min</span><span class="p">)))</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="ihamocc-modifications">
-<h3>iHAMOCC modifications<a class="headerlink" href="#ihamocc-modifications" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="ihamocc-modifications">
+<h3>iHAMOCC modifications<a class="headerlink" href="#ihamocc-modifications" title="Permalink to this headline">#</a></h3>
 <p>In components/micom/hamocc/beleg_bgc.F90</p>
 <p>Line 209 from</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>bkopal = 1.e-6    !i.e. 1.0 mmol Si/m3 
@@ -812,31 +917,31 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
       ropal = 45.  ! opal to organic phosphorous production ratio 
 </pre></div>
 </div>
-</div>
-<div class="section" id="includes-the-long-wave-aod-error">
-<h3>Includes the long wave aod error<a class="headerlink" href="#includes-the-long-wave-aod-error" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="includes-the-long-wave-aod-error">
+<h3>Includes the long wave aod error<a class="headerlink" href="#includes-the-long-wave-aod-error" title="Permalink to this headline">#</a></h3>
 <p><strong>Information about the bug:</strong> The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.</p>
 <p>Note this bug was fixed in N1850OCBDRDDMS_f09_tn14_alwfix_sg30_qmnmx_20190314</p>
-</div>
-</div>
-<div class="section" id="user-name-lists">
-<h2>User name lists<a class="headerlink" href="#user-name-lists" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="gamma">
-<h3>gamma<a class="headerlink" href="#gamma" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="user-name-lists">
+<h2>User name lists<a class="headerlink" href="#user-name-lists" title="Permalink to this headline">#</a></h2>
+<section id="gamma">
+<h3>gamma<a class="headerlink" href="#gamma" title="Permalink to this headline">#</a></h3>
 <p><em>Gamma</em> controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.</p>
-</div>
-<div class="section" id="iceopt">
-<h3>iceopt<a class="headerlink" href="#iceopt" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="iceopt">
+<h3>iceopt<a class="headerlink" href="#iceopt" title="Permalink to this headline">#</a></h3>
 <p>Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.</p>
-</div>
-<div class="section" id="user-nl-micom">
-<h3>user_nl_micom<a class="headerlink" href="#user-nl-micom" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="user-nl-micom">
+<h3>user_nl_micom<a class="headerlink" href="#user-nl-micom" title="Permalink to this headline">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">CWMWTH</span> <span class="o">=</span> <span class="s2">&quot;      30.e3,      30.e3&quot;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="user-nl-cam">
-<h3>user_nl_cam<a class="headerlink" href="#user-nl-cam" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="user-nl-cam">
+<h3>user_nl_cam<a class="headerlink" href="#user-nl-cam" title="Permalink to this headline">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">dyn_fv_inparm</span>
  <span class="n">fv_am_correction</span><span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
  <span class="n">fv_am_diag</span>      <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
@@ -873,18 +978,18 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
                              
 </pre></div>
 </div>
-</div>
-<div class="section" id="user-nl-clm">
-<h3>user_nl_clm<a class="headerlink" href="#user-nl-clm" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="user-nl-clm">
+<h3>user_nl_clm<a class="headerlink" href="#user-nl-clm" title="Permalink to this headline">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">finidat</span> <span class="o">=</span> <span class="s1">&#39;/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc&#39;</span>
 <span class="n">use_init_interp</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
 <span class="n">reset_snow</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="time-series-of-spinup">
-<h2>Time series of spinup<a class="headerlink" href="#time-series-of-spinup" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="time-series-of-spinup">
+<h2>Time series of spinup<a class="headerlink" href="#time-series-of-spinup" title="Permalink to this headline">#</a></h2>
 <p><img alt="MMspinup3" src="../../_images/spinupmm3.png" />
 <strong>NorESM2-MM spinup simulation</strong><br />
 <strong>Left column (from top to bottom):</strong> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST).<br />
@@ -908,8 +1013,8 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
 **Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
 :::
 -->
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -933,9 +1038,11 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="noresm2_mm_spin2.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -951,29 +1058,33 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      By Ada Gjermundsen<br/>
-    
-      <div class="extra_footer">
-        <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Ada Gjermundsen<br/>
+  
+    <div class="extra_footer">
+      <p>
   <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 </p>
 
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
