@@ -15,7 +15,7 @@ The AMIP simulation which is part of DECK uses observed SSTs and observed sea-ic
 
 - **NFHISTfrc2_f09_mg17_20191107 (1975 - 2012)**
 
-Please note, this simulation does not have the NorESM2 derived DMS emissions, but uses Lana.
+**Please note, this simulation does not have the NorESM2 derived DMS emissions, but uses Lana.**
 
 The cmorized data can be accessed on NIRD @ sigma2 under: 
 
@@ -32,10 +32,10 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | CESM parent| CESM2.1.0  | 
 | Parent | - |
 | Run type  | hybrid |
-| Branch time from parent | 1975-01-01 |
+| Branch time from parent | - |
 | Simulated years | 01-01-1975 - 31-12-2012 |   
-| Compset | HIST_CAM60%NORESM%NORPDDMSBC_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_SGLC_SWAV |
-| Git branch | featureCESM2.1.0-OsloDevelopment |
+| Compset | - |
+| Git branch | - |
 | Git commit |- |
 | Resolution | f09_tn14 |
 | Machine  |  -  |
