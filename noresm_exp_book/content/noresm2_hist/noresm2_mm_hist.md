@@ -44,7 +44,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Git commit | 47aa2a4 |
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
-| Case folder | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NHISTfrc2_f09_tn14_20191001 |
+| Case folder | /projects/NS9560K/noresm/cases/NHISTfrc2_f09_tn14_20191001 |
 | Diagnostics | - |
 
 ### NHISTfrc2_f09_tn14_20191025 (1950-2014)
@@ -61,7 +61,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 | Case folder |/cluster/projects/nn2345k/matsbn/NorESM/cases/NHISTfrc2_f09_tn14_20191025  |
-| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NHISTfrc2_f09_tn14_20191025/ |
+| Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NHISTfrc2_f09_tn14_20191025/ |
 
 ## Simulation specifics - ensemble member nr.2
 
